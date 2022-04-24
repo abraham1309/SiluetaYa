@@ -1,0 +1,1229 @@
+@font-face {
+    font-family: "adieue";
+    src: url("../tipografias/adineuePRO-Regular.ttf");
+}
+
+nav.navbar {
+    background-color: #fff !important;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item a {
+    font-family: "adieue";
+}
+
+.boton-explorar {
+    margin-top: 4%;
+    text-decoration: none;
+    padding: 1% 5% 1% 5%;
+    border: solid 2px #fff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "adieue";
+}
+
+
+/*Estilos para la seccion de productos*/
+
+.seccion-productos {
+    height: auto;
+    width: auto;
+    background-color: aqua;
+}
+
+.seccion-productos .div-prduc {
+    padding-top: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-productos .div-prduc img {
+    width: 40%;
+}
+
+.seccion-productos .div-prduc .div-texto {
+    margin-left: -7%;
+}
+
+.seccion-productos .div-prduc .div-texto a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "adieue";
+    font-size: 25px;
+}
+
+.seccion-productos .div-prduc .div-texto h2 {
+    color: #fff;
+    font-family: "adieue";
+}
+
+.seccion-productos .div-producto1 {
+    background-image: radial-gradient(circle, #ffffff, #eeeeef, #dddedf, #cdcecf, #bcbec0);
+}
+
+.seccion-productos .div-producto2 {
+    background: rgb(0, 180, 208);
+    background: linear-gradient( 180deg, rgba(0, 180, 208, 1) 0%, rgba(165, 228, 241, 1) 55%, rgba(234, 248, 254, 1) 76%);
+}
+
+.seccion-productos .div-producto2 .div-texto {
+    margin-top: -7%;
+}
+
+.seccion-productos .div-producto3 {
+    background: rgb(215, 97, 172);
+    background: linear-gradient( 180deg, rgba(215, 97, 172, 1) 0%, rgba(138, 136, 200, 1) 50%, rgba(8, 201, 247, 1) 100%);
+}
+
+.seccion-productos .div-producto3 .div-texto {
+    margin-top: -10%;
+}
+
+@media (max-width: 880px) {
+    .seccion-productos .div-prduc img {
+        width: 35%;
+    }
+    .seccion-productos .div-prduc .div-texto a {
+        font-size: 20px;
+    }
+    .seccion-productos .div-prduc .div-texto h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+    .seccion-productos .div-prduc .div-texto a {
+        font-size: 25px;
+    }
+    .seccion-productos .div-prduc .div-texto h2 {
+        color: #fff;
+        font-size: 20px;
+    }
+    .seccion-productos .div-producto2 img {
+        margin-right: 8%;
+    }
+}
+
+
+/*Estilos para los productos de SiluetaYa y 365*/
+
+.seccion-2-productos .div-producto-izquierdo,
+.div-producto-derecho {
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-2-productos .div-siluetaYa {
+    background: url("../images/Fondo-de-SiluetaYa-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.seccion-2-productos .div-365 {
+    background: url("../images/Fondo-de-SiluetaYa-365-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.seccion-2-productos .div-encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-2-productos .div-encabezado h2 {
+    color: #fff;
+    width: 90%;
+    font-size: 55px;
+    font-family: "adieue";
+    text-align: center;
+}
+
+.seccion-2-productos .div-encabezado p {
+    width: 90%;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-family: "adieue";
+}
+
+.seccion-2-productos .div-cuerpo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.seccion-2-productos .div-cuerpo .div-flecha1 {
+    position: absolute;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -35%;
+    margin-top: 5%;
+}
+
+.seccion-2-productos .div-cuerpo .div-flecha1 p {
+    margin-bottom: -2%;
+    margin-right: 15%;
+    font-family: "adieue";
+    font-size: 20px;
+    color: #fff;
+}
+
+.seccion-2-productos .div-cuerpo .div-flecha1 img {
+    width: 50%;
+}
+
+.seccion-2-productos .div-cuerpo .div-flecha2 {
+    position: absolute;
+    width: 160px;
+    margin-right: -16%;
+}
+
+.seccion-2-productos .div-cuerpo .div-flecha2 p {
+    margin-bottom: -2%;
+    font-family: "adieue";
+    font-size: 20px;
+    color: #fff;
+}
+
+.seccion-2-productos .div-cuerpo .div-flecha2 img {
+    width: 50%;
+}
+
+.seccion-2-productos .div-cuerpo .producto {
+    width: 325px;
+}
+
+@media (max-width: 1000px) {
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        margin-left: 20%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha2 {
+        margin-right: -22%;
+    }
+}
+
+@media (max-width: 915px) {
+    .seccion-2-productos .div-cuerpo .producto {
+        width: 250px;
+        height: 280px;
+    }
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        margin-left: 10%;
+    }
+    .seccion-2-productos .div-cuerpo .producto-365 {
+        margin-right: 5%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha1 {
+        margin-top: 2%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha1 img {
+        width: 41%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha1 p {
+        font-size: 18px;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha2 img {
+        width: 41%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha2 p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 860px) {
+    .seccion-2-productos2 .div-encabezado h2 {
+        font-size: 50px;
+    }
+    .seccion-2-productos .div-encabezado p {
+        width: 80%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .seccion-2-productos .div-producto-izquierdo,
+    .div-producto-derecho {
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+
+@media (max-width: 767px) {
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        margin-left: 0;
+    }
+    .seccion-2-productos .div-cuerpo .producto-365 {
+        margin-right: 0;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha1 {
+        margin-top: 1%;
+        margin-left: -45%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha2 {
+        margin-right: -27%;
+    }
+}
+
+@media (max-width: 610px) {
+    .seccion-2-productos .div-cuerpo .div-flecha1 {
+        margin-left: -60%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha2 {
+        margin-right: -35%;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        margin-left: 11%;
+    }
+    .seccion-2-productos .div-cuerpo .producto-365 {
+        margin-right: 11%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha1 {
+        margin-top: 3%;
+        margin-left: -65%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha1 p {
+        font-size: 16px;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha1 img {
+        width: 38%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha2 {
+        margin-right: -37%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha2 p {
+        font-size: 16px;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha2 img {
+        width: 38%;
+    }
+}
+
+@media (max-width: 385px) {
+    .seccion-2-productos .div-encabezado h2 {
+        font-size: 50px;
+    }
+    .seccion-2-productos .div-encabezado p {
+        width: 90%;
+        font-size: 19px;
+    }
+    .seccion-2-productos .div-cuerpo .producto {
+        width: 200px;
+        height: 228px;
+    }
+}
+
+@media (max-width: 345px) {
+    .seccion-2-productos .div-encabezado h2 {
+        font-size: 40px;
+    }
+    .seccion-2-productos .div-cuerpo .producto {
+        width: 180px;
+        height: 201px;
+    }
+}
+
+@media (max-width: 290px) {
+    .seccion-2-productos .div-encabezado h2 {
+        font-size: 35px;
+    }
+    .seccion-2-productos .div-cuerpo .producto {
+        width: 150px;
+        height: 168px;
+    }
+}
+
+
+/*Estilos para la seccion de pirateria*/
+
+.div-pirateria {
+    height: 40vh;
+    background-color: #fff;
+}
+
+.div-pirateria .div-imagen {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-pirateria .div-imagen img {
+    width: 32%;
+}
+
+.div-pirateria .div-texto {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-pirateria .div-texto h2 {
+    font-family: "adieue";
+    font-size: 35px;
+}
+
+.div-pirateria .div-texto p {
+    width: 80%;
+    font-family: "adieue";
+    font-size: 23px;
+}
+
+@media (max-width: 767px) {
+    .div-pirateria .div-imagen img {
+        width: 45%;
+    }
+    .div-pirateria .div-texto h2 {
+        font-size: 30px;
+    }
+    .div-pirateria .div-texto p {
+        font-size: 20px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 575px) {
+    .div-pirateria {
+        height: auto;
+    }
+    .div-pirateria .div-texto {
+        height: auto;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+    .div-pirateria .div-texto h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .div-pirateria .div-texto p {
+        font-size: 20px;
+        text-align: justify;
+    }
+    .div-pirateria .div-imagen {
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+@media (max-width: 425px) {
+    .div-pirateria .div-texto h2 {
+        font-size: 25px;
+    }
+    .div-pirateria .div-texto p {
+        font-size: 19px;
+    }
+    .div-pirateria .div-imagen {
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+
+/*Estilos para la seccion de los productos SiluetabsYa y a SiluetaYa Tejoforte*/
+
+.seccion-2-productos .div-SiluetabsYa {
+    background: url("../images/Fondo-de-SiluetabsYa-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.seccion-2-productos .div-Tejoforte {
+    background: url("../images/Fondo-de-Tejoforte-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.seccion-2-productos .div-cuerpo .SiluetabsYa {
+    width: 325px;
+    height: 275px;
+}
+
+.seccion-2-productos .div-cuerpo .TejoForte {
+    width: 300px;
+    height: 360px;
+}
+
+.seccion-2-productos .div-cuerpo .flecha-TejoForte {
+    margin-top: 5%;
+}
+
+@media (max-width: 920px) {
+    .seccion-2-productos .div-cuerpo .SiluetabsYa {
+        width: 260px;
+        height: 222px;
+        margin-left: 25%;
+    }
+    .seccion-2-productos .div-cuerpo .TejoForte {
+        width: 250px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 767px) {
+    .seccion-2-productos .div-cuerpo .SiluetabsYa {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 460px) {
+    .seccion-2-productos .div-cuerpo .SiluetabsYa {
+        width: 250px;
+        height: 214px;
+        margin-left: 15%;
+    }
+    .seccion-2-productos .div-cuerpo .SiluetabsYa,
+    .TejoForte {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    .seccion-2-productos .div-cuerpo .flecha-SiluetabsYa {
+        margin-top: 20%;
+    }
+    .seccion-2-productos .div-cuerpo .flecha-TejoForte {
+        margin-top: 20%;
+    }
+}
+
+
+/*Estilos para la seccion de los productos 4*/
+
+.div-3-productos {
+    height: 145vh;
+}
+
+.div-3-productos .div-titulo {
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.527);
+}
+
+.div-3-productos .div-titulo h2 {
+    font-family: "adieue";
+    font-size: 60px;
+    text-align: center;
+}
+
+.div-3-productos .div-producto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-3-productos .div-producto .contenedor {
+    width: 90%;
+    margin-top: 24%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-3-productos .div-producto .div-encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "adieue";
+    width: 100%;
+    text-align: center;
+}
+
+.div-3-productos .div-producto .div-encabezado h3 {
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+}
+
+.div-3-productos .div-producto .div-encabezado p {
+    width: 80%;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.div-3-productos .div-producto .div-cuerpo {
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-3-productos .div-producto .div-cuerpo img {
+    width: 80%;
+}
+
+.div-3-productos .div-producto .boton-explorar-2 {
+    margin-top: 17%;
+}
+
+.div-3-productos .div-producto-1 {
+    height: 145vh;
+    background-image: linear-gradient( to bottom, #0bb979, #68ca76, #9dda77, #cee87e, #fcf68b);
+}
+
+.div-3-productos .div-producto-2 {
+    height: 145vh;
+    background: linear-gradient( 180deg, rgba(0, 180, 208, 1) 0%, rgba(165, 228, 241, 1) 55%, rgba(234, 248, 254, 1) 76%);
+}
+
+.div-3-productos .div-producto-3 {
+    height: 145vh;
+    background: linear-gradient( 180deg, rgba(215, 97, 172, 1) 0%, rgba(138, 136, 200, 1) 50%, rgba(8, 201, 247, 1) 100%);
+}
+
+@media (max-width: 850px) {
+    .div-3-productos {
+        height: auto;
+    }
+    .div-3-productos .div-producto-1 {
+        height: auto;
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
+    .div-3-productos .div-producto-2 {
+        height: auto;
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
+    .div-3-productos .div-producto-3 {
+        height: auto;
+        padding-top: 15%;
+        padding-bottom: 10%;
+    }
+}
+
+@media (max-width: 767px) {
+    .div-3-productos .div-producto-1 {
+        height: auto;
+        padding-top: 25%;
+        padding-bottom: 10%;
+    }
+    .div-3-productos .div-producto-2 {
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .div-3-productos .div-producto-3 {
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .div-3-productos .div-producto .contenedor {
+        margin-top: 0;
+    }
+    .div-3-productos .div-producto .contenedor-Mj {
+        margin-top: 25%;
+    }
+}
+
+@media (max-width: 437px) {
+    .div-3-productos .div-titulo h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+}
+
+
+/* Estilos para la seccion de DoreYa */
+
+.div-DoreYa {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/Fondo-de-DoreYa-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.div-DoreYa .div-producto {
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.div-DoreYa .div-producto .div-producto-general {
+    width: 90%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.div-DoreYa .div-producto .div-producto-general .div-flecha-dore {
+    position: absolute;
+    margin-right: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-DoreYa .div-producto .div-producto-general .div-flecha-dore p {
+    margin-bottom: -3%;
+    margin-right: 30%;
+    font-family: "adieue";
+    font-size: 25px;
+}
+
+.div-DoreYa .div-producto .div-producto-general img {
+    width: 80%;
+}
+
+.div-DoreYa .div-info {
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.div-DoreYa .div-info .div-text {
+    width: 90%;
+    text-align: left;
+}
+
+.div-DoreYa .div-info .div-text h2 {
+    font-family: "adieue";
+    font-size: 55px;
+}
+
+.div-DoreYa .div-info .div-text p {
+    font-family: "adieue";
+    font-size: 30px;
+    text-align: justify;
+}
+
+@media (max-width: 850px) {
+    .div-DoreYa {
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .div-DoreYa .div-producto {
+        height: auto;
+    }
+    .div-DoreYa .div-info {
+        height: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .div-DoreYa .div-general {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .div-DoreYa .div-producto {
+        height: auto;
+    }
+    .div-DoreYa .div-producto .div-producto-general {
+        justify-content: center;
+        width: 100%;
+    }
+    .div-DoreYa .div-producto .div-producto-general img {
+        width: 55%;
+    }
+    .div-DoreYa .div-producto .div-producto-general .div-flecha-dore {
+        margin-right: 45%;
+    }
+    .div-DoreYa .div-info {
+        height: auto;
+        justify-content: center;
+    }
+    .div-DoreYa .div-info .div-text {
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .div-DoreYa .div-info .div-text p {
+        width: 95%;
+        text-align: justify !important;
+    }
+    .div-DoreYa .div-info {
+        height: auto;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .div-DoreYa .div-producto .div-producto-general .div-flecha-dore {
+        margin-right: 55%;
+    }
+    .div-DoreYa .div-info {
+        height: auto;
+        justify-content: center;
+    }
+    .div-DoreYa .div-info {
+        height: auto;
+        justify-content: center;
+    }
+    .div-DoreYa .div-info .div-text {
+        width: 90%;
+        text-align: center;
+    }
+    .div-DoreYa .div-info .div-text h2 {
+        font-size: 40px;
+    }
+    .div-DoreYa .div-info .div-text p {
+        font-size: 20px;
+    }
+}
+
+
+/* Estilos para la seccion de asociados */
+
+.div-asociados {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.div-asociados .div-informacion {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-asociados .div-informacion .div-tex {
+    width: 80%;
+}
+
+.div-asociados .div-informacion .div-tex h2 {
+    font-family: "adieue";
+    font-size: 50px;
+}
+
+.div-asociados .div-informacion .div-tex p {
+    font-family: "adieue";
+    font-size: 25px;
+    text-align: justify;
+}
+
+.div-asociados .div-general-imagen {
+    height: 100vh;
+}
+
+.div-asociados .div-general-imagen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-asociados .div-general-imagen .div-imagen {
+    width: 80%;
+    text-align: center;
+}
+
+.div-asociados .div-general-imagen .div-imagen img {
+    width: 80%;
+}
+
+@media (max-width: 767px) {
+    .div-asociados .div-informacion {
+        height: auto;
+    }
+    .div-asociados .div-informacion .div-tex {
+        width: 90%;
+        text-align: center;
+    }
+    .div-asociados .div-general-imagen {
+        margin-top: 5%;
+        height: auto;
+    }
+    .div-asociados .div-general-imagen .div-imagen img {
+        width: 45%;
+    }
+}
+
+@media (max-width: 850px) {
+    .div-asociados {
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .div-asociados .div-informacion {
+        height: auto;
+    }
+    .div-asociados .div-general-imagen {
+        height: auto;
+    }
+}
+
+@media (max-width: 450px) {
+    .div-asociados .div-informacion .div-tex p {
+        font-size: 20px;
+    }
+    .div-asociados .div-informacion .div-tex h2 {
+        font-size: 40px;
+    }
+    .div-asociados .div-general-imagen .div-imagen img {
+        width: 75%;
+    }
+}
+
+
+/* Estilos para paquete la seccion ActivaYa */
+
+.div-paquete-Activa {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/Fondo-de-Paquete-ActivaYa-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.div-paquete-Activa .div-izquierdo {
+    position: absolute;
+    margin-right: 39%;
+}
+
+.div-paquete-Activa .div-izquierdo p {
+    position: absolute;
+    margin-top: -60%;
+    margin-left: -20%;
+    font-family: "adieue";
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.div-paquete-Activa .div-central {
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-paquete-Activa .div-central img {
+    width: 80%;
+}
+
+.div-paquete-Activa .div-central .imagen-productos {
+    margin-top: 9%;
+}
+
+.div-paquete-Activa .div-text-responsivo {
+    width: 95%;
+    margin-top: 5%;
+    text-align: center;
+    display: none;
+}
+
+.div-paquete-Activa .div-text-responsivo h3 {
+    font-family: "adieue";
+    font-size: 45px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.div-paquete-Activa .div-text-responsivo p {
+    font-family: "adieue";
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 20px #ff6b00;
+}
+
+.div-paquete-Activa .div-derecho {
+    margin-top: 5%;
+    position: absolute;
+    margin-left: 50%;
+}
+
+.div-paquete-Activa .div-derecho p {
+    margin-bottom: -1%;
+    font-family: "adieue";
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 20px #ff6b00;
+}
+
+@media (max-width: 1190px) {
+    .div-paquete-Activa .div-derecho {
+        margin-left: 57%;
+    }
+    .div-paquete-Activa .div-izquierdo {
+        margin-right: 46%;
+    }
+}
+
+@media (max-width: 890px) {
+    .div-paquete-Activa .div-derecho {
+        margin-left: 65%;
+    }
+    .div-paquete-Activa .div-derecho p {
+        font-size: 17px;
+    }
+    .div-paquete-Activa .div-izquierdo {
+        margin-right: 47%;
+    }
+    .div-paquete-Activa .div-izquierdo p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 850px) {
+    .div-paquete-Activa {
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .div-paquete-Activa .div-central {
+        height: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .div-paquete-Activa {
+        flex-direction: column;
+    }
+    .div-paquete-Activa .div-text-responsivo {
+        display: block;
+    }
+    .div-paquete-Activa .div-derecho {
+        display: none;
+    }
+    .div-paquete-Activa .div-izquierdo {
+        display: none;
+    }
+    .div-paquete-Activa .div-central .boton-explorar-eliminar {
+        display: none !important;
+    }
+    .div-paquete-Activa .div-central {
+        width: 90%;
+    }
+    .div-paquete-Activa .div-central img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    .div-paquete-Activa {
+        padding-top: 30%;
+    }
+    .div-paquete-Activa .div-text-responsivo h3 {
+        font-size: 35px;
+    }
+    .div-paquete-Activa .div-central .imagen-productos {
+        margin-top: 25%;
+    }
+}
+
+@media (max-width: 325px) {
+    .div-paquete-Activa .div-central .imagen-productos {
+        margin-top: 30%;
+    }
+    .div-paquete-Activa .div-text-responsivo {
+        margin-top: 10%;
+    }
+}
+
+
+/* Estilos para la seccion de DUOSYA */
+
+.seccion-duosya {
+    position: relative;
+    height: auto;
+}
+
+.seccion-duosya .div-titulo {
+    width: 100vw;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(162, 212, 10);
+}
+
+.seccion-duosya .div-titulo img {
+    width: 40%;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .div-color-1 {
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background: rgb(0, 135, 42);
+    background: linear-gradient(180deg, rgba(0, 135, 42, 1) 34%, rgba(255, 255, 255, 1) 78%, rgba(255, 255, 255, 1) 100%);
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .div-color-2 {
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background: rgb(0, 100, 50);
+    background: linear-gradient(180deg, rgba(0, 100, 50, 1) 34%, rgba(255, 255, 255, 1) 78%, rgba(255, 255, 255, 1) 100%);
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre {
+    width: 90%;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre h3 {
+    font-family: "adieue";
+    font-size: 35px;
+    color: #fff;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-imagen {
+    width: 90%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-imagen img {
+    width: 80%;
+    text-align: center;
+}
+
+.seccion-duosya .swiper-button-prev {
+    margin-top: 7%;
+    color: #fff;
+    cursor: pointer;
+}
+
+.seccion-duosya .swiper-button-next {
+    margin-top: 7%;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width: 575px) {
+    footer .div-logo {
+        justify-content: center;
+    }
+    footer .div-redes-sociales .div-iconos {
+        justify-content: center;
+    }
+}
+
+
+/* Estilos para el footer */
+
+footer {
+    width: 100vw;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #ffa400;
+}
+
+footer .div-logo {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .div-logo img {
+    margin-left: 5%;
+    width: 200;
+    height: 98;
+}
+
+footer .div-leyenda {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .div-leyenda p {
+    width: 85%;
+    font-family: "adieue";
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+footer .div-leyenda p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .div-redes-sociales {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .div-redes-sociales .div-iconos {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+footer .div-redes-sociales .div-iconos a {
+    margin-left: 5%;
+    font-size: 25px;
+    color: #fff;
+}
+
+@media (max-width: 680px) {
+    .seccion-duosya .div-titulo {
+        height: 200px;
+    }
+    .seccion-duosya .div-titulo img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-duosya .div-titulo {
+        height: 200px;
+    }
+    .seccion-duosya .div-titulo img {
+        width: 70%;
+    }
+}
