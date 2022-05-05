@@ -5,7 +5,7 @@
 
 #slides {
     position: absolute;
-    height: 130vh;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -17,35 +17,35 @@
 #slides .slides-container .imagen1-carrusel {
     background: url(../images/Home-carrusel-px-1-min.png);
     width: 100vw;
-    height: 130vh;
+    height: 100vh;
 }
 
 #slides .slides-container .imagen2-carrusel {
     background: url(../images/Home-carrusel-px-2-min.png);
     width: 100vw;
-    height: 130vh;
+    height: 100vh;
 }
 
 #slides .slides-container .imagen3-carrusel {
     background: url(../images/Home-carrusel-px-3-min.png);
     width: 100vw;
-    height: 130vh;
+    height: 100vh;
 }
 
 #slides .slides-container .imagen4-carrusel {
     background: url(../images/Home-carrusel-px-4-min.png);
     width: 100vw;
-    height: 130vh;
+    height: 100vh;
 }
 
 #slides .slides-container .imagen5-carrusel {
     background: url(../images/Home-carrusel-px-5-min.png);
     width: 100vw;
-    height: 130vh;
+    height: 100vh;
 }
 
 #slides .slides-container .container {
-    height: 130vh;
+    height: 100vh;
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
@@ -193,31 +193,26 @@
         background: url(../images/MOBILE-HEADERS-SY-WEB-2022-port.jpg);
         height: 100%;
         margin-top: 18%;
-        margin-bottom: 15%;
     }
     #slides .slides-container .imagen2-carrusel {
         background: url(../images/MOBILE-HEADERS-SY-WEB-2022-asoc.jpg);
         height: 100%;
         margin-top: 18%;
-        margin-bottom: 15%;
     }
     #slides .slides-container .imagen3-carrusel {
         background: url(../images/Carrusel-movil-1-min.png);
         height: 100%;
         margin-top: 18%;
-        margin-bottom: 15%;
     }
     #slides .slides-container .imagen4-carrusel {
         background: url(../images/Carrusel-movil-2-min.png);
         height: 100%;
         margin-top: 18%;
-        margin-bottom: 15%;
     }
     #slides .slides-container .imagen5-carrusel {
         background: url(../images/MOBILE-HEADERS-SY-WEB-2022-raices.jpg);
         height: 100%;
         margin-top: 18%;
-        margin-bottom: 15%;
     }
     #slides .slides-container .container {
         height: 100%;

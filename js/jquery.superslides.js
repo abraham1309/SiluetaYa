@@ -12,7 +12,7 @@
             animation_easing: 'swing',
             animation: 'slide',
             inherit_width_from: window,
-            inherit_height_from: "#slides",
+            inherit_height_from: window,
             pagination: false,
             hashchange: false,
             scrollable: false,

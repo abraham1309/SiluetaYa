@@ -284,14 +284,19 @@ nav.navbar {
     .seccion-2-productos .div-cuerpo .div-flecha2 {
         margin-right: -35%;
     }
+    .seccion-2-productos .div-siluetaYa .div-cuerpo {
+        width: auto;
+        margin-left: 15%;
+    }
+    .seccion-2-productos .div-365 .div-cuerpo {
+        width: auto;
+        margin-left: 15%;
+    }
 }
 
 @media (max-width: 450px) {
     .seccion-2-productos .div-cuerpo .producto-siluetaYa {
         margin-left: 11%;
-    }
-    .seccion-2-productos .div-cuerpo .producto-365 {
-        margin-right: 11%;
     }
     .seccion-2-productos .div-cuerpo .div-flecha1 {
         margin-top: 3%;
@@ -485,6 +490,17 @@ nav.navbar {
     }
 }
 
+@media (max-width: 610px) {
+    .seccion-2-productos .div-SiluetabsYa .div-cuerpo {
+        width: auto;
+        margin-left: 24%;
+    }
+    .seccion-2-productos .div-Tejoforte .div-cuerpo {
+        width: auto;
+        margin-left: 10%;
+    }
+}
+
 @media (max-width: 460px) {
     .seccion-2-productos .div-cuerpo .SiluetabsYa {
         width: 250px;
@@ -501,6 +517,13 @@ nav.navbar {
     }
     .seccion-2-productos .div-cuerpo .flecha-TejoForte {
         margin-top: 20%;
+    }
+}
+
+@media (max-width: 440px) {
+    .seccion-2-productos .div-SiluetabsYa .div-cuerpo {
+        width: auto;
+        margin-left: 0;
     }
 }
 
@@ -1140,12 +1163,21 @@ nav.navbar {
     cursor: pointer;
 }
 
-@media (max-width: 575px) {
-    footer .div-logo {
-        justify-content: center;
+@media (max-width: 680px) {
+    .seccion-duosya .div-titulo {
+        height: 200px;
     }
-    footer .div-redes-sociales .div-iconos {
-        justify-content: center;
+    .seccion-duosya .div-titulo img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-duosya .div-titulo {
+        height: 200px;
+    }
+    .seccion-duosya .div-titulo img {
+        width: 70%;
     }
 }
 
@@ -1210,20 +1242,11 @@ footer .div-redes-sociales .div-iconos a {
     color: #fff;
 }
 
-@media (max-width: 680px) {
-    .seccion-duosya .div-titulo {
-        height: 200px;
+@media (max-width: 575px) {
+    footer .div-logo {
+        justify-content: center;
     }
-    .seccion-duosya .div-titulo img {
-        width: 60%;
-    }
-}
-
-@media (max-width: 450px) {
-    .seccion-duosya .div-titulo {
-        height: 200px;
-    }
-    .seccion-duosya .div-titulo img {
-        width: 70%;
+    footer .div-redes-sociales .div-iconos {
+        justify-content: center;
     }
 }
