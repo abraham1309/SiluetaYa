@@ -1,0 +1,282 @@
+@font-face {
+    font-family: "adieue";
+    src: url("../tipografias/adineuePRO-Regular.ttf");
+}
+
+nav.navbar {
+    background-color: #fff !important;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item a {
+    font-family: "adieue";
+}
+
+
+/* Estilos para la seccion de inicio */
+
+.seccion-principal {
+    height: 100vh;
+    width: 100%;
+}
+
+.seccion-principal .div-fondo {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: url("../images/ConocenosYa-Imagen-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.seccion-principal .div-general {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 1;
+}
+
+.seccion-principal .div-general .div-text {
+    margin-top: 8%;
+    text-align: center;
+}
+
+.seccion-principal .div-general .div-text h1 {
+    font-family: "adieue";
+    font-size: 60px;
+    color: #fff;
+}
+
+.seccion-principal .div-general .div-text p {
+    margin-top: -2%;
+    font-family: "adieue";
+    font-size: 25px;
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .seccion-principal .div-general .div-text {
+        margin-top: 16%;
+    }
+}
+
+@media (max-width: 650px) {
+    .seccion-principal .div-general .div-text {
+        margin-top: 35%;
+    }
+    .seccion-principal .div-general .div-text h1 {
+        width: 95%;
+        font-size: 40px;
+    }
+}
+
+
+/* Estilos para la seccion de informacion */
+
+.seccion-informacion {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-informacion .div-text {
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.seccion-informacion .div-text h1 {
+    font-family: "adieue";
+    font-size: 40px;
+    color: #000;
+    text-align: center;
+}
+
+.seccion-informacion .div-text p {
+    font-family: "adieue";
+    font-size: 23px;
+    color: #000;
+    text-align: justify;
+}
+
+@media (max-width: 767px) {
+    .seccion-informacion .div-text p {
+        font-size: 20px;
+    }
+}
+
+
+/* Estilos para la seccion de filosofia */
+
+.seccion-filosofia {
+    height: auto;
+    width: 100%;
+}
+
+.seccion-filosofia .div-general-texto {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(11, 185, 121);
+    background: linear-gradient(180deg, rgba(11, 185, 121, 1) 60%, rgba(252, 246, 139, 1) 100%);
+}
+
+.seccion-filosofia .div-text {
+    width: 84%;
+    height: auto;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+
+.seccion-filosofia .div-text h2 {
+    font-family: "adieue";
+    font-size: 30px;
+    color: #fff;
+}
+
+.seccion-filosofia .div-text p {
+    font-family: "adieue";
+    font-size: 23px;
+    text-align: justify;
+    margin-top: -2%;
+    color: #fff;
+}
+
+.seccion-filosofia .div-text .div-ecambezado {
+    margin-bottom: 5%;
+}
+
+.seccion-filosofia .div-text .div-ecambezado h1 {
+    font-family: "adieue";
+    font-size: 40px;
+    color: #fff;
+}
+
+.seccion-filosofia .div-text .div-mision,
+.div-vision,
+.div-valores {
+    margin-top: 5%;
+}
+
+.seccion-filosofia .div-text .div-valores {
+    font-family: "adieue";
+    font-size: 23px;
+    color: #fff;
+}
+
+.seccion-filosofia .div-general-imagen {
+    height: auto;
+}
+
+.seccion-filosofia .div-general-imagen .div-imagen-completa {
+    height: 100%;
+    background: url("../images/Foto-de-arbol-de-tejocotes-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.seccion-filosofia .div-general-imagen .div-imagen {
+    width: 100%;
+    height: auto;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-filosofia .div-general-imagen .div-imagen img {
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .seccion-filosofia .div-text {
+        width: 90%;
+    }
+    .seccion-filosofia .div-text p {
+        font-size: 20px;
+    }
+    .seccion-filosofia .div-text .div-valores {
+        font-size: 20px;
+    }
+    .seccion-filosofia .div-general-imagen .div-imagen-completa {
+        display: none;
+    }
+    .seccion-filosofia .div-general-imagen .div-imagen {
+        display: flex;
+    }
+}
+
+
+/* Estilos para el footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #ffa400;
+}
+
+footer .div-logo {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .div-logo img {
+    margin-left: 5%;
+    width: 200;
+    height: 98;
+}
+
+footer .div-leyenda {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .div-leyenda p {
+    width: 85%;
+    font-family: "adieue";
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+footer .div-leyenda p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .div-redes-sociales {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .div-redes-sociales .div-iconos {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+footer .div-redes-sociales .div-iconos a {
+    margin-left: 5%;
+    font-size: 25px;
+    color: #fff;
+}
+
+@media (max-width: 575px) {
+    footer .div-logo {
+        justify-content: center;
+    }
+    footer .div-redes-sociales .div-iconos {
+        justify-content: center;
+    }
+}
