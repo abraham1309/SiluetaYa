@@ -7,7 +7,7 @@
 
     Superslides = function(el, options) {
         this.options = $.extend({
-            play: 4500,
+            play: 4250,
             animation_speed: 1000,
             animation_easing: 'swing',
             animation: 'slide',
@@ -165,7 +165,6 @@
                         "background-repea": 'no-repeat',
                         "background-size": 'cover',
                         "background-position": 'center center'
-
                     });
 
                 $images.each(function() {
