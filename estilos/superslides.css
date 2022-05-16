@@ -98,6 +98,7 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 20%;
+        padding-top: 10%;
     }
     #slides .slides-container .contenedor1 .div-abajo {
         width: 100%;
@@ -106,6 +107,7 @@
         justify-content: flex-end;
         align-items: center;
         flex-direction: column;
+        padding-bottom: 15%;
     }
 }
 
@@ -296,14 +298,15 @@
 @media (max-width: 450px) {
     #slides .slides-container .contenedor-app .div-central .imagen-mobil-app {
         margin-top: 20%;
-        width: 65%;
+        width: 60%;
     }
     #slides .slides-container .contenedor-app .div-central .imagen-celular {
-        width: 50%;
+        width: 45%;
         display: flex;
     }
     #slides .slides-container .contenedor-app .div-central .imagen-silueta {
         width: 55%;
+        margin-top: -7%;
     }
     #slides .slides-container .contenedor-app .div-central .div-tiendas img {
         width: 30%;
@@ -422,7 +425,6 @@
     }
     #slides .slides-container .div-productos .imagen-titulo {
         width: 80%;
-        margin-top: 30%;
         margin-bottom: 10%;
     }
     #slides .slides-container .div-productos .imagen-codigoQR {
