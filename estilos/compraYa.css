@@ -1,0 +1,594 @@
+@font-face {
+    font-family: "adieue";
+    src: url("../tipografias/adineuePRO-Regular.ttf");
+}
+
+nav.navbar {
+    background-color: #fff !important;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item a {
+    font-family: "adieue";
+}
+
+.boton-explorar {
+    margin-top: 4%;
+    text-decoration: none;
+    padding: 1% 5% 1% 5%;
+    border: solid 2px #000;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "adieue";
+}
+
+
+/* Estilos para la seccion de inicio */
+
+.seccion-inicio {
+    width: 100%;
+    height: 100vh;
+}
+
+.seccion-inicio .div-general-texto {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-inicio .div-texto {
+    width: 80%;
+    text-align: justify;
+}
+
+.seccion-inicio .div-texto h1 {
+    font-family: "adieue";
+    font-size: 60px;
+    color: #fff;
+}
+
+.seccion-inicio .div-texto p {
+    width: 100%;
+    font-family: "adieue";
+    font-size: 30px;
+    color: #fff;
+    text-align: justify;
+}
+
+.seccion-inicio .div-general-imagen {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.seccion-inicio .div-general-imagen img {
+    width: 90%;
+}
+
+.seccion-inicio .div-fondo {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: url("../images/compraYa/CompraYa-Fondo2-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+}
+
+@media (max-width: 991px) {
+    .seccion-inicio .div-general-texto {
+        height: 50vh;
+        padding-top: 10%;
+    }
+    .seccion-inicio .div-general-texto .div-texto {
+        width: 90%;
+    }
+    .seccion-inicio .div-general-texto .div-texto h1 {
+        text-align: center;
+    }
+    .seccion-inicio .div-general-imagen {
+        height: 50vh;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .seccion-inicio .div-general-texto .div-texto h1 {
+        font-size: 30px;
+    }
+    .seccion-inicio .div-texto p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-inicio .div-general-texto {
+        padding-top: 15%;
+    }
+    .seccion-inicio .div-fondo {
+        background: url("../images/compraYa/CompraYa-Fondo2-m-min.png");
+    }
+    .seccion-inicio .div-general-imagen img {
+        margin-bottom: 30%;
+    }
+}
+
+
+/* Estilos para la seccion de asociados */
+
+.seccion-asociados {
+    height: 100vh;
+    width: 100%;
+}
+
+.seccion-asociados .div-imagen {
+    height: 100vh;
+}
+
+.seccion-asociados .div-general-texto {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.seccion-asociados .div-general-texto .div-texto {
+    width: 90%;
+}
+
+.seccion-asociados .div-general-texto .div-texto h2 {
+    font-family: "adieue";
+    font-size: 60px;
+    color: #000;
+}
+
+.seccion-asociados .div-general-texto .div-texto p {
+    font-family: "adieue";
+    font-size: 25px;
+    color: #000;
+    text-align: justify;
+}
+
+.seccion-asociados .div-fondo {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: url("../images/compraYa/Imagen-de-emprendedores-1-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .seccion-asociados .div-general-texto {
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+    }
+    .seccion-asociados .div-imagen {
+        display: none;
+    }
+    .seccion-asociados .div-general-texto .div-texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .seccion-asociados .div-general-texto .div-texto h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .seccion-asociados .div-general-texto .div-texto p {
+        width: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-asociados .div-general-texto .div-texto p {
+        text-align: justify;
+    }
+}
+
+
+/* Estlos para la seccion de productos individuales */
+
+.seccion-productos-individuales {
+    height: auto;
+    width: 100%;
+    background-color: blueviolet;
+}
+
+.seccion-productos-individuales .div-titulo {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a2d40a;
+}
+
+.seccion-productos-individuales .div-titulo h2 {
+    font-family: "adieue";
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+}
+
+.seccion-productos-individuales .div-general-productos {
+    height: auto;
+    padding-top: 5%;
+    margin-bottom: 5%;
+    background-color: #fff;
+}
+
+.seccion-productos-individuales .div-general-productos .div-producto {
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-productos-individuales .div-general-productos .div-producto .div-contenedor {
+    width: 85%;
+    height: 85%;
+    display: flex;
+}
+
+.seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-imagen {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-imagen img {
+    width: 100%;
+}
+
+.seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-derecho {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-derecho h3 {
+    font-family: "adieue";
+    font-size: 45px;
+}
+
+.seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-derecho a {
+    margin-top: 10%;
+    padding: 2% 5% 2% 5%;
+    font-family: "adieue";
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 450px) {
+    .seccion-productos-individuales .div-titulo h2 {
+        width: 90%;
+        font-size: 40px;
+    }
+    .seccion-productos-individuales .div-general-productos .div-producto {
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor {
+        width: 90%;
+        height: 100%;
+    }
+    .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-derecho h3 {
+        font-size: 35px;
+    }
+    .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-derecho a {
+        margin-top: 10%;
+        font-size: 18px;
+    }
+}
+
+
+/* Estilos para la seccion de paquete activa */
+
+.div-paquete-Activa {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/Fondo-de-Paquete-ActivaYa-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.div-paquete-Activa .div-izquierdo {
+    position: absolute;
+    margin-right: 39%;
+}
+
+.div-paquete-Activa .div-izquierdo p {
+    position: absolute;
+    margin-top: -60%;
+    margin-left: -20%;
+    font-family: "adieue";
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.div-paquete-Activa .div-central {
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-paquete-Activa .div-central img {
+    width: 80%;
+}
+
+.div-paquete-Activa .div-central .imagen-productos {
+    margin-top: 9%;
+}
+
+.div-paquete-Activa .div-text-responsivo {
+    width: 95%;
+    margin-top: 5%;
+    text-align: center;
+    display: none;
+}
+
+.div-paquete-Activa .div-text-responsivo h3 {
+    font-family: "adieue";
+    font-size: 45px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.div-paquete-Activa .div-text-responsivo p {
+    font-family: "adieue";
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 20px #ff6b00;
+}
+
+.div-paquete-Activa .div-derecho {
+    margin-top: 5%;
+    position: absolute;
+    margin-left: 50%;
+}
+
+.div-paquete-Activa .div-derecho p {
+    margin-bottom: -1%;
+    font-family: "adieue";
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 20px #ff6b00;
+}
+
+@media (max-width: 1190px) {
+    .div-paquete-Activa .div-derecho {
+        margin-left: 57%;
+    }
+    .div-paquete-Activa .div-izquierdo {
+        margin-right: 46%;
+    }
+}
+
+@media (max-width: 890px) {
+    .div-paquete-Activa .div-derecho {
+        margin-left: 65%;
+    }
+    .div-paquete-Activa .div-derecho p {
+        font-size: 17px;
+    }
+    .div-paquete-Activa .div-izquierdo {
+        margin-right: 47%;
+    }
+    .div-paquete-Activa .div-izquierdo p {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 850px) {
+    .div-paquete-Activa {
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .div-paquete-Activa .div-central {
+        height: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .div-paquete-Activa {
+        flex-direction: column;
+    }
+    .div-paquete-Activa .div-text-responsivo {
+        display: block;
+    }
+    .div-paquete-Activa .div-derecho {
+        display: none;
+    }
+    .div-paquete-Activa .div-izquierdo {
+        display: none;
+    }
+    .div-paquete-Activa .div-central .boton-explorar-eliminar {
+        display: none !important;
+    }
+    .div-paquete-Activa .div-central {
+        width: 90%;
+    }
+    .div-paquete-Activa .div-central img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    .div-paquete-Activa {
+        padding-top: 30%;
+    }
+    .div-paquete-Activa .div-text-responsivo h3 {
+        font-size: 35px;
+    }
+    .div-paquete-Activa .div-central .imagen-productos {
+        margin-top: 25%;
+    }
+}
+
+@media (max-width: 325px) {
+    .div-paquete-Activa .div-central .imagen-productos {
+        margin-top: 30%;
+    }
+    .div-paquete-Activa .div-text-responsivo {
+        margin-top: 10%;
+    }
+}
+
+
+/* Estilos para paquetes duosYa */
+
+.div-paquetes-duosYa {
+    height: auto;
+    width: 100%;
+}
+
+.div-paquetes-duosYa .div-titulo {
+    width: 100%;
+    height: 225px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(162, 212, 10);
+}
+
+.div-paquetes-duosYa .div-titulo img {
+    width: 40%;
+}
+
+.div-paquetes-duosYa .div-general-productos {
+    height: auto;
+    padding-top: 3%;
+    background-color: #fff;
+}
+
+.div-paquetes-duosYa .div-general-productos .div-producto {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.div-paquetes-duosYa .div-general-productos .div-producto h3 {
+    font-family: "adieue";
+    font-size: 30px;
+    text-align: center;
+}
+
+.div-paquetes-duosYa .div-general-productos .div-producto img {
+    width: 70%;
+}
+
+@media (max-width: 680px) {
+    .div-paquetes-duosYa .div-titulo {
+        height: 200px;
+    }
+    .div-paquetes-duosYa .div-titulo img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 680px) {
+    .div-paquetes-duosYa .div-titulo img {
+        width: 70%;
+    }
+}
+
+
+/* Estilos para el footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #ffa400;
+}
+
+footer .div-logo {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .div-logo img {
+    margin-left: 5%;
+    width: 200;
+    height: 98;
+}
+
+footer .div-leyenda {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .div-leyenda p {
+    width: 85%;
+    font-family: "adieue";
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+footer .div-leyenda p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .div-redes-sociales {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .div-redes-sociales .div-iconos {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+footer .div-redes-sociales .div-iconos a {
+    margin-left: 5%;
+    font-size: 25px;
+    color: #fff;
+}
+
+@media (max-width: 575px) {
+    footer .div-logo {
+        justify-content: center;
+    }
+    footer .div-redes-sociales .div-iconos {
+        justify-content: center;
+    }
+}

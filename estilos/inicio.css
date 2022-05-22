@@ -376,7 +376,7 @@ nav.navbar {
 }
 
 .div-pirateria .div-imagen img {
-    width: 32%;
+    width: 50%;
 }
 
 .div-pirateria .div-texto {
@@ -775,7 +775,7 @@ nav.navbar {
 .div-DoreYa .div-producto .div-producto-general {
     width: 90%;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
 }
 
@@ -793,10 +793,12 @@ nav.navbar {
     margin-right: 30%;
     font-family: "adieue";
     font-size: 25px;
+    color: #fff;
 }
 
 .div-DoreYa .div-producto .div-producto-general img {
-    width: 80%;
+    width: 55%;
+    margin-left: 20%;
 }
 
 .div-DoreYa .div-info {
@@ -851,7 +853,8 @@ nav.navbar {
         width: 100%;
     }
     .div-DoreYa .div-producto .div-producto-general img {
-        width: 55%;
+        width: 40%;
+        margin-left: 5%;
     }
     .div-DoreYa .div-producto .div-producto-general .div-flecha-dore {
         margin-right: 45%;
@@ -1250,9 +1253,6 @@ nav.navbar {
 }
 
 @media (max-width: 450px) {
-    .seccion-duosya .div-titulo {
-        height: 200px;
-    }
     .seccion-duosya .div-titulo img {
         width: 70%;
     }
