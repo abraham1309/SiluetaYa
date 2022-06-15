@@ -44,14 +44,14 @@ nav.navbar {
 
 .seccion-inicio .div-texto h1 {
     font-family: "adieue";
-    font-size: 60px;
+    font-size: 68px;
     color: #fff;
 }
 
 .seccion-inicio .div-texto p {
     width: 100%;
     font-family: "adieue";
-    font-size: 30px;
+    font-size: 35px;
     color: #fff;
     text-align: justify;
 }
@@ -97,16 +97,24 @@ nav.navbar {
 
 @media (max-width: 767px) {
     .seccion-inicio .div-general-texto .div-texto h1 {
-        font-size: 30px;
+        font-size: 60px;
     }
     .seccion-inicio .div-texto p {
-        font-size: 20px;
+        font-size: 30px;
+        text-align: justify;
     }
 }
 
 @media (max-width: 450px) {
     .seccion-inicio .div-general-texto {
-        padding-top: 15%;
+        padding-top: 30%;
+    }
+    .seccion-inicio .div-general-texto .div-texto h1 {
+        font-size: 50px;
+    }
+    .seccion-inicio .div-texto p {
+        font-size: 25px;
+        text-align: justify;
     }
     .seccion-inicio .div-fondo {
         background: url("../images/compraYa/CompraYa-Fondo2-m-min.png");
@@ -116,58 +124,102 @@ nav.navbar {
     }
 }
 
+@media (max-width: 320px) {
+    .seccion-inicio .div-general-texto {
+        padding-top: 40%;
+    }
+    .seccion-inicio .div-general-texto .div-texto h1 {
+        font-size: 40px;
+    }
+    .seccion-inicio .div-texto p {
+        font-size: 20px;
+        text-align: justify;
+    }
+}
+
 
 /* Estilos para la seccion de asociados */
 
 .seccion-asociados {
-    height: 100vh;
+    height: auto;
     width: 100%;
 }
 
 .seccion-asociados .div-imagen {
-    height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* background-color: red; */
+}
+
+.seccion-asociados .div-imagen img {
+    width: 100%;
 }
 
 .seccion-asociados .div-general-texto {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    /* background-color: #a2d40a; */
 }
 
 .seccion-asociados .div-general-texto .div-texto {
-    width: 90%;
+    width: 100%;
 }
 
 .seccion-asociados .div-general-texto .div-texto h2 {
     font-family: "adieue";
     font-size: 60px;
-    color: #000;
+    color: #fff;
 }
 
 .seccion-asociados .div-general-texto .div-texto p {
+    width: 95%;
     font-family: "adieue";
     font-size: 25px;
-    color: #000;
+    color: #fff;
     text-align: justify;
 }
 
 .seccion-asociados .div-fondo {
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background: url("../images/compraYa/Imagen-de-emprendedores-1-min.png");
+    background: url("../images/compraYa/CompraYa-Asociados-F-min.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     z-index: -1;
 }
 
+.seccion-asociados .div-general-texto .div-imagen-movil {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .seccion-asociados .div-general-texto .div-texto h2 {
+        font-size: 50px;
+    }
+    .seccion-asociados .div-general-texto .div-texto p {
+        font-size: 20px;
+    }
+}
+
 @media (max-width: 767px) {
     .seccion-asociados .div-general-texto {
-        width: 100vw;
-        height: 100vh;
         justify-content: center;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    .seccion-asociados .div-general-texto .div-imagen-movil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion-asociados .div-general-texto .div-imagen-movil img {
+        width: 90%;
     }
     .seccion-asociados .div-imagen {
         display: none;
@@ -179,19 +231,23 @@ nav.navbar {
         flex-direction: column;
     }
     .seccion-asociados .div-general-texto .div-texto h2 {
-        font-size: 30px;
-        text-align: center;
+        font-size: 50px;
     }
     .seccion-asociados .div-general-texto .div-texto p {
-        width: 100%;
-        font-size: 20px;
-        text-align: center;
+        font-size: 30px;
+        width: 90%;
     }
 }
 
 @media (max-width: 450px) {
     .seccion-asociados .div-general-texto .div-texto p {
         text-align: justify;
+    }
+    .seccion-asociados .div-general-texto .div-texto h2 {
+        font-size: 50px;
+    }
+    .seccion-asociados .div-general-texto .div-texto p {
+        font-size: 20px;
     }
 }
 
@@ -201,7 +257,6 @@ nav.navbar {
 .seccion-productos-individuales {
     height: auto;
     width: 100%;
-    background-color: blueviolet;
 }
 
 .seccion-productos-individuales .div-titulo {
@@ -249,7 +304,11 @@ nav.navbar {
 }
 
 .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-imagen img {
-    width: 100%;
+    width: 90%;
+}
+
+.seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-imagen .img-DoreYa {
+    width: 75%;
 }
 
 .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-derecho {
@@ -275,13 +334,32 @@ nav.navbar {
     text-decoration: none;
 }
 
+@media (max-width: 850px) {
+    .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-derecho h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-imagen .img-MJYa {
+        width: 75%;
+    }
+    .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-imagen .img-UPPYa {
+        width: 75%;
+    }
+    .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-imagen .img-DoreYa {
+        width: 68%;
+    }
+}
+
 @media (max-width: 450px) {
     .seccion-productos-individuales .div-titulo h2 {
         width: 90%;
         font-size: 40px;
     }
     .seccion-productos-individuales .div-general-productos .div-producto {
-        height: auto;
+        height: 230px;
         padding-top: 5%;
         padding-bottom: 5%;
     }
@@ -290,11 +368,14 @@ nav.navbar {
         height: 100%;
     }
     .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-derecho h3 {
-        font-size: 35px;
+        text-align: center;
     }
     .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-derecho a {
         margin-top: 10%;
         font-size: 18px;
+    }
+    .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-imagen .img-SiluetabsYa {
+        margin-right: -10%;
     }
 }
 

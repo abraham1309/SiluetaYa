@@ -28,7 +28,6 @@ nav.navbar {
 .seccion-productos {
     height: auto;
     width: auto;
-    background-color: aqua;
 }
 
 .seccion-productos .div-prduc {
@@ -207,6 +206,7 @@ nav.navbar {
 
 .seccion-2-productos .div-cuerpo .producto-siluetaYa {
     margin-left: 18%;
+    width: 330px !important;
 }
 
 @media (max-width: 1000px) {
@@ -215,6 +215,11 @@ nav.navbar {
     }
     .seccion-2-productos .div-cuerpo .div-flecha2 {
         margin-right: -22%;
+    }
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        margin-left: 18%;
+        width: 325px !important;
+        height: 364px !important;
     }
 }
 
@@ -301,13 +306,25 @@ nav.navbar {
     }
 }
 
+@media (max-width: 550px) {
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        margin-left: 10%;
+    }
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        width: 300px !important;
+        height: 336px !important;
+    }
+}
+
 @media (max-width: 450px) {
     .seccion-2-productos .div-cuerpo .producto-siluetaYa {
         margin-left: 11%;
+        width: 280px !important;
+        height: 313px !important;
     }
     .seccion-2-productos .div-cuerpo .div-flecha1 {
         margin-top: 3%;
-        margin-left: -65%;
+        margin-left: -85%;
     }
     .seccion-2-productos .div-cuerpo .div-flecha1 p {
         font-size: 16px;
@@ -337,6 +354,10 @@ nav.navbar {
     .seccion-2-productos .div-cuerpo .producto {
         width: 200px;
         height: 228px;
+    }
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        width: 200px !important;
+        height: 224px !important;
     }
 }
 
