@@ -3,6 +3,11 @@
     src: url("../tipografias/adineuePRO-Regular.ttf");
 }
 
+@font-face {
+    font-family: "adieue light";
+    src: url("../tipografias/adineueTEXT-Light.ttf");
+}
+
 nav.navbar {
     background-color: #fff !important;
 }
@@ -601,6 +606,214 @@ nav.navbar {
 @media (max-width: 680px) {
     .div-paquetes-duosYa .div-titulo img {
         width: 70%;
+    }
+}
+
+
+/* Estilos para la pagina de producto */
+
+.seccion-producto {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.seccion-producto .div-general-producto {
+    height: auto;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    display: flex;
+}
+
+.seccion-producto .div-general-producto .div-informacion {
+    height: auto;
+    width: 60%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.seccion-producto .div-general-producto .div-informacion .div-texto {
+    width: 90%;
+    height: auto;
+}
+
+.seccion-producto .div-general-producto .div-informacion .div-texto h1 {
+    font-size: 45px;
+    font-family: "adieue";
+}
+
+.seccion-producto .div-general-producto .div-informacion .div-texto h2 {
+    font-size: 30px;
+    font-family: "adieue";
+}
+
+.seccion-producto .div-general-producto .div-informacion .div-texto li {
+    width: 80%;
+    margin-left: -1.5%;
+    font-size: 20px;
+    font-family: "adieue light";
+}
+
+.seccion-producto .div-general-producto .div-informacion .div-general-botones {
+    width: 90%;
+    height: 40%;
+}
+
+.seccion-producto .div-general-producto .div-informacion .div-general-botones p {
+    font-size: 27px;
+    font-family: "adieue";
+}
+
+.seccion-producto .div-general-producto .div-informacion .div-general-botones .div-btns {
+    display: flex;
+}
+
+.seccion-producto .div-general-producto .div-informacion .div-general-botones .div-cantidad-btn {
+    margin-right: 10%;
+}
+
+.seccion-producto .div-general-producto .div-informacion .div-general-botones .div-cantidad-btn button {
+    width: 50px;
+    height: 45px;
+    border: none;
+    font-size: 25px;
+    font-family: "adieue light";
+    background-color: rgb(242, 242, 242);
+}
+
+.seccion-producto .div-general-producto .div-informacion .div-general-botones .div-cantidad-btn label {
+    width: 100px;
+    text-align: center;
+}
+
+.seccion-producto .div-general-producto .div-informacion .div-general-botones .div-btns .btn-agrregar-carrito {
+    width: 160px;
+    height: 45px;
+    background: none;
+    border: solid 3px rgb(255, 168, 14);
+    font-size: 18px;
+    font-family: "adieue";
+    color: rgb(255, 168, 14);
+}
+
+.seccion-producto .div-general-producto .div-informacion .div-general-botones .btn-comprar-ahora {
+    width: 205px;
+    height: 45px;
+    border: none;
+    background-color: rgb(255, 106, 0);
+    font-family: "adieue";
+    font-size: 18px;
+    color: #fff;
+}
+
+.seccion-producto .div-general-producto .div-imagenes {
+    height: auto;
+    width: 40%;
+}
+
+.seccion-producto .div-general-producto .div-imagenes .div-imagen-principal {
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-producto .div-general-producto .div-imagenes .div-imagen-principal img {
+    width: 60%;
+}
+
+.seccion-producto .div-general-producto .div-imagenes .div-mas-imagenes {
+    height: 35%;
+}
+
+.seccion-producto .div-general-producto .div-imagenes .div-mas-imagenes .div-imagenes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-producto .div-general-producto .div-imagenes .div-mas-imagenes .div-imagenes img {
+    width: 28%;
+}
+
+.seccion-producto .div-general-producto .div-imagenes .div-mas-imagenes .div-imagenes .img-central {
+    border-left: solid 1px rgba(0, 0, 0, 0.616);
+    border-right: solid 1px rgba(0, 0, 0, 0.616);
+}
+
+@media (max-width: 950px) {
+    .seccion-producto .div-general-producto .div-informacion .div-texto h1 {
+        font-size: 35px;
+    }
+    .seccion-producto .div-general-producto .div-informacion .div-texto h2 {
+        font-size: 25px;
+    }
+    .seccion-producto .div-general-producto {
+        margin-top: 13%;
+    }
+}
+
+@media (max-width: 767px) {
+    .seccion-producto .div-general-producto {
+        margin-top: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .seccion-producto .div-general-producto .div-imagenes {
+        height: auto;
+        width: 95%;
+        padding-bottom: 5%;
+    }
+    .seccion-producto .div-general-producto .div-informacion {
+        width: 95%;
+        align-items: center;
+    }
+    .seccion-producto .div-general-producto .div-informacion .div-texto h1,
+    h2 {
+        text-align: center;
+    }
+    .seccion-producto .div-general-producto .div-informacion .div-texto li {
+        width: 100%;
+        margin-left: -1.5%;
+        font-size: 20px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-producto .div-general-producto {
+        margin-top: 30%;
+    }
+    .seccion-producto .div-general-producto .div-imagenes {
+        height: auto;
+        width: 95%;
+        padding-bottom: 5%;
+    }
+    .seccion-producto .div-general-producto .div-informacion {
+        width: 95%;
+        align-items: center;
+    }
+    .seccion-producto .div-general-producto .div-informacion .div-texto h1,
+    h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .seccion-producto .div-general-producto .div-informacion .div-texto {
+        width: 100%;
+    }
+    .seccion-producto .div-general-producto .div-informacion .div-general-botones {
+        width: 100%;
+    }
+    .seccion-producto .div-general-producto .div-informacion .div-general-botones .div-btns {
+        display: flex;
+        flex-direction: column;
     }
 }
 
