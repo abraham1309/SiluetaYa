@@ -9,7 +9,7 @@
 }
 
 nav.navbar {
-    background-color: #fff !important;
+    background-color: rgb(255, 255, 255) !important;
 }
 
 .navbar .container-fluid .collapse .navbar-nav .nav-item a {
@@ -32,11 +32,12 @@ nav.navbar {
 
 .seccion-inicio {
     width: 100%;
-    height: 100vh;
+    height: 90vh;
+    margin-top: 10vh;
 }
 
 .seccion-inicio .div-general-texto {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +63,7 @@ nav.navbar {
 }
 
 .seccion-inicio .div-general-imagen {
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -74,7 +75,7 @@ nav.navbar {
 
 .seccion-inicio .div-fondo {
     position: absolute;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background: url("../images/compraYa/CompraYa-Fondo2-min.png");
     background-repeat: no-repeat;
@@ -86,7 +87,8 @@ nav.navbar {
 @media (max-width: 991px) {
     .seccion-inicio .div-general-texto {
         height: 50vh;
-        padding-top: 10%;
+        padding-top: 4%;
+        align-items: flex-start;
     }
     .seccion-inicio .div-general-texto .div-texto {
         width: 90%;
@@ -97,6 +99,9 @@ nav.navbar {
     .seccion-inicio .div-general-imagen {
         height: 50vh;
         justify-content: center;
+    }
+    .seccion-inicio .div-general-imagen img {
+        margin-bottom: 10%;
     }
 }
 
@@ -112,20 +117,21 @@ nav.navbar {
 
 @media (max-width: 450px) {
     .seccion-inicio .div-general-texto {
-        padding-top: 30%;
+        padding-top: 8%;
     }
     .seccion-inicio .div-general-texto .div-texto h1 {
         font-size: 50px;
     }
     .seccion-inicio .div-texto p {
-        font-size: 25px;
+        font-size: 20px;
         text-align: justify;
     }
     .seccion-inicio .div-fondo {
         background: url("../images/compraYa/CompraYa-Fondo2-m-min.png");
     }
     .seccion-inicio .div-general-imagen img {
-        margin-bottom: 30%;
+        width: 100%;
+        margin-bottom: 38%;
     }
 }
 
@@ -155,7 +161,6 @@ nav.navbar {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    /* background-color: red; */
 }
 
 .seccion-asociados .div-imagen img {
@@ -165,13 +170,12 @@ nav.navbar {
 .seccion-asociados .div-general-texto {
     height: auto;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
-    /* background-color: #a2d40a; */
 }
 
 .seccion-asociados .div-general-texto .div-texto {
-    width: 100%;
+    width: 90%;
 }
 
 .seccion-asociados .div-general-texto .div-texto h2 {
@@ -181,7 +185,7 @@ nav.navbar {
 }
 
 .seccion-asociados .div-general-texto .div-texto p {
-    width: 95%;
+    width: 90%;
     font-family: "adieue";
     font-size: 25px;
     color: #fff;
@@ -217,6 +221,7 @@ nav.navbar {
         justify-content: center;
         flex-direction: column;
         margin-top: 10%;
+        width: 100%;
     }
     .seccion-asociados .div-general-texto .div-imagen-movil {
         display: flex;
@@ -240,7 +245,7 @@ nav.navbar {
     }
     .seccion-asociados .div-general-texto .div-texto p {
         font-size: 30px;
-        width: 90%;
+        width: 95%;
     }
 }
 
@@ -449,7 +454,7 @@ nav.navbar {
     font-family: "adieue";
     font-size: 20px;
     color: #fff;
-    text-shadow: 1px 1px 20px #ff6b00;
+    text-shadow: 0 0 20px #ff6b00, 0 0 30px #ff6b00, 0 0 40px #ff6b00, 0 0 55px #ff6b00;
 }
 
 .div-paquete-Activa .div-derecho {
@@ -464,7 +469,8 @@ nav.navbar {
     font-size: 18px;
     color: #fff;
     font-weight: bold;
-    text-shadow: 1px 1px 20px #ff6b00;
+    color: #FFFFFF;
+    text-shadow: 0 0 20px #ff6b00, 0 0 30px #ff6b00, 0 0 40px #ff6b00, 0 0 55px #ff6b00;
 }
 
 @media (max-width: 1190px) {
@@ -720,6 +726,7 @@ nav.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5%;
 }
 
 .seccion-producto .div-general-producto .div-imagenes .div-imagen-principal img {
@@ -766,6 +773,12 @@ nav.navbar {
         align-items: center;
         flex-direction: column-reverse;
     }
+    .seccion-producto .div-general-producto .div-informacion .div-general-botones {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .seccion-producto .div-general-producto .div-imagenes {
         height: auto;
         width: 95%;
@@ -780,16 +793,20 @@ nav.navbar {
         text-align: center;
     }
     .seccion-producto .div-general-producto .div-informacion .div-texto li {
-        width: 100%;
-        margin-left: -1.5%;
+        width: 85%;
+        margin-left: 4%;
         font-size: 20px;
         text-align: justify;
+    }
+    .seccion-producto .div-general-producto .div-informacion .div-general-botones .div-btns {
+        width: 97%;
     }
 }
 
 @media (max-width: 450px) {
     .seccion-producto .div-general-producto {
         margin-top: 30%;
+        margin-bottom: 10%;
     }
     .seccion-producto .div-general-producto .div-imagenes {
         height: auto;
@@ -811,9 +828,105 @@ nav.navbar {
     .seccion-producto .div-general-producto .div-informacion .div-general-botones {
         width: 100%;
     }
+    .seccion-producto .div-general-producto .div-informacion .div-general-botones .div-cantidad-btn {
+        margin-right: 0;
+    }
     .seccion-producto .div-general-producto .div-informacion .div-general-botones .div-btns {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
+    }
+}
+
+
+/* Estilos para la seccion de DUOSYA */
+
+.seccion-duosya {
+    position: relative;
+    height: auto;
+}
+
+.seccion-duosya .div-titulo {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(254, 214, 0);
+}
+
+.seccion-duosya .div-titulo h2 {
+    font-size: 42px;
+    font-family: "adieue";
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .div-color-1 {
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .div-color-2 {
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre {
+    width: 90%;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre h3 {
+    font-family: "adieue";
+    font-size: 35px;
+    color: #000;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-imagen {
+    width: 90%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-imagen img {
+    width: 80%;
+    text-align: center;
+}
+
+.seccion-duosya .swiper-button-prev {
+    margin-top: 7%;
+    color: rgb(104, 102, 102);
+    cursor: pointer;
+}
+
+.seccion-duosya .swiper-button-next {
+    margin-top: 7%;
+    color: rgb(104, 102, 102);
+    cursor: pointer;
+}
+
+@media (max-width: 680px) {
+    .seccion-duosya .div-titulo {
+        height: 120px;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-duosya .div-titulo {
+        height: 100px;
+    }
+    .seccion-duosya .div-titulo h2 {
+        font-size: 30px;
     }
 }
 

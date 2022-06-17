@@ -40,19 +40,21 @@ nav.navbar {
     height: 40vh;
     width: 100%;
     text-align: center;
-    padding-top: 9%;
+    padding-top: 8%;
 }
 
 .seccion-principal .div-general .div-text h1 {
     font-family: "adieue";
-    font-size: 60px;
+    font-size: 85px;
     color: #fff;
+    text-align: center;
 }
 
 .seccion-principal .div-general .div-text p {
     font-family: "adieue";
-    font-size: 25px;
+    font-size: 40px;
     color: #fff;
+    text-align: center;
 }
 
 .seccion-principal .div-general .div-foto {
@@ -65,7 +67,7 @@ nav.navbar {
 
 .seccion-principal .div-general .div-foto img {
     width: 95%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 .seccion-principal .div-general .div-foto .img-movil {
@@ -84,13 +86,19 @@ nav.navbar {
     }
     .seccion-principal .div-general .div-text h1 {
         width: 95%;
-        font-size: 40px;
+        font-size: 70px;
+    }
+    .seccion-principal .div-fondo {
+        background: url("../images/conocenosYa/ConocenosYa-Fondo-2-m-min.png");
     }
 }
 
 @media (max-width: 450px) {
     .seccion-principal .div-general .div-text {
-        padding-top: 33%;
+        padding-top: 35%;
+    }
+    .seccion-principal .div-general .div-text h1 {
+        font-size: 50px;
     }
     .seccion-principal .div-general .div-foto .img-escritorio {
         display: none;
@@ -98,7 +106,7 @@ nav.navbar {
     .seccion-principal .div-general .div-foto .img-movil {
         display: flex;
         width: 80%;
-        margin-bottom: 25%;
+        margin-bottom: 10%;
     }
 }
 

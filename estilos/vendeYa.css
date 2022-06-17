@@ -1,0 +1,521 @@
+@font-face {
+    font-family: "adieue";
+    src: url("../tipografias/adineuePRO-Regular.ttf");
+}
+
+@font-face {
+    font-family: "adieue light";
+    src: url("../tipografias/adineueTEXT-Light.ttf");
+}
+
+nav.navbar {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item a {
+    font-family: "adieue";
+}
+
+.boton-explorar {
+    margin-top: 4%;
+    text-decoration: none;
+    padding: 1% 5% 1% 5%;
+    border: solid 2px #000;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "adieue";
+}
+
+
+/* Estilos para la seccion de inicio */
+
+.seccion-incio {
+    height: 90vh;
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.seccion-incio .div-general {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.seccion-incio .div-general .div-general-imagen {
+    width: 50%;
+    height: 100%;
+}
+
+.seccion-incio .div-general .div-general-texto {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-incio .div-general .div-general-texto .div-texto {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    color: #fff;
+}
+
+.seccion-incio .div-general .div-general-texto .div-texto h1 {
+    font-size: 55px;
+    font-family: "adieue";
+}
+
+.seccion-incio .div-general .div-general-texto .div-texto p {
+    font-size: 30px;
+    width: 80%;
+    font-family: "adieue light";
+    text-align: justify;
+}
+
+.seccion-incio .div-general .div-fondo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("../images/VendeYa/VendeYa-Imagen-de-cabecera-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .seccion-incio .div-general {
+        flex-direction: column-reverse;
+    }
+    .seccion-incio .div-general .div-general-imagen {
+        width: 100%;
+    }
+    .seccion-incio .div-general .div-general-texto {
+        width: 100%;
+        align-items: center;
+    }
+    .seccion-incio .div-general .div-general-texto .div-texto {
+        text-align: center;
+        align-items: center;
+    }
+    .seccion-incio .div-general .div-general-texto .div-texto p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-incio .div-general .div-general-texto {
+        align-items: flex-start;
+    }
+    .seccion-incio .div-general .div-general-texto .div-texto {
+        margin-top: 10%;
+    }
+    .seccion-incio .div-general .div-general-texto .div-texto h1 {
+        font-size: 50px;
+    }
+    .seccion-incio .div-general .div-general-texto .div-texto p {
+        font-size: 20px;
+    }
+}
+
+
+/* Estilos para la seccion de asociados */
+
+.seccion-asociados {
+    height: auto;
+    width: 100%;
+    background: url("../images/compraYa/CompraYa-Asociados-F-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+}
+
+.seccion-asociados .div-imagen {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.seccion-asociados .div-imagen img {
+    width: 95%;
+}
+
+.seccion-asociados .div-general-texto {
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.seccion-asociados .div-general-texto .div-texto {
+    width: 90%;
+}
+
+.seccion-asociados .div-general-texto .div-texto h2 {
+    font-family: "adieue";
+    font-size: 60px;
+    color: #fff;
+}
+
+.seccion-asociados .div-general-texto .div-texto p {
+    width: 90%;
+    font-family: "adieue";
+    font-size: 25px;
+    color: #fff;
+    text-align: justify;
+}
+
+.seccion-asociados .div-general-texto .div-imagen-movil {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .seccion-asociados .div-general-texto .div-texto h2 {
+        font-size: 50px;
+    }
+    .seccion-asociados .div-general-texto .div-texto p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .seccion-asociados .div-general-texto {
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10%;
+        width: 100%;
+    }
+    .seccion-asociados .div-general-texto .div-imagen-movil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion-asociados .div-general-texto .div-imagen-movil img {
+        width: 90%;
+    }
+    .seccion-asociados .div-imagen {
+        display: none;
+    }
+    .seccion-asociados .div-general-texto .div-texto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .seccion-asociados .div-general-texto .div-texto h2 {
+        font-size: 50px;
+    }
+    .seccion-asociados .div-general-texto .div-texto p {
+        font-size: 30px;
+        width: 95%;
+    }
+    .seccion-asociados .div-general-texto {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-asociados .div-general-texto .div-texto p {
+        text-align: justify;
+    }
+    .seccion-asociados .div-general-texto .div-texto h2 {
+        font-size: 50px;
+    }
+    .seccion-asociados .div-general-texto .div-texto p {
+        font-size: 20px;
+    }
+}
+
+
+/* Estilos para la seccion de paquetes */
+
+.seccion-paquetes {
+    height: auto;
+    width: 100%;
+}
+
+.seccion-paquetes .div-general {
+    height: 100%;
+    width: 100%;
+}
+
+.seccion-paquetes .div-general .div-titulo {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 163, 0);
+}
+
+.seccion-paquetes .div-general .div-titulo h2 {
+    width: 80%;
+    font-family: "adieue";
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+}
+
+.seccion-paquetes .div-general .div-general-texto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.seccion-paquetes .div-general .div-general-texto .div-texto {
+    width: 100%;
+    width: 90%;
+    text-align: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.seccion-paquetes .div-general .div-general-texto .div-texto p {
+    font-size: 25px;
+    font-family: "adieue";
+}
+
+.seccion-paquetes .div-general .div-general-texto .div-botones {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seccion-paquetes .div-general .div-general-texto .div-botones button {
+    width: 180px;
+    height: 45px;
+    background: none;
+}
+
+.seccion-paquetes .div-general .div-general-texto .div-botones .btn-informes {
+    border: solid 2px #a2d40a;
+}
+
+.seccion-paquetes .div-general .div-general-texto .div-botones .btn-informes a {
+    color: #a2d40a;
+}
+
+.seccion-paquetes .div-general .div-general-texto .div-botones .btn-vender {
+    border: solid 2px #ff6a00;
+}
+
+.seccion-paquetes .div-general .div-general-texto .div-botones .btn-vender a {
+    color: #ff6a00;
+}
+
+.seccion-paquetes .div-general .div-general-texto .div-botones .btn-representante {
+    border: solid 2px #ffa300;
+}
+
+.seccion-paquetes .div-general .div-general-texto .div-botones .btn-representante a {
+    color: #ffa300;
+}
+
+.seccion-paquetes .div-general .div-general-texto .div-botones button a {
+    font-family: 'adieue';
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.seccion-paquetes .div-general .div-general-paquetes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-paquetes .div-general .div-general-paquetes .div-paquete {
+    width: 90%;
+    display: flex;
+}
+
+.seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-imagen {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-imagen img {
+    width: 280px;
+}
+
+.seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-texto {
+    width: 60%;
+    display: flex;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: 'adieue';
+}
+
+.seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-texto h3 {
+    font-size: 35px;
+}
+
+.seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-texto p {
+    font-size: 20px;
+}
+
+.seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-texto ol {
+    font-size: 19px;
+    margin-left: -1.5%;
+    text-align: justify;
+}
+
+.seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-texto a {
+    text-decoration: none;
+    padding: 1% 4% 1% 4%;
+    border: solid 2px #000;
+    color: #000;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: "adieue";
+}
+
+@media (max-width: 767px) {
+    .seccion-paquetes .div-general .div-general-paquetes .div-paquete {
+        width: 95%;
+        flex-direction: column-reverse;
+        margin-bottom: 6%;
+    }
+    .seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-texto {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-texto ol {
+        text-align: justify;
+        margin-left: 0;
+    }
+    .seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-imagen {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .seccion-paquetes .div-general .div-general-texto .div-botones {
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .seccion-paquetes .div-general .div-general-texto .div-botones button {
+        margin-bottom: 6%;
+    }
+    .seccion-paquetes .div-general .div-titulo {
+        height: 150px;
+    }
+    .seccion-paquetes .div-general .div-titulo h2 {
+        width: 90%;
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-paquetes .div-general .div-general-texto .div-texto p {
+        font-size: 20px;
+    }
+    .seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-imagen img {
+        width: 60%;
+    }
+    .seccion-paquetes .div-general .div-general-paquetes .div-paquete {
+        margin-bottom: 10%;
+    }
+    .seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-texto ol {
+        width: 90%;
+    }
+    .seccion-paquetes .div-general .div-titulo {
+        height: 120px;
+    }
+    .seccion-paquetes .div-general .div-titulo h2 {
+        font-size: 35px;
+    }
+}
+
+
+/* Estilos para el footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #ffa400;
+}
+
+footer .div-logo {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .div-logo img {
+    margin-left: 5%;
+    width: 200;
+    height: 98;
+}
+
+footer .div-leyenda {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .div-leyenda p {
+    width: 85%;
+    font-family: "adieue";
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+footer .div-leyenda p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .div-redes-sociales {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .div-redes-sociales .div-iconos {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+footer .div-redes-sociales .div-iconos a {
+    margin-left: 5%;
+    font-size: 25px;
+    color: #fff;
+}
+
+@media (max-width: 575px) {
+    footer .div-logo {
+        justify-content: center;
+    }
+    footer .div-redes-sociales .div-iconos {
+        justify-content: center;
+    }
+}
