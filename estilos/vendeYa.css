@@ -105,6 +105,16 @@ nav.navbar {
     .seccion-incio .div-general .div-general-texto .div-texto p {
         width: 100%;
     }
+    .seccion-incio .div-general .div-fondo {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: url("../images/VendeYa/VendeYa-Imagen-de-cabecera-m-min.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        z-index: -1;
+    }
 }
 
 @media (max-width: 450px) {

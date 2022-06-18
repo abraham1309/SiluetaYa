@@ -27,6 +27,10 @@ nav.navbar {
     font-family: "adieue";
 }
 
+.zoomContainer {
+    left: 67% !important;
+}
+
 
 /* Estilos para la seccion de inicio */
 
@@ -693,6 +697,8 @@ nav.navbar {
 
 .seccion-producto .div-general-producto .div-informacion .div-general-botones .div-cantidad-btn label {
     width: 100px;
+    font-size: 20px;
+    font-family: "adieue";
     text-align: center;
 }
 
@@ -731,6 +737,7 @@ nav.navbar {
 
 .seccion-producto .div-general-producto .div-imagenes .div-imagen-principal img {
     width: 60%;
+    cursor: zoom-out;
 }
 
 .seccion-producto .div-general-producto .div-imagenes .div-mas-imagenes {
@@ -746,6 +753,7 @@ nav.navbar {
 
 .seccion-producto .div-general-producto .div-imagenes .div-mas-imagenes .div-imagenes img {
     width: 28%;
+    cursor: pointer;
 }
 
 .seccion-producto .div-general-producto .div-imagenes .div-mas-imagenes .div-imagenes .img-central {
@@ -927,6 +935,142 @@ nav.navbar {
     }
     .seccion-duosya .div-titulo h2 {
         font-size: 30px;
+    }
+}
+
+
+/* Estilos para la pagina de App */
+
+.seccion-inicio-app {
+    height: 100vh;
+    width: 100%;
+}
+
+.seccion-inicio-app .div-general {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.seccion-inicio-app .div-general .div-informacion {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-inicio-app .div-general .div-informacion .logotipo-siluetaYa {
+    width: 45%;
+}
+
+.seccion-inicio-app .div-general .div-informacion p {
+    font-family: "adieue";
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.seccion-inicio-app .div-general .div-informacion .div-tiendas {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-inicio-app .div-general .div-informacion .div-tiendas a {
+    text-decoration: none;
+}
+
+.seccion-inicio-app .div-general .div-informacion .div-tiendas .a-play {
+    margin-right: 10%;
+}
+
+.seccion-inicio-app .div-general .div-informacion .div-tiendas a img {
+    width: 200px;
+}
+
+.seccion-inicio-app .div-general .div-informacion .p-version {
+    font-family: "adieue light" !important;
+    font-size: 20px !important;
+}
+
+.seccion-inicio-app .div-general .div-celular {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-inicio-app .div-general .div-celular img {
+    margin-top: 15%;
+    width: 60%;
+}
+
+.seccion-inicio-app .div-general .div-fondo {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("../images/imagen3-app-carrusel/App-Fondo-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+    .seccion-inicio-app .div-general {
+        flex-direction: column-reverse;
+    }
+    .seccion-inicio-app .div-general .div-informacion {
+        height: 100%;
+        width: 100%;
+    }
+    .seccion-inicio-app .div-general .div-celular {
+        width: 100%;
+    }
+    .seccion-inicio-app .div-general .div-celular img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-inicio-app .div-general .div-informacion {
+        height: 50%;
+        width: 100%;
+    }
+    .seccion-inicio-app .div-general .div-informacion p {
+        font-size: 25px;
+    }
+    .seccion-inicio-app .div-general .div-informacion .logotipo-siluetaYa {
+        width: 70%;
+    }
+    .seccion-inicio-app .div-general .div-celular {
+        height: 50%;
+        width: 100%;
+        align-items: flex-end;
+    }
+    .seccion-inicio-app .div-general .div-celular img {
+        margin-top: 0;
+        width: 40%;
+    }
+    .seccion-inicio-app .div-general .div-informacion .div-tiendas {
+        flex-direction: column;
+    }
+    .seccion-inicio-app .div-general .div-informacion .div-tiendas .a-play {
+        margin-right: 0;
+    }
+    .seccion-inicio-app .div-general .div-fondo {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: url("../images/imagen3-app-carrusel/App-Fondo-Movil-min.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        z-index: -1;
     }
 }
 

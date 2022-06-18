@@ -7,8 +7,8 @@
 
     Superslides = function(el, options) {
         this.options = $.extend({
-            play: 0,
-            animation_speed: 1000,
+            play: 4500,
+            animation_speed: 1400,
             animation_easing: 'swing',
             animation: 'slide',
             inherit_width_from: window,
