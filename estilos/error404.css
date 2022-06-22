@@ -1,0 +1,590 @@
+@font-face {
+    font-family: "adieue";
+    src: url("../tipografias/adineuePRO-Regular.ttf");
+}
+
+@font-face {
+    font-family: "adieue light";
+    src: url("../tipografias/adineueTEXT-Light.ttf");
+}
+
+.boton-explorar {
+    margin-top: 4%;
+    text-decoration: none;
+    padding: 1% 5% 1% 5%;
+    border: solid 2px #fff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "adieue";
+}
+
+
+/* Estilos para la seccion principal */
+
+.seccion-principal {
+    height: 100vh;
+    width: 100%;
+}
+
+.seccion-principal .div-general {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 148, 254);
+}
+
+.seccion-principal .div-general .div-imagen {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-principal .div-general .div-imagen img {
+    width: 80%;
+}
+
+.seccion-principal .div-general .div-titulos {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-principal .div-general .div-titulos .div-elementos {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-principal .div-general .div-titulos .div-elementos img {
+    width: 350px;
+}
+
+.seccion-principal .div-general .div-titulos .div-elementos h2 {
+    font-size: 45px;
+    color: #fff;
+    font-family: "adieue";
+}
+
+.seccion-principal .div-general .div-titulos .div-elementos p {
+    font-size: 22px;
+    color: #fff;
+    font-family: "adieue light";
+}
+
+.seccion-principal .div-general .div-titulos .div-elementos a {
+    padding: 8px 60px 8px 60px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "adieue";
+    color: rgb(0, 148, 254);
+    background-color: #fff;
+}
+
+@media (max-width: 890px) {
+    .seccion-principal .div-general .div-titulos .div-elementos img {
+        width: 85%;
+    }
+    .seccion-principal .div-general .div-imagen {
+        height: auto;
+    }
+    .seccion-principal .div-general .div-titulos {
+        height: auto;
+    }
+    .seccion-principal .div-general {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-principal .div-general .div-titulos .div-elementos h2 {
+        font-size: 40px;
+    }
+    .seccion-principal .div-general .div-titulos .div-elementos p {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+/* Estilos del titulo */
+
+.seccion-titulo {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(162, 212, 10);
+}
+
+.seccion-titulo .div-general {
+    width: 90%;
+    text-align: center;
+    color: #fff;
+}
+
+.seccion-titulo .div-general h1 {
+    font-family: 'adieue';
+    font-size: 50px;
+}
+
+.seccion-titulo .div-general p {
+    font-family: 'adieue light';
+    font-size: 30px;
+}
+
+@media (max-width: 450px) {
+    .seccion-titulo .div-general h1 {
+        font-family: 'adieue';
+        font-size: 50px;
+    }
+    .seccion-titulo .div-general p {
+        font-family: 'adieue light';
+        font-size: 23px;
+    }
+}
+
+
+/*Estilos para los productos de SiluetaYa y 365*/
+
+.seccion-2-productos .div-producto-izquierdo,
+.div-producto-derecho {
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-2-productos .div-siluetaYa {
+    background: url("../images/Fondo-de-SiluetaYa-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.seccion-2-productos .div-365 {
+    background: url("../images/Fondo-de-SiluetaYa-365-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.seccion-2-productos .div-encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-2-productos .div-encabezado h2 {
+    color: #fff;
+    width: 90%;
+    font-size: 55px;
+    font-family: "adieue";
+    text-align: center;
+}
+
+.seccion-2-productos .div-encabezado p {
+    width: 90%;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    font-family: "adieue";
+}
+
+.seccion-2-productos .div-cuerpo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.seccion-2-productos .div-cuerpo .div-flecha1 {
+    position: absolute;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -35%;
+    margin-top: 5%;
+}
+
+.seccion-2-productos .div-cuerpo .div-flecha1 p {
+    margin-bottom: -2%;
+    margin-right: 15%;
+    font-family: "adieue";
+    font-size: 20px;
+    color: #fff;
+}
+
+.seccion-2-productos .div-cuerpo .div-flecha1 img {
+    width: 50%;
+}
+
+.seccion-2-productos .div-cuerpo .div-flecha2 {
+    position: absolute;
+    width: 160px;
+    margin-right: -16%;
+}
+
+.seccion-2-productos .div-cuerpo .div-flecha2 p {
+    margin-bottom: -2%;
+    font-family: "adieue";
+    font-size: 20px;
+    color: #fff;
+}
+
+.seccion-2-productos .div-cuerpo .div-flecha2 img {
+    width: 50%;
+}
+
+.seccion-2-productos .div-cuerpo .producto {
+    width: 325px;
+}
+
+.seccion-2-productos .div-cuerpo .producto-siluetaYa {
+    margin-left: 18%;
+    width: 330px !important;
+}
+
+@media (max-width: 1000px) {
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        margin-left: 20%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha2 {
+        margin-right: -22%;
+    }
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        margin-left: 18%;
+        width: 325px !important;
+        height: 364px !important;
+    }
+}
+
+@media (max-width: 915px) {
+    .seccion-2-productos .div-cuerpo .producto {
+        width: 250px;
+        height: 280px;
+    }
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        margin-left: 20%;
+    }
+    .seccion-2-productos .div-cuerpo .producto-365 {
+        margin-right: 5%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha1 {
+        margin-top: 2%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha1 img {
+        width: 41%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha1 p {
+        font-size: 18px;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha2 img {
+        width: 41%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha2 p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 860px) {
+    .seccion-2-productos2 .div-encabezado h2 {
+        font-size: 50px;
+    }
+    .seccion-2-productos .div-encabezado p {
+        width: 80%;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    .seccion-2-productos .div-producto-izquierdo,
+    .div-producto-derecho {
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+
+@media (max-width: 767px) {
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        margin-left: 10%;
+    }
+    .seccion-2-productos .div-cuerpo .producto-365 {
+        margin-right: 0;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha1 {
+        margin-top: 1%;
+        margin-left: -45%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha2 {
+        margin-right: -27%;
+    }
+}
+
+@media (max-width: 610px) {
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        margin-left: 1%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha1 {
+        margin-left: -60%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha2 {
+        margin-right: -35%;
+    }
+    .seccion-2-productos .div-siluetaYa .div-cuerpo {
+        width: auto;
+        margin-left: 15%;
+    }
+    .seccion-2-productos .div-365 .div-cuerpo {
+        width: auto;
+        margin-left: 15%;
+    }
+}
+
+@media (max-width: 550px) {
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        margin-left: 10%;
+    }
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        width: 300px !important;
+        height: 336px !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        margin-left: 11%;
+        width: 280px !important;
+        height: 313px !important;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha1 {
+        margin-top: 3%;
+        margin-left: -85%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha1 p {
+        font-size: 16px;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha1 img {
+        width: 38%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha2 {
+        margin-right: -37%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha2 p {
+        font-size: 16px;
+    }
+    .seccion-2-productos .div-cuerpo .div-flecha2 img {
+        width: 38%;
+    }
+}
+
+@media (max-width: 385px) {
+    .seccion-2-productos .div-encabezado h2 {
+        font-size: 50px;
+    }
+    .seccion-2-productos .div-encabezado p {
+        width: 90%;
+        font-size: 19px;
+    }
+    .seccion-2-productos .div-cuerpo .producto {
+        width: 200px;
+        height: 228px;
+    }
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        width: 200px !important;
+        height: 224px !important;
+    }
+}
+
+@media (max-width: 345px) {
+    .seccion-2-productos .div-encabezado h2 {
+        font-size: 40px;
+    }
+    .seccion-2-productos .div-cuerpo .producto {
+        width: 180px;
+        height: 201px;
+    }
+}
+
+@media (max-width: 290px) {
+    .seccion-2-productos .div-encabezado h2 {
+        font-size: 35px;
+    }
+    .seccion-2-productos .div-cuerpo .producto {
+        width: 150px;
+        height: 168px;
+    }
+}
+
+
+/* Estilos para la seccion de DUOSYA */
+
+.seccion-duosya {
+    position: relative;
+    height: auto;
+}
+
+.seccion-duosya .div-titulo {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(162, 212, 10);
+}
+
+.seccion-duosya .div-titulo h2 {
+    font-size: 42px;
+    font-family: "adieue";
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .div-color-1 {
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .div-color-2 {
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre {
+    width: 90%;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre h3 {
+    font-family: "adieue";
+    font-size: 35px;
+    color: #000;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-imagen {
+    width: 90%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-imagen img {
+    width: 80%;
+    text-align: center;
+}
+
+.seccion-duosya .swiper-button-prev {
+    margin-top: 7%;
+    color: rgb(104, 102, 102);
+    cursor: pointer;
+}
+
+.seccion-duosya .swiper-button-next {
+    margin-top: 7%;
+    color: rgb(104, 102, 102);
+    cursor: pointer;
+}
+
+@media (max-width: 680px) {
+    .seccion-duosya .div-titulo {
+        height: 120px;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-duosya .div-titulo {
+        height: 100px;
+    }
+    .seccion-duosya .div-titulo h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* Estilos para el footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #ffa400;
+}
+
+footer .div-logo {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .div-logo img {
+    margin-left: 5%;
+    width: 200;
+    height: 98;
+}
+
+footer .div-leyenda {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .div-leyenda p {
+    width: 85%;
+    font-family: "adieue";
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+footer .div-leyenda p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .div-redes-sociales {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .div-redes-sociales .div-iconos {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+footer .div-redes-sociales .div-iconos a {
+    margin-left: 5%;
+    font-size: 25px;
+    color: #fff;
+}
+
+@media (max-width: 575px) {
+    footer .div-logo {
+        justify-content: center;
+    }
+    footer .div-redes-sociales .div-iconos {
+        justify-content: center;
+    }
+}

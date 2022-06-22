@@ -487,3 +487,120 @@ select:focus {
         font-size: 35px;
     }
 }
+
+
+/* Estilos para la seccion de redes */
+
+.seccion-redes {
+    height: auto;
+    width: 100%;
+}
+
+.seccion-redes .div-general {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.seccion-redes .div-general h2 {
+    font-size: 50px;
+    font-family: 'adieue';
+}
+
+.seccion-redes .div-iconos {
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.seccion-redes .div-iconos a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(162, 212, 10);
+}
+
+.seccion-redes .div-iconos a i {
+    font-size: 60px;
+}
+
+@media (max-width: 600px) {
+    .seccion-redes .div-iconos {
+        width: 95%;
+    }
+    .seccion-redes .div-iconos a i {
+        font-size: 50px;
+    }
+    .seccion-redes .div-general {
+        margin-bottom: 10%;
+    }
+}
+
+
+/* ---Estilos para la pagina de politicas de privacidad */
+
+.titulo-politicas {
+    height: 250px !important;
+    background: linear-gradient( 180deg, rgba(215, 97, 172, 1) 0%, rgba(138, 136, 200, 1) 50%, rgba(8, 201, 247, 1) 100%) !important;
+}
+
+.seccion-texto {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.seccion-texto .div-general {
+    width: 90%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+.seccion-texto .div-general h3 {
+    font-size: 27px;
+    font-family: 'adieue';
+}
+
+.seccion-texto .div-general p,
+li {
+    font-size: 19px;
+    text-align: justify;
+    font-family: 'adieue light';
+}
+
+.seccion-texto .div-general .div-parrafo-2 .div-columna1 p {
+    width: 95%;
+}
+
+.seccion-texto .div-general .div-parrafo-2 .div-columna2 {
+    display: flex;
+    justify-content: right;
+}
+
+.seccion-texto .div-general .div-parrafo-2 .div-columna2 p {
+    width: 95%;
+}
+
+@media (max-width: 575px) {
+    .seccion-texto .div-general .div-parrafo-2 .div-columna1 p {
+        width: 100%;
+    }
+    .seccion-texto .div-general .div-parrafo-2 .div-columna2 {
+        justify-content: center;
+    }
+    .seccion-texto .div-general .div-parrafo-2 .div-columna2 p {
+        width: 100%;
+    }
+    .seccion-texto .div-general h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .seccion-texto .div-general p {
+        font-size: 18px;
+    }
+}

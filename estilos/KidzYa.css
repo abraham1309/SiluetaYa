@@ -1,0 +1,378 @@
+@font-face {
+    font-family: "adieue";
+    src: url("../tipografias/adineuePRO-Regular.ttf");
+}
+
+@font-face {
+    font-family: "adieue light";
+    src: url("../tipografias/adineueTEXT-Light.ttf");
+}
+
+nav.navbar {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item a {
+    font-family: "adieue";
+}
+
+
+/* Estilos para la seccion de incio */
+
+.seccion-inicio {
+    height: 100vh;
+    width: 100%;
+}
+
+.seccion-inicio .div-general {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.seccion-inicio .div-general .div-imagenes {
+    height: 75%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-inicio .div-general .div-imagenes .imagen-producto {
+    width: 25%;
+    margin-right: -7%;
+    z-index: 1;
+}
+
+.seccion-inicio .div-general .div-imagenes .imagen-logo {
+    width: 40%;
+}
+
+.seccion-inicio .div-general .div-parrafo {
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.seccion-inicio .div-general .div-parrafo p {
+    font-size: 30px;
+    font-family: 'adieue light';
+    color: #fff;
+}
+
+.seccion-inicio .div-fondo {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: url("../images/KidzYa/KIDZ-fondo-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+}
+
+@media (max-width: 950px) {
+    .seccion-inicio .div-general .div-imagenes .imagen-producto {
+        width: 35%;
+    }
+    .seccion-inicio .div-general .div-imagenes .imagen-logo {
+        width: 50%;
+    }
+    .seccion-inicio .div-general .div-imagenes {
+        height: 75%;
+        padding-top: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .seccion-inicio {
+        margin-top: 9vh;
+    }
+    .seccion-inicio .div-general .div-imagenes {
+        flex-direction: column-reverse;
+        padding-top: 0;
+    }
+    .seccion-inicio .div-general .div-imagenes .imagen-producto {
+        width: 55%;
+        margin-right: 0;
+    }
+    .seccion-inicio .div-general .div-imagenes .imagen-logo {
+        width: 70%;
+    }
+    .seccion-inicio .div-general .div-parrafo p {
+        width: 90%;
+        font-size: 25px;
+    }
+    .seccion-inicio .div-fondo {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background: url("../images/KidzYa/KIDZ-fondo-m-min.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 450px) {
+    /*     .seccion-inicio .div-general .div-imagenes {
+        height: 70%;
+    }
+    .seccion-inicio .div-general .div-parrafo {
+        height: 30%;
+    } */
+    .seccion-inicio .div-general .div-imagenes .imagen-producto {
+        width: 65%;
+    }
+    .seccion-inicio .div-general .div-imagenes .imagen-logo {
+        width: 85%;
+    }
+    .seccion-inicio .div-general .div-parrafo p {
+        width: 90%;
+        font-size: 24px;
+    }
+}
+
+
+/* Estilos para la seccion de informacion */
+
+.seccion-informacion {
+    height: 100vh;
+    width: 100%;
+}
+
+.seccion-informacion .div-general {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.seccion-informacion .div-general .div-texto {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-informacion .div-general .div-texto .div-p {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-informacion .div-general .div-texto .div-p h2 {
+    width: 65%;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'adieue';
+}
+
+.seccion-informacion .div-general .div-texto .div-p p {
+    width: 65%;
+    font-size: 24px;
+    text-align: justify;
+    font-family: 'adieue';
+}
+
+.seccion-informacion .div-fondo {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: url("../images/KidzYa/KIDZ-imagen-para-seccion-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+}
+
+.seccion-informacion .div-general .div-imagen {
+    height: 100vh;
+}
+
+@media (max-width: 767px) {
+    .seccion-informacion .div-general .div-texto {
+        height: auto;
+    }
+    .seccion-informacion .div-general .div-imagen {
+        height: auto;
+    }
+    .seccion-informacion .div-general .div-texto .div-p {
+        margin-top: 15%;
+    }
+    .seccion-informacion .div-fondo {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background: url("../images/KidzYa/KIDZ-imagen-para-seccion-m-min.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        z-index: -1;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-informacion .div-general .div-texto .div-p p {
+        width: 90%;
+        font-size: 21px;
+    }
+    .seccion-informacion .div-general .div-texto .div-p h2 {
+        width: 90%;
+        font-size: 40px;
+    }
+}
+
+
+/* Estilos para la seccion de los 3 productos */
+
+.seccion-productos {
+    height: auto;
+    width: auto;
+}
+
+.seccion-productos .div-prduc {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-productos .div-prduc img {
+    width: 22%;
+}
+
+.seccion-productos .div-prduc .div-texto a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "adieue";
+    font-size: 25px;
+}
+
+.seccion-productos .div-prduc .div-texto h2 {
+    color: #fff;
+    font-family: "adieue";
+}
+
+.seccion-productos .div-producto1 {
+    background: rgb(80, 176, 77);
+    background: linear-gradient(180deg, rgba(80, 176, 77, 1) 30%, rgba(253, 201, 8, 1) 100%);
+}
+
+.seccion-productos .div-producto2 {
+    background: rgb(32, 62, 118);
+    background: linear-gradient(180deg, rgba(32, 62, 118, 1) 30%, rgba(240, 192, 14, 1) 100%);
+}
+
+.seccion-productos .div-producto3 {
+    background: rgb(10, 170, 227);
+    background: linear-gradient(180deg, rgba(10, 170, 227, 1) 30%, rgba(236, 178, 200, 1) 100%);
+}
+
+@media (max-width: 880px) {
+    .seccion-productos .div-prduc img {
+        width: 35%;
+    }
+    .seccion-productos .div-prduc .div-texto a {
+        font-size: 20px;
+    }
+    .seccion-productos .div-prduc .div-texto h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+    .seccion-productos .div-prduc .div-texto a {
+        font-size: 25px;
+    }
+    .seccion-productos .div-prduc .div-texto h2 {
+        color: #fff;
+        font-size: 20px;
+    }
+    .seccion-productos .div-prduc img {
+        width: 20%;
+    }
+    .seccion-productos .div-producto1 img {
+        margin-left: -4.5%;
+    }
+}
+
+
+/* Estilos para el footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #ffa400;
+}
+
+footer .div-logo {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .div-logo img {
+    margin-left: 5%;
+    width: 200;
+    height: 98;
+}
+
+footer .div-leyenda {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .div-leyenda p {
+    width: 85%;
+    font-family: "adieue";
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+footer .div-leyenda p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .div-redes-sociales {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .div-redes-sociales .div-iconos {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+footer .div-redes-sociales .div-iconos a {
+    margin-left: 5%;
+    font-size: 25px;
+    color: #fff;
+}
+
+@media (max-width: 575px) {
+    footer .div-logo {
+        justify-content: center;
+    }
+    footer .div-redes-sociales .div-iconos {
+        justify-content: center;
+    }
+}
