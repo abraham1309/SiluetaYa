@@ -16,6 +16,17 @@ nav.navbar {
     font-family: "adieue";
 }
 
+.boton-explorar {
+    margin-top: 4%;
+    text-decoration: none;
+    padding: 1% 5% 1% 5%;
+    border: solid 2px #fff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "adieue";
+}
+
 
 /* Estilos para la seccion de incio */
 
@@ -305,6 +316,214 @@ nav.navbar {
     .seccion-productos .div-producto1 img {
         margin-left: -4.5%;
     }
+}
+
+
+/* Estilos para la seccion de DoreYa */
+
+.div-minitoYa {
+    height: 100vh;
+    background: rgb(32, 62, 118);
+    background: linear-gradient(180deg, rgba(32, 62, 118, 1) 30%, rgba(240, 192, 14, 1) 100%);
+}
+
+.div-DoreYa .div-producto {
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.div-DoreYa .div-producto .div-producto-general {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-DoreYa .div-producto .div-producto-general .div-flecha-dore {
+    position: absolute;
+    margin-left: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-DoreYa .div-producto .div-producto-general .div-flecha-dore p {
+    margin-bottom: -3%;
+    margin-right: 9%;
+    font-family: "adieue";
+    font-size: 25px;
+    color: #fff;
+    text-align: center;
+}
+
+.div-DoreYa .div-producto .div-producto-general img {
+    width: 40%;
+    margin-left: -20%;
+}
+
+.div-DoreYa .div-info {
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.div-DoreYa .div-info .div-text {
+    width: 90%;
+    text-align: left;
+}
+
+.div-DoreYa .div-info .div-text h2 {
+    font-family: "adieue";
+    font-size: 55px;
+    color: #fff;
+}
+
+.div-DoreYa .div-info .div-text p {
+    font-family: "adieue";
+    font-size: 30px;
+    text-align: justify;
+    color: #fff;
+}
+
+@media (max-width: 850px) {
+    .div-DoreYa,
+    .div-multiYa {
+        height: auto !important;
+        padding-top: 10% !important;
+        padding-bottom: 10% !important;
+    }
+    .div-DoreYa .div-producto {
+        height: auto;
+    }
+    .div-DoreYa .div-info,
+    .div-info-2 {
+        height: auto !important;
+        justify-content: center !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .div-DoreYa .div-general {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .div-DoreYa .div-producto .div-producto-general {
+        justify-content: center;
+        width: 100%;
+    }
+    .div-DoreYa .div-producto .div-producto-general img {
+        width: 40%;
+        margin-left: 1%;
+    }
+    .div-DoreYa .div-producto .div-producto-general .div-flecha-dore {
+        margin-left: 55%;
+    }
+    .div-DoreYa .div-info,
+    .div-info-2 {
+        justify-content: center !important;
+    }
+    .div-DoreYa .div-info .div-text,
+    .div-text-2 {
+        width: 95% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+    .div-DoreYa .div-info .div-text p {
+        width: 95%;
+        text-align: justify !important;
+    }
+    /*  */
+    .div-DoreYa .div-producto .div-producto-general .div-flecha-multiYa {
+        margin-right: 100% !important;
+    }
+    .div-DoreYa .div-info-2 {
+        margin-bottom: 10% !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .div-DoreYa .div-producto .div-producto-general .div-flecha-dore {
+        margin-left: 60%;
+    }
+    .div-DoreYa .div-producto .div-producto-general .div-flecha-dore p {
+        margin-bottom: -3%;
+        margin-right: -5%;
+        font-size: 23px;
+    }
+    .div-DoreYa .div-info {
+        height: auto;
+        justify-content: center;
+    }
+    .div-DoreYa .div-info .div-text {
+        width: 90%;
+        text-align: center;
+    }
+    .div-DoreYa .div-info .div-text h2 {
+        font-size: 40px;
+    }
+    .div-DoreYa .div-info .div-text p {
+        font-size: 20px;
+    }
+    .div-DoreYa .div-producto .div-producto-general .img-multiYa {
+        width: 35%;
+    }
+}
+
+
+/* Estilos para  la seccion del producto 2 */
+
+.div-multiYa {
+    height: 100vh;
+    background: rgb(80, 176, 77);
+    background: linear-gradient(180deg, rgba(80, 176, 77, 1) 30%, rgba(253, 201, 8, 1) 100%);
+}
+
+.div-DoreYa .div-info-2 {
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.div-DoreYa .div-info .div-text-2 {
+    width: 87%;
+    text-align: left;
+}
+
+.div-DoreYa .div-producto .div-producto-general .img-multiYa {
+    width: 35%;
+}
+
+.div-DoreYa .div-producto .div-producto-general .div-flecha-multiYa {
+    margin-right: 50%;
+}
+
+.div-DoreYa .div-producto .div-producto-general .div-flecha-multiYa p {
+    width: 140%;
+}
+
+@media (max-width: 450px) {
+    .div-DoreYa .div-producto .div-producto-general .div-flecha-multiYa {
+        margin-left: 38%;
+    }
+    .div-DoreYa .div-producto .div-producto-general .img-multiYa {
+        width: 45%;
+    }
+}
+
+.div-ProtecYa {
+    height: 100vh;
+    background: rgb(10, 170, 227);
+    background: linear-gradient(180deg, rgba(10, 170, 227, 1) 30%, rgba(236, 178, 200, 1) 100%);
 }
 
 

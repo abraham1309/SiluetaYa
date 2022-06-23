@@ -9,7 +9,7 @@
 }
 
 nav.navbar {
-    background-color: #fff !important;
+    background-color: rgb(255, 255, 255) !important;
 }
 
 .navbar .container-fluid .collapse .navbar-nav .nav-item a {
