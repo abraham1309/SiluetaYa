@@ -14,6 +14,7 @@ nav.navbar {
 
 .navbar .container-fluid .collapse .navbar-nav .nav-item a {
     font-family: "adieue";
+    font-size: 17px;
 }
 
 .boton-explorar {

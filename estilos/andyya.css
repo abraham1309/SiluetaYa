@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "adieue";
+    src: url("../tipografias/adineuePRO-Regular.ttf");
+}
+
+@font-face {
+    font-family: "adieue light";
+    src: url("../tipografias/adineueTEXT-Light.ttf");
+}
+
+nav.navbar {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item a {
+    font-family: "adieue";
+    font-size: 17px;
+}
