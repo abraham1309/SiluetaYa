@@ -16,3 +16,313 @@ nav.navbar {
     font-family: "adieue";
     font-size: 17px;
 }
+
+
+/* Estilos para la seccion de inicio */
+
+.seccion-incio {
+    height: 91vh;
+    width: 100%;
+    background: url("../images/andyya/AndiYa-Fondo-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+}
+
+.seccion-incio .div-general {
+    height: 100%;
+    width: 100%;
+}
+
+.seccion-incio .div-general .div-logo {
+    height: 91vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.seccion-incio .div-general .div-logo img {
+    width: 80%;
+}
+
+.seccion-incio .div-general .div-texto {
+    height: 91vh;
+}
+
+.seccion-incio .div-general .div-texto .div-tex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.seccion-incio .div-general .div-texto .div-tex p {
+    width: 80%;
+    margin-bottom: 20%;
+    font-family: 'adieue light';
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .seccion-incio .div-general {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion-incio .div-general .div-logo {
+        height: auto;
+    }
+    .seccion-incio .div-general .div-texto {
+        height: auto;
+    }
+    .seccion-incio .div-general .div-texto .div-tex p {
+        width: 90%;
+    }
+    .seccion-incio .div-general .div-logo {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-incio .div-general .div-logo img {
+        width: 95%;
+    }
+    .seccion-incio .div-general .div-texto .div-tex p {
+        font-size: 30px;
+    }
+    .seccion-incio {
+        background: url("../images/andyya/AndiYa-Fondo-m-min.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        z-index: -1;
+    }
+    .seccion-incio .div-general .div-logo {
+        margin-bottom: 10%;
+    }
+}
+
+
+/* Estilos para la seccion de informacion */
+
+.seccion-informacion {
+    height: auto;
+    width: 100%;
+    padding-top: 7%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-informacion .div-titulo {
+    width: 100%;
+}
+
+.seccion-informacion .div-titulo h2 {
+    font-family: 'adieue';
+    font-size: 40px;
+    margin-left: 65%;
+    margin-right: 35%;
+}
+
+.seccion-informacion .div-informacion1 {
+    width: 100%;
+    display: flex;
+    margin-bottom: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-informacion .div-informacion1 .div-general1 {
+    width: 95%;
+}
+
+.seccion-informacion .div-informacion1 .div-general1 .div-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-informacion .div-informacion1 .div-general1 .div-logo img {
+    width: 90%;
+    min-width: 90%;
+}
+
+.seccion-informacion .div-informacion1 .div-general1 .div-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-informacion p {
+    font-family: 'adieue';
+    font-size: 25px;
+    text-align: justify;
+}
+
+.seccion-informacion .div-informacion2 {
+    width: 95%;
+}
+
+@media (max-width: 767px) {
+    .seccion-informacion .div-titulo h2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .seccion-informacion .div-titulo {
+        text-align: center;
+    }
+    .seccion-informacion .div-informacion1 .div-general1 .div-logo {
+        margin-bottom: 2%;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-informacion .div-general1,
+    .div-informacion2 {
+        width: 90% !important;
+    }
+    .seccion-informacion p {
+        font-size: 20px;
+    }
+}
+
+
+/* Estilos para el carrusel de los productos */
+
+.seccion-duosya {
+    position: relative;
+    height: auto;
+    margin-bottom: 7%;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre {
+    width: 90%;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre h3 {
+    font-family: "adieue";
+    font-size: 35px;
+    color: #000;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-imagen {
+    width: 90%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-imagen img {
+    width: 80%;
+    text-align: center;
+}
+
+.seccion-duosya .swiper-button-prev {
+    color: rgb(104, 102, 102);
+    cursor: pointer;
+}
+
+.seccion-duosya .swiper-button-next {
+    color: rgb(104, 102, 102);
+    cursor: pointer;
+}
+
+@media (max-width: 680px) {
+    .seccion-duosya .div-titulo {
+        height: 120px;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-duosya .div-titulo {
+        height: 100px;
+    }
+    .seccion-duosya .div-titulo h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* Estilos para el footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #ffa400;
+}
+
+footer .div-logo {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .div-logo img {
+    margin-left: 5%;
+    width: 200;
+    height: 98;
+}
+
+footer .div-leyenda {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .div-leyenda p {
+    width: 85%;
+    font-family: "adieue";
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+footer .div-leyenda p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .div-redes-sociales {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .div-redes-sociales .div-iconos {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+footer .div-redes-sociales .div-iconos a {
+    margin-left: 5%;
+    font-size: 25px;
+    color: #fff;
+}
+
+@media (max-width: 575px) {
+    footer .div-logo {
+        justify-content: center;
+    }
+    footer .div-redes-sociales .div-iconos {
+        justify-content: center;
+    }
+}

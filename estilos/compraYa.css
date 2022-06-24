@@ -122,7 +122,13 @@ nav.navbar {
 
 @media (max-width: 450px) {
     .seccion-inicio .div-general-texto {
-        padding-top: 8%;
+        height: 45vh;
+        padding-top: 0;
+        padding-bottom: 15%;
+        align-items: flex-end;
+    }
+    .seccion-inicio .div-general-imagen {
+        height: 45vh;
     }
     .seccion-inicio .div-general-texto .div-texto h1 {
         font-size: 50px;
@@ -136,7 +142,7 @@ nav.navbar {
     }
     .seccion-inicio .div-general-imagen img {
         width: 100%;
-        margin-bottom: 38%;
+        margin-bottom: 10%;
     }
 }
 
@@ -945,6 +951,11 @@ nav.navbar {
 .seccion-inicio-app {
     height: 100vh;
     width: 100%;
+    background: url("../images/imagen3-app-carrusel/App-Fondo-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
 }
 
 .seccion-inicio-app .div-general {
@@ -1007,21 +1018,15 @@ nav.navbar {
 
 .seccion-inicio-app .div-general .div-celular img {
     margin-top: 15%;
-    width: 60%;
-}
-
-.seccion-inicio-app .div-general .div-fondo {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: url("../images/imagen3-app-carrusel/App-Fondo-min.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    z-index: -1;
+    width: 65%;
 }
 
 @media (max-width: 767px) {
+    .seccion-inicio-app {
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
     .seccion-inicio-app .div-general {
         flex-direction: column-reverse;
     }
@@ -1033,11 +1038,14 @@ nav.navbar {
         width: 100%;
     }
     .seccion-inicio-app .div-general .div-celular img {
-        width: 40%;
+        width: 45%;
     }
 }
 
 @media (max-width: 450px) {
+    .seccion-inicio-app {
+        margin-top: 10vh;
+    }
     .seccion-inicio-app .div-general .div-informacion {
         height: 50%;
         width: 100%;
@@ -1046,32 +1054,22 @@ nav.navbar {
         font-size: 25px;
     }
     .seccion-inicio-app .div-general .div-informacion .logotipo-siluetaYa {
-        width: 70%;
+        width: 75%;
     }
     .seccion-inicio-app .div-general .div-celular {
         height: 50%;
         width: 100%;
-        align-items: flex-end;
+        align-items: center;
     }
     .seccion-inicio-app .div-general .div-celular img {
+        width: 70%;
         margin-top: 0;
-        width: 40%;
     }
     .seccion-inicio-app .div-general .div-informacion .div-tiendas {
         flex-direction: column;
     }
     .seccion-inicio-app .div-general .div-informacion .div-tiendas .a-play {
         margin-right: 0;
-    }
-    .seccion-inicio-app .div-general .div-fondo {
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        background: url("../images/imagen3-app-carrusel/App-Fondo-Movil-min.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        z-index: -1;
     }
 }
 

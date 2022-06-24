@@ -34,6 +34,10 @@ nav.navbar {
 .seccion-inicio {
     height: 100vh;
     width: 100%;
+    background: url("../images/KidzYa/KIDZ-fondo-min.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 .seccion-inicio .div-general {
@@ -44,7 +48,7 @@ nav.navbar {
 
 .seccion-inicio .div-general .div-imagenes {
     height: 75%;
-    padding-top: 5%;
+    padding-top: 12%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,17 +79,6 @@ nav.navbar {
     color: #fff;
 }
 
-.seccion-inicio .div-fondo {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    background: url("../images/KidzYa/KIDZ-fondo-min.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    z-index: -1;
-}
-
 @media (max-width: 950px) {
     .seccion-inicio .div-general .div-imagenes .imagen-producto {
         width: 35%;
@@ -105,6 +98,7 @@ nav.navbar {
 @media (max-width: 650px) {
     .seccion-inicio {
         margin-top: 9vh;
+        height: 105vh;
     }
     .seccion-inicio .div-general .div-imagenes {
         flex-direction: column-reverse;
@@ -134,12 +128,6 @@ nav.navbar {
 }
 
 @media (max-width: 450px) {
-    /*     .seccion-inicio .div-general .div-imagenes {
-        height: 70%;
-    }
-    .seccion-inicio .div-general .div-parrafo {
-        height: 30%;
-    } */
     .seccion-inicio .div-general .div-imagenes .imagen-producto {
         width: 65%;
     }
@@ -200,7 +188,7 @@ nav.navbar {
     position: absolute;
     height: 100vh;
     width: 100%;
-    background: url("../images/KidzYa/KIDZ-imagen-para-seccion-min.png");
+    background: url("../images/KidzYa/KIDZ-imagen-para-seccion-Fondo-min.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -209,27 +197,27 @@ nav.navbar {
 
 .seccion-informacion .div-general .div-imagen {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-informacion .div-general .div-imagen img {
+    width: 95%;
 }
 
 @media (max-width: 767px) {
+    .seccion-informacion .div-general {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     .seccion-informacion .div-general .div-texto {
         height: auto;
     }
     .seccion-informacion .div-general .div-imagen {
         height: auto;
-    }
-    .seccion-informacion .div-general .div-texto .div-p {
-        margin-top: 15%;
-    }
-    .seccion-informacion .div-fondo {
-        position: absolute;
-        height: 100vh;
-        width: 100%;
-        background: url("../images/KidzYa/KIDZ-imagen-para-seccion-m-min.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-        z-index: -1;
     }
 }
 
@@ -241,6 +229,9 @@ nav.navbar {
     .seccion-informacion .div-general .div-texto .div-p h2 {
         width: 90%;
         font-size: 40px;
+    }
+    .seccion-informacion .div-general .div-texto {
+        margin-bottom: 15%;
     }
 }
 
@@ -320,16 +311,18 @@ nav.navbar {
 }
 
 
-/* Estilos para la seccion de DoreYa */
+/* Estilos para la seccion de producto 1 */
 
 .div-minitoYa {
-    height: 100vh;
+    height: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
     background: rgb(32, 62, 118);
     background: linear-gradient(180deg, rgba(32, 62, 118, 1) 30%, rgba(240, 192, 14, 1) 100%);
 }
 
 .div-DoreYa .div-producto {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -366,7 +359,7 @@ nav.navbar {
 }
 
 .div-DoreYa .div-info {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -483,13 +476,15 @@ nav.navbar {
 /* Estilos para  la seccion del producto 2 */
 
 .div-multiYa {
-    height: 100vh;
+    height: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
     background: rgb(80, 176, 77);
     background: linear-gradient(180deg, rgba(80, 176, 77, 1) 30%, rgba(253, 201, 8, 1) 100%);
 }
 
 .div-DoreYa .div-info-2 {
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -522,7 +517,8 @@ nav.navbar {
 }
 
 .div-ProtecYa {
-    height: 100vh;
+    padding-top: 4%;
+    padding-bottom: 4%;
     background: rgb(10, 170, 227);
     background: linear-gradient(180deg, rgba(10, 170, 227, 1) 30%, rgba(236, 178, 200, 1) 100%);
 }

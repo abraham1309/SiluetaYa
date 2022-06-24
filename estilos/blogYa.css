@@ -169,6 +169,10 @@ nav.navbar {
         margin-right: 38;
         margin-top: 2%;
     }
+    .seccion-articulos .div-general .articulo .div-informacion .div-texto .p-fecha {
+        margin-top: 4%;
+        margin-bottom: 3%;
+    }
 }
 
 @media (max-width: 450px) {
@@ -188,6 +192,10 @@ nav.navbar {
     .seccion-titulo .div-general p {
         font-family: 'adieue light';
         font-size: 23px;
+    }
+    .seccion-articulos .div-general .articulo .div-informacion .div-texto .p-fecha {
+        margin-top: 5%;
+        margin-bottom: 4%;
     }
 }
 

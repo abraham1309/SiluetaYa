@@ -475,12 +475,13 @@
 #slides .slides-container .div-raizes {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
 }
 
 #slides .slides-container .div-raizes .imagen-productos {
     width: 85vw;
     margin-left: -40%;
+    margin-bottom: 13%;
 }
 
 #slides .slides-container .div-raizes .imagen-productos-movil {
@@ -491,7 +492,7 @@
     position: absolute;
     width: 30vw;
     margin-left: 50%;
-    margin-bottom: 7%;
+    margin-top: 10%;
 }
 
 @media (max-width: 991px) {
