@@ -1,0 +1,362 @@
+@font-face {
+    font-family: "adieue";
+    src: url("../tipografias/adineuePRO-Regular.ttf");
+}
+
+@font-face {
+    font-family: "adieue light";
+    src: url("../tipografias/adineueTEXT-Light.ttf");
+}
+
+nav.navbar {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item a {
+    font-family: "adieue";
+    font-size: 17px;
+}
+
+
+/* Estilos para la seccion inicio */
+
+.seccion-inicio .fondo {
+    height: 100vh !important;
+    width: 100% !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    z-index: -1 !important;
+}
+
+.seccion-inicio .div-fondo-madre {
+    background: url("../images/blogYa/1-dia-de-la-madre-siluetaya-min.png");
+}
+
+.seccion-inicio .div-fondo-potasio {
+    background: url("../images/blogYa/2-PORTADA-BLOG-SY-13-1-min.png");
+}
+
+.seccion-inicio .div-fondo-alimento {
+    background: url("../images/blogYa/3-PORTADA-BLOG-SY-14-min.png");
+}
+
+.seccion-inicio .div-fondo-hambre {
+    background: url("../images/blogYa/4-PORTADA-BLOG-SY-15-min.png");
+}
+
+.seccion-inicio .div-fondo-compra {
+    background: url("../images/blogYa/5-PORTADA-BLOG-SY-16-min.png");
+}
+
+.seccion-inicio .div-fondo-papa {
+    background: url("../images/blogYa/6-PORTADA-BLOG-SY-17-min.png");
+}
+
+.seccion-inicio .div-fondo-distribuidor {
+    background: url("../images/blogYa/7-PORTADA-BLOG-SY-18-min.png");
+}
+
+.seccion-inicio .div-fondo-tips {
+    background: url("../images/blogYa/8-PORTADA-BLOG-SY-19-min.png");
+}
+
+.seccion-inicio .div-fondo-secreto {
+    background: url("../images/blogYa/9-PORTADA-BLOG-SY-20-min.png");
+}
+
+.seccion-inicio .div-fondo-productos {
+    background: url("../images/blogYa/10-PORTADA-BLOG-SY-21-min.png");
+}
+
+.seccion-inicio {
+    height: 100vh;
+    width: 100%;
+    margin-top: 11vh;
+}
+
+.seccion-informacion .div-fecha {
+    width: 100%;
+    margin-top: 2%;
+    text-align: center;
+}
+
+.seccion-informacion .div-fecha p {
+    font-family: 'adieue light';
+    font-size: 19px;
+    color: rgb(58, 58, 58);
+}
+
+.seccion-informacion .div-texto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.seccion-informacion .div-texto .div-titulo {
+    width: 90%;
+    margin-top: 5%;
+    margin-bottom: 4%;
+    text-align: center;
+}
+
+.seccion-informacion .div-texto .div-titulo h1 {
+    font-size: 50px;
+    font-family: 'adieue';
+}
+
+.seccion-informacion .div-texto .div-cuerpo {
+    width: 65%;
+}
+
+.seccion-informacion .div-texto .div-cuerpo p,
+li {
+    font-family: 'adieue';
+    font-size: 22px;
+    text-align: justify;
+}
+
+.seccion-informacion .div-redes {
+    width: 45%;
+    margin-top: 3%;
+    padding-top: 2%;
+    text-align: center;
+    border-top: solid 2px rgb(162, 212, 10);
+}
+
+.seccion-informacion .div-redes a {
+    text-decoration: none;
+    color: rgb(255, 106, 0);
+}
+
+.seccion-informacion .div-redes a i {
+    font-size: 40px;
+}
+
+.seccion-informacion .div-redes .fa-facebook-f {
+    margin-right: 6%;
+}
+
+@media (max-width: 767px) {
+    .seccion-informacion .div-texto .div-titulo {
+        width: 95%;
+    }
+    .seccion-informacion .div-texto .div-titulo h1 {
+        font-size: 40px;
+    }
+    .seccion-informacion .div-texto .div-cuerpo {
+        width: 90%;
+    }
+    .seccion-informacion .div-redes {
+        width: 55%;
+        padding-top: 3%;
+    }
+}
+
+@media (max-width: 450px) {
+    .seccion-informacion .div-texto .div-titulo h1 {
+        font-size: 30px;
+    }
+    .seccion-informacion .div-texto .div-cuerpo p,
+    li {
+        font-size: 20px;
+    }
+    .seccion-informacion .div-fecha {
+        width: 100%;
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion-informacion .div-fecha p {
+        width: 90%;
+    }
+    .seccion-informacion .div-redes {
+        margin-top: 5%;
+        padding-top: 5%;
+    }
+    .seccion-informacion .div-redes .fa-facebook-f {
+        margin-right: 10%;
+    }
+    .seccion-comentarios .div-comen p {
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+
+/* Estilos para el carrusel */
+
+.seccion-duosya {
+    position: relative;
+    height: auto;
+    margin-top: 5%;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide {
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-text a {
+    text-align: center;
+    text-decoration: none;
+    width: 75%;
+    margin-top: 4%;
+    font-family: "adieue";
+    font-size: 20px;
+    color: #000;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide img {
+    width: 75%;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-duosya .swiper-button-prev,
+.swiper-button-next {
+    color: rgb(104, 102, 102) !important;
+    cursor: pointer !important;
+}
+
+@media (max-width: 450px) {
+    .seccion-duosya {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+
+
+/* Estilos para la seccion de comentarios */
+
+.seccion-comentarios {
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion-comentarios .div-comen {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion-comentarios .div-comen p {
+    font-family: 'adieue';
+    font-size: 30px;
+}
+
+.seccion-comentarios .div-comen textarea {
+    width: 100%;
+    padding-left: 1%;
+    background: none;
+    border: solid 2px rgb(255, 106, 0);
+    font-family: 'adieue light';
+    font-size: 20px;
+}
+
+.seccion-comentarios .div-comen textarea,
+select:focus {
+    outline: none;
+}
+
+.seccion-comentarios .div-comen button {
+    width: 200px;
+    height: 45px;
+    margin-top: 3%;
+    background-color: rgb(255, 106, 0);
+    border: none;
+    font-family: 'adieue';
+    color: #fff;
+    font-size: 20px;
+}
+
+@media (max-width: 767px) {
+    .seccion-comentarios .div-comen {
+        width: 90%;
+    }
+}
+
+
+/* Estilos para el footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #ffa400;
+}
+
+footer .div-logo {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .div-logo img {
+    margin-left: 5%;
+    width: 200;
+    height: 98;
+}
+
+footer .div-leyenda {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .div-leyenda p {
+    width: 85%;
+    font-family: "adieue";
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+footer .div-leyenda p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .div-redes-sociales {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+footer .div-redes-sociales .div-iconos {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+footer .div-redes-sociales .div-iconos a {
+    margin-left: 5%;
+    font-size: 25px;
+    color: #fff;
+}
+
+@media (max-width: 575px) {
+    footer .div-logo {
+        justify-content: center;
+    }
+    footer .div-redes-sociales .div-iconos {
+        justify-content: center;
+    }
+}
