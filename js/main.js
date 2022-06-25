@@ -47,3 +47,9 @@ function eliminarProducto() {
         label.innerHTML = contador;
     }
 }
+
+//Metodo para cerrar el menu del navbar para celulares
+function cerrarNavbar() {
+    if (!$(this).parent().hasClass("dropdown"))
+        $(".navbar-collapse").collapse("hide");
+}
