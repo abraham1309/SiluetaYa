@@ -1012,13 +1012,14 @@ nav.navbar {
     height: 100%;
     width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .seccion-inicio-app .div-general .div-celular img {
     margin-top: 15%;
     width: 65%;
+    margin-left: -8%;
 }
 
 @media (max-width: 767px) {
@@ -1036,15 +1037,18 @@ nav.navbar {
     }
     .seccion-inicio-app .div-general .div-celular {
         width: 100%;
+        justify-content: center;
     }
     .seccion-inicio-app .div-general .div-celular img {
         width: 45%;
+        margin-left: 0;
     }
 }
 
 @media (max-width: 450px) {
     .seccion-inicio-app {
         margin-top: 10vh;
+        padding-bottom: 15%;
     }
     .seccion-inicio-app .div-general .div-informacion {
         height: 50%;
@@ -1059,6 +1063,8 @@ nav.navbar {
     .seccion-inicio-app .div-general .div-celular {
         height: 50%;
         width: 100%;
+        margin-top: 15%;
+        margin-bottom: 10%;
         align-items: center;
     }
     .seccion-inicio-app .div-general .div-celular img {

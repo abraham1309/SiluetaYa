@@ -5,6 +5,7 @@ var swiper = new Swiper('.swiper-container', {
     },
     slidesPerView: 1,
     spaceBetween: 10,
+    loop: "true",
     // init: false,
     pagination: {
         el: '.swiper-pagination',
@@ -29,5 +30,6 @@ var swiper = new Swiper('.swiper-container', {
             slidesPerView: 3,
             spaceBetween: 0,
         },
-    }
+    },
+
 });

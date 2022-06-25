@@ -55,13 +55,13 @@ nav.navbar {
 }
 
 .seccion-inicio .div-general .div-imagenes .imagen-producto {
-    width: 25%;
+    width: 30%;
     margin-right: -7%;
     z-index: 1;
 }
 
 .seccion-inicio .div-general .div-imagenes .imagen-logo {
-    width: 40%;
+    width: 45%;
 }
 
 .seccion-inicio .div-general .div-parrafo {
@@ -74,9 +74,11 @@ nav.navbar {
 }
 
 .seccion-inicio .div-general .div-parrafo p {
+    width: 40%;
     font-size: 30px;
     font-family: 'adieue light';
     color: #fff;
+    line-height: 25px
 }
 
 @media (max-width: 950px) {
@@ -127,6 +129,12 @@ nav.navbar {
     }
 }
 
+@media (max-width: 510px) {
+    .seccion-inicio .div-general .div-parrafo p {
+        line-height: 22px
+    }
+}
+
 @media (max-width: 450px) {
     .seccion-inicio .div-general .div-imagenes .imagen-producto {
         width: 65%;
@@ -158,7 +166,7 @@ nav.navbar {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
 }
 
@@ -178,7 +186,7 @@ nav.navbar {
 }
 
 .seccion-informacion .div-general .div-texto .div-p p {
-    width: 65%;
+    width: 90%;
     font-size: 24px;
     text-align: justify;
     font-family: 'adieue';
@@ -218,6 +226,9 @@ nav.navbar {
     }
     .seccion-informacion .div-general .div-imagen {
         height: auto;
+    }
+    .seccion-informacion .div-general .div-texto {
+        align-items: center;
     }
 }
 
@@ -467,8 +478,11 @@ nav.navbar {
     .div-DoreYa .div-info .div-text p {
         font-size: 20px;
     }
-    .div-DoreYa .div-producto .div-producto-general .img-multiYa {
-        width: 35%;
+    .div-DoreYa .div-producto .div-producto-general .img1 {
+        margin-right: 25%;
+    }
+    .div-DoreYa .div-producto .div-producto-general .flecha1 {
+        margin-right: 20%;
     }
 }
 
@@ -509,10 +523,11 @@ nav.navbar {
 
 @media (max-width: 450px) {
     .div-DoreYa .div-producto .div-producto-general .div-flecha-multiYa {
-        margin-left: 38%;
+        margin-left: 60%;
     }
     .div-DoreYa .div-producto .div-producto-general .img-multiYa {
         width: 45%;
+        margin-right: -25%;
     }
 }
 

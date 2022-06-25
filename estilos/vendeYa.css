@@ -68,7 +68,8 @@ nav.navbar {
 }
 
 .seccion-incio .div-general .div-general-texto .div-texto {
-    width: 90%;
+    width: 80%;
+    margin-right: 3%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -83,7 +84,7 @@ nav.navbar {
 
 .seccion-incio .div-general .div-general-texto .div-texto p {
     font-size: 30px;
-    width: 80%;
+    width: 100%;
     font-family: "adieue light";
     text-align: justify;
 }
@@ -108,10 +109,14 @@ nav.navbar {
     .seccion-incio .div-general .div-general-texto {
         width: 100%;
         align-items: center;
+        justify-content: center;
     }
     .seccion-incio .div-general .div-general-texto .div-texto {
+        margin-right: 0;
         text-align: center;
         align-items: center;
+        justify-content: center;
+        width: 90%;
     }
     .seccion-incio .div-general .div-general-texto .div-texto p {
         width: 100%;

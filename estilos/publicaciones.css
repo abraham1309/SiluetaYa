@@ -20,59 +20,19 @@ nav.navbar {
 
 /* Estilos para la seccion inicio */
 
+.seccion-inicio {
+    height: auto;
+    width: 100%;
+    margin-top: 15vh;
+}
+
 .seccion-inicio .fondo {
-    height: 100vh !important;
+    height: auto !important;
     width: 100% !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center center !important;
     z-index: -1 !important;
-}
-
-.seccion-inicio .div-fondo-madre {
-    background: url("../images/blogYa/1-dia-de-la-madre-siluetaya-min.png");
-}
-
-.seccion-inicio .div-fondo-potasio {
-    background: url("../images/blogYa/2-PORTADA-BLOG-SY-13-1-min.png");
-}
-
-.seccion-inicio .div-fondo-alimento {
-    background: url("../images/blogYa/3-PORTADA-BLOG-SY-14-min.png");
-}
-
-.seccion-inicio .div-fondo-hambre {
-    background: url("../images/blogYa/4-PORTADA-BLOG-SY-15-min.png");
-}
-
-.seccion-inicio .div-fondo-compra {
-    background: url("../images/blogYa/5-PORTADA-BLOG-SY-16-min.png");
-}
-
-.seccion-inicio .div-fondo-papa {
-    background: url("../images/blogYa/6-PORTADA-BLOG-SY-17-min.png");
-}
-
-.seccion-inicio .div-fondo-distribuidor {
-    background: url("../images/blogYa/7-PORTADA-BLOG-SY-18-min.png");
-}
-
-.seccion-inicio .div-fondo-tips {
-    background: url("../images/blogYa/8-PORTADA-BLOG-SY-19-min.png");
-}
-
-.seccion-inicio .div-fondo-secreto {
-    background: url("../images/blogYa/9-PORTADA-BLOG-SY-20-min.png");
-}
-
-.seccion-inicio .div-fondo-productos {
-    background: url("../images/blogYa/10-PORTADA-BLOG-SY-21-min.png");
-}
-
-.seccion-inicio {
-    height: 100vh;
-    width: 100%;
-    margin-top: 11vh;
 }
 
 .seccion-informacion .div-fecha {
@@ -116,6 +76,14 @@ li {
     font-family: 'adieue';
     font-size: 22px;
     text-align: justify;
+}
+
+.seccion-informacion .div-texto .div-cuerpo li p {
+    margin-left: -1.8%;
+}
+
+.seccion-informacion .div-texto .div-cuerpo ol {
+    margin-left: -2%;
 }
 
 .seccion-informacion .div-redes {
@@ -162,6 +130,12 @@ li {
     .seccion-informacion .div-texto .div-cuerpo p,
     li {
         font-size: 20px;
+    }
+    .seccion-informacion .div-texto .div-cuerpo ol {
+        margin-left: -6%;
+    }
+    .seccion-informacion .div-texto .div-cuerpo li p {
+        margin-left: -3%;
     }
     .seccion-informacion .div-fecha {
         width: 100%;
