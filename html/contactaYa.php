@@ -98,7 +98,7 @@
             </div>
 
             <div class="div-formulario">
-                <form action="">
+                <form method="post">
                     <div class="div-cabezera">
                         <h2>Contáctanos</h2>
                         <p>Usa el siguiente formulario y en breve nos pondremos en contacto contigo.</p>
@@ -107,34 +107,38 @@
                     <br>
                     <div class="div-campo">
                         <p>Nombre*</p>
-                        <input type="text">
+                        <input type="text" name="nombre" required >
                     </div>
 
                     <br>
                     <div class="div-campo">
                         <p>Email*</p>
-                        <input type="text">
+                        <input type="text" name="correo" required>
                     </div>
 
                     <br>
                     <div class="div-campo">
                         <p>Asunto</p>
-                        <select>
+                        <select name="asunto">
                             <option value="value1">Unirme a la Empresa</option>
                             <option value="value2">2</option>
                             <option value="value3">3</option>
-                          </select>
+                        </select>
                     </div>
 
                     <br>
                     <div class="div-campo">
                         <p>Mensaje</p>
-                        <textarea name="textarea" rows="10" cols="50" style="resize: none;"></textarea>
+                        <textarea name="mensaje" rows="10" cols="50" style="resize: none;" required></textarea>
                     </div>
 
                     <br>
-                    <input type="button" value="Enviar" class="boton">
+                    <input type="submit" name="enviar" value="enviar" class="boton">
                 </form>
+
+                <?php 
+                    include('../php/correo.php')
+                ?>
             </div>
         </div>
     </section>
