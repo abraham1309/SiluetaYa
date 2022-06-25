@@ -1230,6 +1230,12 @@ nav.navbar {
     flex-direction: column;
 }
 
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
 .seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre {
     width: 90%;
     margin-top: 15%;

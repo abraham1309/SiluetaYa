@@ -601,6 +601,12 @@ nav.navbar {
     padding-bottom: 2%;
 }
 
+.div-paquetes-duosYa .div-general-productos .div-producto a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+}
+
 .div-paquetes-duosYa .div-general-productos .div-producto h3 {
     font-family: "adieue";
     font-size: 30px;
@@ -668,11 +674,17 @@ nav.navbar {
     font-family: "adieue";
 }
 
-.seccion-producto .div-general-producto .div-informacion .div-texto li {
+.seccion-producto .div-general-producto .div-informacion .div-texto li,
+p {
     width: 80%;
     margin-left: -1.5%;
     font-size: 20px;
     font-family: "adieue light";
+    line-height: 23px
+}
+
+.seccion-producto .div-general-producto .div-informacion .div-texto p {
+    margin-left: 0;
 }
 
 .seccion-producto .div-general-producto .div-informacion .div-general-botones {
@@ -808,7 +820,13 @@ nav.navbar {
         text-align: center;
     }
     .seccion-producto .div-general-producto .div-informacion .div-texto li {
-        width: 85%;
+        width: 90%;
+        margin-left: 1%;
+        font-size: 20px;
+        text-align: justify;
+    }
+    .seccion-producto .div-general-producto .div-informacion .div-texto p {
+        width: 90%;
         margin-left: 4%;
         font-size: 20px;
         text-align: justify;
@@ -893,6 +911,12 @@ nav.navbar {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
+}
+
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
 }
 
 .seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre {
