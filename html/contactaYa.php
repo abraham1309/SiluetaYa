@@ -21,7 +21,7 @@
     <!--Menu de navegacion-->
     <nav class="navbar  navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html" style="margin-left: 5%;">
+            <a class="navbar-brand" href="../index.html" style="margin-left: 5%;" onclick="cerrarNavbar()">
                 <img src="../images/logo-nav.png" alt="" width="125">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,51 +30,51 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav  ms-auto mb-2 mb-lg-0" style="margin-right: 5%;">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./ConocenosYa.html">ConócenosYa!</a>
+                        <a class="nav-link" aria-current="page" href="./ConocenosYa.html" onclick="cerrarNavbar()">ConócenosYa!</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./compraYa.html">CompraYa!</a>
+                        <a class="nav-link" href="./compraYa.html" onclick="cerrarNavbar()">CompraYa!</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./vendeYa.html">VendeYa!</a>
+                        <a class="nav-link" href="./vendeYa.html" onclick="cerrarNavbar()">VendeYa!</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./app.html">App</a>
+                        <a class="nav-link" href="./app.html" onclick="cerrarNavbar()">App</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./blogYa.html">BlogYa!</a>
+                        <a class="nav-link" href="./blogYa.html" onclick="cerrarNavbar()">BlogYa!</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="./contactaYa.html">ContactaYa!</a>
+                        <a class="nav-link active" href="./contactaYa.html" onclick="cerrarNavbar()">ContactaYa!</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./KidzYa.html">KidzYa!</a>
+                        <a class="nav-link" href="./KidzYa.html" onclick="cerrarNavbar()">KidzYa!</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./andyya.html">Andyya!</a>
+                        <a class="nav-link" href="./andyya.html" onclick="cerrarNavbar()">Andyya!</a>
                     </li>
 
                     <li class="nav-item" style="margin-right: 2%; margin-top: 5px;">
-                        <a class="nav-link" href="#" style="padding: 0;">
+                        <a class="nav-link" href="#" style="padding: 0;" onclick="cerrarNavbar()">
                             <img src="../images/Icono-Carrito.png" style="width: 25px; " alt="" srcset="">
                         </a>
                     </li>
 
                     <li class="nav-item" style="margin-top: 5px;">
-                        <a class="nav-link" href="#" style="padding: 0;">
+                        <a class="nav-link" href="#" style="padding: 0;" onclick="cerrarNavbar()">
                             <img src="../images/Icono-Lupa.png" style="width: 25px;" alt="" srcset="">
                         </a>
                     </li>
 
                     <li class="nav-item" style="margin-left: 2%;">
-                        <button style="margin-top: 2%; border: none; width: 150px; height: 38px; background-color: rgb(255, 106, 0); color: #fff; font-weight: bold;">Comprar
+                        <button style="margin-top: 2%; border: none; width: 150px; height: 38px; background-color: rgb(255, 106, 0); color: #fff; font-weight: bold;" onclick="cerrarNavbar()">Comprar
                                 Ahora
                             </button>
                     </li>
@@ -206,6 +206,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
