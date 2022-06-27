@@ -252,7 +252,7 @@ nav.navbar {
 .seccion-asociados {
     height: auto;
     width: 100%;
-    background: url("../images/compraYa/CompraYa-Asociados-F-min.png");
+    background: url("../images/VendeYa/VendeYa-Imagen-de-seccion-Fondo-2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -262,12 +262,13 @@ nav.navbar {
 .seccion-asociados .div-imagen {
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: flex-end;
 }
 
 .seccion-asociados .div-imagen img {
-    width: 95%;
+    width: 100%;
+    height: 100%;
 }
 
 .seccion-asociados .div-general-texto {
@@ -323,7 +324,7 @@ nav.navbar {
         align-items: center;
     }
     .seccion-asociados .div-general-texto .div-imagen-movil img {
-        width: 90%;
+        width: 100%;
     }
     .seccion-asociados .div-imagen {
         display: none;
