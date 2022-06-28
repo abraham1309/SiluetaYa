@@ -1,3 +1,76 @@
+/* Funcion para el boton al hacer scroll */
+let seccion = document.querySelectorAll('article');
+let boton = document.getElementById('btnColor');
+
+window.onscroll = () => {
+    seccion.forEach(sec => {
+        let top = window.scrollY;
+        let cordenas = sec.offsetTop - 150; /*Devuelve la posición superior (en píxeles) relativa a la parte superior del elemento*/
+        let alto = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+
+
+        if (top >= cordenas && top < cordenas + alto) {
+
+            switch (id) {
+                case 'carruselA':
+                    boton.style.backgroundColor = "#000";
+
+                    break;
+
+                case 'articulo1':
+                    boton.style.backgroundColor = "#28B9EB";
+
+                    break;
+
+                case 'articulo2':
+                    boton.style.backgroundColor = "#FF6C00";
+                    break;
+
+                case 'articulo3':
+                    boton.style.backgroundColor = "#000";;
+                    break;
+
+                case 'articulo4':
+                    boton.style.backgroundColor = "#5B50AA";;
+                    break;
+
+                case 'articulo5':
+                    boton.style.backgroundColor = "#3CC5DC";;
+                    break;
+
+                case 'articulo6':
+                    boton.style.backgroundColor = "#BF930D";;
+                    break;
+
+                case 'articulo7':
+                    boton.style.backgroundColor = "#000";;
+                    break;
+
+                case 'articulo8':
+                    boton.style.backgroundColor = "#FE3402";;
+                    break;
+
+                case 'articulo9':
+                    boton.style.backgroundColor = "#006432";;
+                    break;
+            }
+
+            /*             if (id == "articulo2") {
+                            boton.style.backgroundColor = "red";
+                        }
+                        if (id == "articulo3") {
+
+                        }
+                        if (id == "articulo4") {
+
+                        } */
+
+        }
+    });
+};
+
 /* Funciones para la pagina de producto */
 var anchoPantalla;
 window.onload = function() {

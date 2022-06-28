@@ -1,11 +1,11 @@
 <?php 
     if(isset($_POST['enviar'])){
-        if(!empty($_POST['nombre']) && !empty($_POST['correo']) && !empty($_POST['mensaje'])){
+        if(!empty($_POST['nombre']) && !empty($_POST['correo']) && !empty($_POST['asunto']) && !empty($_POST['mensaje'])){
             $nombreTex=$_POST['nombre'];
             $correoCliente=$_POST['correo'];
+            $asunto=$_POST['asunto'];
             $mensajeTex=$_POST['mensaje'];
-            $asunto="Prueba";
-
+            
             $correoEmpresa="abraham@mobil.aullox.com";
 
             $header="From: ".$correoCliente."\r\n";

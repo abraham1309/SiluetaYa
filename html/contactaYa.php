@@ -323,9 +323,11 @@
                     <div class="div-campo">
                         <p>Asunto</p>
                         <select name="asunto">
-                            <option value="value1">Unirme a la Empresa</option>
-                            <option value="value2">2</option>
-                            <option value="value3">3</option>
+                            <option value="Unirme a la Empresa">Unirme a la Empresa</option>
+                            <option value="Síntomas">Síntomas</option>
+                            <option value="Dudas de mi pedido">Dudas de mi pedido</option>
+                            <option value="Soporte de la aplicacion">Soporte de la aplicacion</option>
+                            <option value="Otros">Otros</option>
                         </select>
                     </div>
 
