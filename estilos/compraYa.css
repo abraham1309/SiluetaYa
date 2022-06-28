@@ -553,7 +553,7 @@ nav.navbar {
 }
 
 .div-paquete-Activa .div-text-responsivo {
-    width: 95%;
+    width: 90%;
     margin-top: 5%;
     text-align: center;
     display: none;
@@ -567,9 +567,12 @@ nav.navbar {
 }
 
 .div-paquete-Activa .div-text-responsivo p {
+    width: 100%;
     font-family: "adieue";
     font-size: 20px;
     color: #fff;
+    text-align: center;
+    background-color: red;
     text-shadow: 0 0 20px #ff6b00, 0 0 30px #ff6b00, 0 0 40px #ff6b00, 0 0 55px #ff6b00;
 }
 
@@ -629,7 +632,11 @@ nav.navbar {
         flex-direction: column;
     }
     .div-paquete-Activa .div-text-responsivo {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #a2d40a;
     }
     .div-paquete-Activa .div-derecho {
         display: none;

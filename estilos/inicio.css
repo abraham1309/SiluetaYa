@@ -705,6 +705,7 @@ nav.navbar {
         margin-bottom: 15%;
     }
     .seccion-2-productos .div-cuerpo .flecha-SiluetabsYa {
+        margin-right: -10%;
         margin-top: 20%;
     }
     .seccion-2-productos .div-cuerpo .flecha-TejoForte {
@@ -717,7 +718,7 @@ nav.navbar {
         margin-left: 45%;
     }
     .seccion-2-productos .div-cuerpo .flecha-SiluetabsYa {
-        margin-right: -5%;
+        margin-right: -30%;
     }
     .seccion-2-productos .div-SiluetabsYa .div-cuerpo {
         width: auto;
@@ -733,7 +734,7 @@ nav.navbar {
     }
     .seccion-2-productos .div-cuerpo .flecha-SiluetabsYa {
         margin-top: 5%;
-        margin-right: -5%;
+        margin-left: -60%;
     }
     .seccion-2-productos .div-SiluetabsYa .div-cuerpo {
         width: auto;
@@ -1377,6 +1378,10 @@ nav.navbar {
     text-decoration: none;
     color: #fff;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre {
