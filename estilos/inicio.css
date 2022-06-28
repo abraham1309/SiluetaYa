@@ -3,6 +3,10 @@
     src: url("../tipografias/adineuePRO-Regular.ttf");
 }
 
+#tidio-chat-iframe {
+    margin-bottom: 50px !important;
+}
+
 .body-scroll {
     overflow: hidden !important;
 }
