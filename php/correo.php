@@ -15,9 +15,17 @@
             $mail=mail($correoEmpresa, $asunto, $mensajeTex, $header);
         
             if($mail){
-                echo "Mensaje enviado exitosamente";
+                echo '
+                    <div class="div-mensaje-confirmacion" style="width: 100%; height: auto; display: flex; justify-content: center; align-items: center; border: solid 2px rgb(241, 109, 34); color: rgb(25, 135, 84); text-align: center; ">
+                        <p class="p-confirmacion">Mensaje enviado correctamente</p>
+                    </div>
+                ';
             }else{
-                echo"No se pudo enviar el correo";
+                echo '
+                    <div class="div-mensaje-error" style="width: 100%; height: auto; display: flex; justify-content: center; align-items: center; border: solid 2px rgb(241, 109, 34); color: rgb(220, 53, 69); text-align: center;">
+                        <p class="p-error">Hubo un problema al enviar el mensaje, revise los campos rellenados. Si sigue teniendo problemas comuniquese con la empresa</p>
+                    </div>
+                ';
             }
         }
     }

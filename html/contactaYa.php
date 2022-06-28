@@ -50,7 +50,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="./contactaYa.html" onclick="cerrarNavbar()">ContactaYa!</a>
+                        <a class="nav-link active" href="./contactaYa.php" onclick="cerrarNavbar()">ContactaYa!</a>
                     </li>
 
                     <li class="nav-item">
@@ -62,7 +62,7 @@
                     </li>
 
                     <li class="nav-item" style="margin-right: 2%; margin-top: 5px;">
-                        <a class="nav-link" href="#" style="padding: 0;" onclick="cerrarNavbar()">
+                        <a class="nav-link" href="./compraYa.html" style="padding: 0;" onclick="cerrarNavbar()">
                             <img src="../images/Icono-Carrito.png" style="width: 25px; " alt="" srcset="">
                         </a>
                     </li>
@@ -85,8 +85,8 @@
         </div>
     </nav>
 
-<!-- Modal para la busqueda -->
-<div class="div-modal" id="divModal">
+    <!-- Modal para la busqueda -->
+    <div class="div-modal" id="divModal">
         <div class="contenedor-modal modal-cerrar" id="contenedorModal">
             <div class="div-cuerpo">
                 <img src="../images/Icono-Lupa.png" alt="" class="img-lupa">
@@ -310,7 +310,7 @@
                     <br>
                     <div class="div-campo">
                         <p>Nombre*</p>
-                        <input type="text" name="nombre" required >
+                        <input type="text" name="nombre" required>
                     </div>
 
                     <br>
@@ -335,13 +335,13 @@
                         <textarea name="mensaje" rows="10" cols="50" style="resize: none;" required></textarea>
                     </div>
 
+                    <?php 
+                        include('../php/correo.php')
+                    ?>
+
                     <br>
                     <input type="submit" name="enviar" value="enviar" class="boton">
                 </form>
-
-                <?php 
-                    include('../php/correo.php')
-                ?>
             </div>
         </div>
     </section>
