@@ -267,7 +267,7 @@ nav.navbar {
 }
 
 .seccion-asociados .div-imagen img {
-    width: 100%;
+    width: 110%;
     height: 100%;
 }
 
@@ -324,7 +324,7 @@ nav.navbar {
         align-items: center;
     }
     .seccion-asociados .div-general-texto .div-imagen-movil img {
-        width: 100%;
+        width: 100vw;
     }
     .seccion-asociados .div-imagen {
         display: none;
