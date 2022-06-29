@@ -572,7 +572,6 @@ nav.navbar {
     font-size: 20px;
     color: #fff;
     text-align: center;
-    background-color: red;
     text-shadow: 0 0 20px #ff6b00, 0 0 30px #ff6b00, 0 0 40px #ff6b00, 0 0 55px #ff6b00;
 }
 
@@ -636,7 +635,6 @@ nav.navbar {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: #a2d40a;
     }
     .div-paquete-Activa .div-derecho {
         display: none;
