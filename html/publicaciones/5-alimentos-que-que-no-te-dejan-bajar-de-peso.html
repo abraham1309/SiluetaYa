@@ -21,6 +21,10 @@
 </head>
 
 <body id="body" class="body">
+    <!-- scrip para comentarios de fb -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v14.0" nonce="VAIdtThv"></script>
+
     <!--Menu de navegacion-->
     <nav class="navbar  navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
         <div class="container-fluid">
@@ -475,9 +479,7 @@
 
     <section class="seccion-comentarios">
         <div class="div-comen">
-            <p>Publica un nuevo comentario</p>
-            <textarea name="textarea" rows="8" cols="50" style="resize: none;" placeholder="Ingresa tu comentario"></textarea>
-            <button>Enviar comentario</button>
+            <div class="fb-comments" data-href="https://abraham1309.github.io/SiluetaYa/index.html" data-width="100%" data-numposts="5"></div>
         </div>
     </section>
 
