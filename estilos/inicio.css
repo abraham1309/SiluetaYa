@@ -39,8 +39,16 @@
     font-size: 35px;
     font-family: 'adieue';
     color: #000;
-    -webkit-animation: sk-bouncedelay 1.8s infinite ease-in-out both;
-    animation: sk-bouncedelay 1.8s infinite ease-in-out both;
+    -webkit-animation: sk-bouncedelay 2.5s infinite ease-in-out both;
+    animation: sk-bouncedelay 2.5s infinite ease-in-out both;
+}
+
+.spinner .letra-s {
+    margin-left: 6%;
+}
+
+.spinner .letra-a {
+    margin-right: 6%;
 }
 
 @-webkit-keyframes sk-bouncedelay {
@@ -71,10 +79,17 @@
 
 @media (max-width: 450px) {
     .spinner>div {
-        width: 2rem;
+        width: 1.3rem;
         height: 2.5rem;
-        margin-left: 0;
-        font-size: 25px;
+    }
+    .spinner img {
+        width: 100px;
+    }
+    .spinner .letra-s {
+        margin-left: 9%;
+    }
+    .spinner .letra-a {
+        margin-right: 9%;
     }
 }
 
