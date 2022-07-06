@@ -470,8 +470,8 @@ nav.navbar {
 }
 
 .div-DoreYa .div-producto .div-producto-general img {
-    width: 40%;
-    margin-left: -20%;
+    width: 50%;
+    margin-left: -38%;
 }
 
 .div-DoreYa .div-info {
@@ -615,7 +615,8 @@ nav.navbar {
 }
 
 .div-DoreYa .div-producto .div-producto-general .img-multiYa {
-    width: 35%;
+    width: 40%;
+    margin-right: -30%;
 }
 
 .div-DoreYa .div-producto .div-producto-general .div-flecha-multiYa {
@@ -628,7 +629,7 @@ nav.navbar {
 
 @media (max-width: 450px) {
     .div-DoreYa .div-producto .div-producto-general .div-flecha-multiYa {
-        margin-left: 60%;
+        margin-left: 50%;
     }
     .div-DoreYa .div-producto .div-producto-general .img-multiYa {
         width: 45%;

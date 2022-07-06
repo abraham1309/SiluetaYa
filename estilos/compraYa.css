@@ -415,6 +415,12 @@ nav.navbar {
     align-items: center;
 }
 
+.seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .img-pronto {
+    position: absolute;
+    width: 125px;
+    margin-top: -1.9%;
+}
+
 .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor {
     width: 85%;
     height: 85%;
@@ -477,6 +483,10 @@ nav.navbar {
     .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-imagen .img-DoreYa {
         width: 68%;
     }
+    .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .img-pronto {
+        width: 125px;
+        margin-top: -3.5%;
+    }
 }
 
 @media (max-width: 450px) {
@@ -502,6 +512,10 @@ nav.navbar {
     }
     .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .div-imagen .img-SiluetabsYa {
         margin-right: -10%;
+    }
+    .seccion-productos-individuales .div-general-productos .div-producto .div-contenedor .img-pronto {
+        width: 100px;
+        margin-top: -5.5%;
     }
 }
 

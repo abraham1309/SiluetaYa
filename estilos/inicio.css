@@ -266,6 +266,7 @@ nav.navbar {
 
 .seccion-productos .div-prduc {
     padding-top: 2%;
+    padding-bottom: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,7 +293,7 @@ nav.navbar {
 }
 
 .seccion-productos .div-producto1 {
-    background-image: radial-gradient(circle, #ffffff, #eeeeef, #dddedf, #cdcecf, #bcbec0);
+    background-image: linear-gradient( to bottom, #0bb979, #68ca76, #9dda77, #cee87e, #fcf68b);
 }
 
 .seccion-productos .div-producto2 {
@@ -300,17 +301,19 @@ nav.navbar {
     background: linear-gradient( 180deg, rgba(0, 180, 208, 1) 0%, rgba(165, 228, 241, 1) 55%, rgba(234, 248, 254, 1) 76%);
 }
 
-.seccion-productos .div-producto2 .div-texto {
-    margin-top: -7%;
-}
-
 .seccion-productos .div-producto3 {
     background: rgb(215, 97, 172);
     background: linear-gradient( 180deg, rgba(215, 97, 172, 1) 0%, rgba(138, 136, 200, 1) 50%, rgba(8, 201, 247, 1) 100%);
 }
 
-.seccion-productos .div-producto3 .div-texto {
-    margin-top: -10%;
+.seccion-productos .div-producto4 {
+    background: rgb(224, 170, 55);
+    background: linear-gradient(180deg, rgba(224, 170, 55, 1) 0%, rgba(252, 226, 216, 1) 100%);
+}
+
+.seccion-productos .div-producto4 .img-doreYa {
+    width: 32%;
+    margin-right: 14%;
 }
 
 @media (max-width: 880px) {
@@ -322,6 +325,10 @@ nav.navbar {
     }
     .seccion-productos .div-prduc .div-texto h2 {
         font-size: 18px;
+    }
+    .seccion-productos .div-producto4 .img-doreYa {
+        width: 29%;
+        margin-right: 11%;
     }
 }
 
@@ -335,6 +342,9 @@ nav.navbar {
     }
     .seccion-productos .div-producto2 img {
         margin-right: 8%;
+    }
+    .seccion-productos .div-producto4 .img-doreYa {
+        width: 24%;
     }
 }
 
@@ -620,6 +630,7 @@ nav.navbar {
 
 .div-pirateria {
     height: 40vh;
+    margin-bottom: 5%;
     background-color: #fff;
 }
 
@@ -706,6 +717,13 @@ nav.navbar {
 
 /*Estilos para la seccion de los productos SiluetabsYa y a SiluetaYa Tejoforte*/
 
+.seccion-2-productos .img-pronto {
+    width: 15%;
+    position: absolute;
+    margin-top: -3%;
+    left: 0;
+}
+
 .seccion-2-productos .div-SiluetabsYa {
     background: url("../images/Fondo-de-SiluetabsYa-min.png");
     background-repeat: no-repeat;
@@ -766,6 +784,11 @@ nav.navbar {
     }
     .seccion-2-productos .div-cuerpo .flecha-SiluetabsYa {
         margin-right: 10%;
+    }
+    .seccion-2-productos .img-pronto {
+        width: 30%;
+        margin-top: -6%;
+        left: -1%;
     }
 }
 
