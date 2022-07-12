@@ -1042,12 +1042,19 @@ p {
     text-decoration: none;
     color: #fff;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre {
     width: 90%;
     margin-top: 15%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre h3 {
