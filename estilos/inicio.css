@@ -1049,6 +1049,7 @@ nav.navbar {
     display: flex;
     justify-content: right;
     align-items: center;
+    background-color: red;
 }
 
 .div-DoreYa .div-producto .div-producto-general {
@@ -1056,15 +1057,17 @@ nav.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #68ca76;
 }
 
 .div-DoreYa .div-producto .div-producto-general .div-flecha-dore {
     position: absolute;
-    margin-right: 25%;
+    margin-left: -23%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #ff6b00;
 }
 
 .div-DoreYa .div-producto .div-producto-general .div-flecha-dore p {
@@ -1162,6 +1165,7 @@ nav.navbar {
 
 @media (max-width: 450px) {
     .div-DoreYa .div-producto .div-producto-general .div-flecha-dore {
+        margin-left: 0;
         margin-right: 55%;
     }
     .div-DoreYa .div-info {
