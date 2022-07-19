@@ -430,7 +430,8 @@ nav.navbar {
 .seccion-2-productos .div-cuerpo .div-flecha2 {
     position: absolute;
     width: 160px;
-    margin-right: -16%;
+    margin-left: 16%;
+    background-color: red;
 }
 
 .seccion-2-productos .div-cuerpo .div-flecha2 p {
@@ -458,7 +459,7 @@ nav.navbar {
         margin-left: 20%;
     }
     .seccion-2-productos .div-cuerpo .div-flecha2 {
-        margin-right: -22%;
+        margin-left: 27%;
     }
     .seccion-2-productos .div-cuerpo .producto-siluetaYa {
         margin-left: 18%;
@@ -538,7 +539,7 @@ nav.navbar {
         margin-left: -60%;
     }
     .seccion-2-productos .div-cuerpo .div-flecha2 {
-        margin-right: -35%;
+        margin-left: 20%;
     }
     .seccion-2-productos .div-siluetaYa .div-cuerpo {
         width: auto;
@@ -577,7 +578,7 @@ nav.navbar {
         width: 38%;
     }
     .seccion-2-productos .div-cuerpo .div-flecha2 {
-        margin-right: -37%;
+        margin-left: 13%;
     }
     .seccion-2-productos .div-cuerpo .div-flecha2 p {
         font-size: 16px;
