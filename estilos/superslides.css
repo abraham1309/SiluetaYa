@@ -479,9 +479,10 @@
 }
 
 #slides .slides-container .div-raizes .imagen-productos {
+    position: absolute;
     width: 85vw;
-    margin-left: -40%;
     margin-bottom: 13%;
+    margin-right: 35%;
 }
 
 #slides .slides-container .div-raizes .imagen-productos-movil {
@@ -491,32 +492,39 @@
 #slides .slides-container .div-raizes .imagen-titulo {
     position: absolute;
     width: 30vw;
+    margin-top: 5%;
     margin-left: 50%;
-    margin-top: 10%;
 }
 
 @media (max-width: 991px) {
     #slides .slides-container .div-raizes {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         flex-direction: column-reverse;
     }
     #slides .slides-container .div-raizes .imagen-productos {
-        margin-left: 0;
-        margin-top: -25%;
+        margin-right: 0;
+        margin-top: 0;
+        position: relative;
     }
     #slides .slides-container .div-raizes .imagen-titulo {
         position: relative;
         margin-left: 0;
         margin-bottom: 0;
-        margin-top: 12%;
-        margin-bottom: 5%;
+        margin-top: 25%;
+        margin-bottom: 0;
     }
 }
 
-
-/* @media (max-width: 767px) {} */
+@media (max-width: 767px) {
+    #slides .slides-container .div-raizes .imagen-productos {
+        width: 100vw;
+    }
+    #slides .slides-container .div-raizes .imagen-titulo {
+        width: 40vw;
+    }
+}
 
 @media (max-width: 450px) {
     #slides .slides-container .div-raizes .imagen-productos {
@@ -525,8 +533,7 @@
         margin-top: -25%;
     }
     #slides .slides-container .div-raizes .imagen-titulo {
-        width: 50vw;
-        position: relative;
+        width: 60vw;
         margin-left: 0;
         margin-bottom: 0;
         margin-top: 12%;
