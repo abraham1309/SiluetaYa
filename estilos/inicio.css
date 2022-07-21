@@ -110,6 +110,18 @@ nav.navbar {
     font-size: 17px;
 }
 
+.navbar .container-fluid .collapse .navbar-nav .subdiv-navbar {
+    display: flex;
+    margin-right: 3%;
+}
+
+@media (max-width: 991px) {
+    .navbar .container-fluid .collapse .navbar-nav .subdiv-navbar {
+        display: block;
+        margin-right: 0;
+    }
+}
+
 .boton-explorar {
     margin-top: 4%;
     text-decoration: none;

@@ -474,15 +474,13 @@
 
 #slides .slides-container .div-raizes {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 #slides .slides-container .div-raizes .imagen-productos {
-    position: absolute;
     width: 85vw;
     margin-bottom: 13%;
-    margin-right: 35%;
 }
 
 #slides .slides-container .div-raizes .imagen-productos-movil {
@@ -490,10 +488,7 @@
 }
 
 #slides .slides-container .div-raizes .imagen-titulo {
-    position: absolute;
     width: 30vw;
-    margin-top: 5%;
-    margin-left: 50%;
 }
 
 @media (max-width: 991px) {
@@ -536,8 +531,8 @@
         width: 60vw;
         margin-left: 0;
         margin-bottom: 0;
-        margin-top: 12%;
-        margin-bottom: 5%;
+        margin-top: 20%;
+        margin-bottom: 1%;
     }
 }
 
