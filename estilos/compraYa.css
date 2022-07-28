@@ -406,7 +406,7 @@ nav.navbar {
     height: auto;
     padding-top: 5%;
     margin-bottom: 5%;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
 }
 
 .seccion-productos-individuales .div-general-productos .div-producto {

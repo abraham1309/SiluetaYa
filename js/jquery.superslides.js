@@ -1,13 +1,14 @@
 /*! Superslides - v0.6.2 - 2013-07-10
  * https://github.com/nicinabox/superslides
  * Copyright (c) 2013 Nic Aitch; Licensed MIT */
+
 (function(window, $) {
 
     var Superslides, plugin = 'superslides';
 
     Superslides = function(el, options) {
         this.options = $.extend({
-            play: 4500,
+            play: 0,
             animation_speed: 1400,
             animation_easing: 'swing',
             animation: 'slide',

@@ -77,8 +77,14 @@ window.onload = function() {
 
 function verImagen(smallImg) {
     var imgPrincipal = document.getElementById("imagenPrincipal");
+    var rutaPrincipal = "";
+
     imgPrincipal.dataset.zoomImage = smallImg.src;
+    rutaPrincipal = imgPrincipal.src;
     imgPrincipal.src = smallImg.src;
+
+    smallImg.src = rutaPrincipal;
+
 
     /* Funcion para el zoom de la imagen del producto */
     if (anchoPantalla > 800) {
@@ -92,6 +98,9 @@ function verImagen(smallImg) {
 }
 
 /* Funciones para agregar y eliminar producto */
+document.getElementById("labelCantidad").innerHTML = 1;
+
+
 var label = document.getElementById("labelCantidad");
 var contador = 0;
 
