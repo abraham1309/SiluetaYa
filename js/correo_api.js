@@ -1,3 +1,29 @@
+var camposLlenos = false;
+
+function validarCampos() {
+    var nombre = document.getElementById("inputNombre").value;
+    var correo = document.getElementById("inputCorreo").value;
+
+    if (!nombre == "" && !correo == "") {
+        document.getElementById("divErrorCampos").style.display = "none";
+        camposLlenos = true;
+        validarRecaptcha();
+    } else {
+        document.getElementById("divErrorCampos").style.display = "flex";
+        camposLlenos = false;
+    }
+}
+
+
+function validarRecaptcha() {
+    let divError = document.getElementById('divError');
+    if (camposLlenos == false) {
+        divError.style.display = "flex";
+    } else {
+        grecaptcha.execute();
+    }
+}
+
 function generarId() {
     let result = '';
     const characters = '1234567890';
@@ -39,14 +65,20 @@ function enviarCorreo() {
         .catch(error => console.error('El error es: ', error))
         .then((response) => {
             if (response.code == 201) {
+                divConfirmacion.style.display = "none";
                 divError.style.display = "none";
                 divConfirmacion.style.display = "flex";
             } else {
                 if (response.code == 400) {
+                    divError.style.display = "none";
                     divConfirmacion.style.display = "none";
                     divError.style.display = "flex";
                 }
             }
         });
 
+}
+
+function onSubmit(token) {
+    alert("Gracias por enviar su correo " + token);
 }

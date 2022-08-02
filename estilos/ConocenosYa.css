@@ -17,6 +17,10 @@ nav.navbar {
     font-size: 17px;
 }
 
+#tidio-chat-iframe {
+    margin-bottom: 50px !important;
+}
+
 
 /* Estilos para el modal de busqueda */
 
@@ -385,7 +389,7 @@ footer {
     width: 100%;
     height: auto;
     padding-top: 3%;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     background-color: #ffa400;
 }
 
