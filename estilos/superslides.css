@@ -62,7 +62,7 @@
     align-items: flex-start;
     flex-direction: column;
     padding-bottom: 3%;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 #slides .slides-container .contenedor1 img {
@@ -233,11 +233,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
 }
 
 #slides .slides-container .contenedor-app .div-celular-izquierdo img {
-    width: 85%;
+    width: 75%;
 }
 
 #slides .slides-container .contenedor-app .div-central {
@@ -276,11 +275,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
 }
 
 #slides .slides-container .contenedor-app .div-celular-derecho img {
-    width: 85%;
+    width: 75%;
 }
 
 @media (max-width: 991px) {
@@ -360,9 +358,9 @@
 }
 
 #slides .slides-container .div-codigoQR img {
-    width: 130%;
+    width: 120%;
     margin-top: 30%;
-    margin-left: 20%;
+    margin-left: 40%;
     z-index: 1;
 }
 
@@ -376,7 +374,7 @@
 
 #slides .slides-container .div-productos .imagen-titulo {
     width: 50%;
-    margin-top: 9%;
+    margin-top: 5%;
     margin-bottom: -5%;
     margin-left: 10%;
 }
@@ -386,7 +384,7 @@
 }
 
 #slides .slides-container .div-productos .imagen-productos {
-    width: 85%;
+    width: 75%;
     z-index: 2;
 }
 
@@ -479,7 +477,7 @@
 }
 
 #slides .slides-container .div-raizes .imagen-productos {
-    width: 85vw;
+    width: 110vw;
     margin-bottom: 13%;
 }
 
@@ -488,7 +486,8 @@
 }
 
 #slides .slides-container .div-raizes .imagen-titulo {
-    width: 30vw;
+    width: 18vw;
+    margin-right: 15%;
 }
 
 @media (max-width: 991px) {
@@ -575,52 +574,11 @@
     text-decoration: none;
 }
 
-.slides-navigation a.prev i {
-    color: #fff;
-    font-size: 70px;
-}
-
-.slides-navigation a.next i {
-    color: #fff;
-    font-size: 70px;
-}
-
-
-/* 
 @media (max-width: 450px) {
-    #slides {
-        height: 100%;
+    .slides-navigation a.prev img {
+        width: 80%;
     }
-    #slides .slides-container {
-        height: 100%;
-        padding-bottom: 15%;
+    .slides-navigation a.next img {
+        width: 80%;
     }
-    #slides .slides-container .imagen1-carrusel {
-        background: url(../images/MOBILE-HEADERS-SY-WEB-2022-port.jpg);
-        height: 100%;
-        margin-top: 18%;
-    }
-    #slides .slides-container .imagen2-carrusel {
-        background: url(../images/MOBILE-HEADERS-SY-WEB-2022-asoc.jpg);
-        height: 100%;
-        margin-top: 18%;
-    }
-    #slides .slides-container .imagen3-carrusel {
-        background: url(../images/Carrusel-movil-1-min.png);
-        height: 100%;
-        margin-top: 18%;
-    }
-    #slides .slides-container .imagen4-carrusel {
-        background: url(../images/Carrusel-movil-2-min.png);
-        height: 100%;
-        margin-top: 18%;
-    }
-    #slides .slides-container .imagen5-carrusel {
-        background: url(../images/MOBILE-HEADERS-SY-WEB-2022-raices.jpg);
-        height: 100%;
-        margin-top: 18%;
-    }
-    #slides .slides-container .container {
-        height: 100%;
-    }
-} */
+}

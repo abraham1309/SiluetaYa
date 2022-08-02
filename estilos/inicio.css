@@ -623,6 +623,7 @@ nav.navbar {
 .div-pirateria {
     height: 40vh;
     margin-bottom: 5%;
+    margin-top: 5%;
     background-color: #fff;
 }
 
@@ -1168,7 +1169,7 @@ nav.navbar {
 }
 
 .div-asociados .div-general-imagen .div-imagen img {
-    width: 80%;
+    width: 70%;
 }
 
 @media (max-width: 767px) {
