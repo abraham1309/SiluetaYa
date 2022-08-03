@@ -28,6 +28,10 @@ nav.navbar {
     font-family: "adieue";
 }
 
+#tidio-chat-iframe {
+    margin-bottom: -30px !important;
+}
+
 
 /* Estilos para el modal de busqueda */
 
@@ -474,7 +478,7 @@ nav.navbar {
 }
 
 .seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-imagen img {
-    width: 280px;
+    width: 240px;
 }
 
 .seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-texto {
@@ -582,7 +586,7 @@ footer {
     width: 100%;
     height: auto;
     padding-top: 3%;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     background-color: #ffa400;
 }
 

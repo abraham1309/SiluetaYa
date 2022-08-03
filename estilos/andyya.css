@@ -17,6 +17,10 @@ nav.navbar {
     font-size: 17px;
 }
 
+#tidio-chat-iframe {
+    margin-bottom: -30px !important;
+}
+
 
 /* Estilos para el modal de busqueda */
 
@@ -298,67 +302,36 @@ nav.navbar {
 }
 
 
-/* Estilos para el carrusel de los productos */
+/* Estilos para la imagen del final */
 
-.seccion-duosya {
-    position: relative;
+.seccion-imagenes {
+    width: 100%;
     height: auto;
-    margin-bottom: 7%;
 }
 
-.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide {
-    height: auto;
+.seccion-imagenes .div-general-imagen {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
-.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre {
-    width: 90%;
-    margin-top: 15%;
-    text-align: center;
-}
-
-.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre h3 {
-    font-family: "adieue";
-    font-size: 35px;
-    color: #000;
-}
-
-.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-imagen {
-    width: 90%;
-    margin-top: 10%;
-    text-align: center;
-}
-
-.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-imagen img {
+.seccion-imagenes .div-general-imagen img {
     width: 80%;
-    text-align: center;
 }
 
-.seccion-duosya .swiper-button-prev {
-    color: rgb(104, 102, 102);
-    cursor: pointer;
+.seccion-imagenes .div-general-imagen .img-cel {
+    display: none;
 }
 
-.seccion-duosya .swiper-button-next {
-    color: rgb(104, 102, 102);
-    cursor: pointer;
-}
-
-@media (max-width: 680px) {
-    .seccion-duosya .div-titulo {
-        height: 120px;
+@media (max-width: 500px) {
+    .seccion-imagenes .div-general-imagen .img-escritorio {
+        display: none;
     }
-}
-
-@media (max-width: 450px) {
-    .seccion-duosya .div-titulo {
-        height: 100px;
-    }
-    .seccion-duosya .div-titulo h2 {
-        font-size: 30px;
+    .seccion-imagenes .div-general-imagen .img-cel {
+        display: flex;
+        width: 80%;
     }
 }
 
@@ -369,8 +342,7 @@ footer {
     width: 100%;
     height: auto;
     padding-top: 3%;
-    padding-bottom: 3%;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     background-color: #ffa400;
 }
 

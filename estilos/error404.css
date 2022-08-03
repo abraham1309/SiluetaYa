@@ -19,6 +19,10 @@
     font-family: "adieue";
 }
 
+#tidio-chat-iframe {
+    margin-bottom: -30px !important;
+}
+
 
 /* Estilos para la seccion principal */
 
@@ -526,7 +530,7 @@ footer {
     width: 100%;
     height: auto;
     padding-top: 3%;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     background-color: #ffa400;
 }
 
