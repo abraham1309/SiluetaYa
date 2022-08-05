@@ -519,7 +519,7 @@ nav.navbar {
 @media (max-width: 767px) {
     .seccion-paquetes .div-general .div-general-paquetes .div-paquete {
         width: 95%;
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin-bottom: 6%;
     }
     .seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-texto {
@@ -563,10 +563,10 @@ nav.navbar {
         font-size: 20px;
     }
     .seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-imagen img {
-        width: 60%;
+        width: 50%;
     }
     .seccion-paquetes .div-general .div-general-paquetes .div-paquete {
-        margin-bottom: 10%;
+        margin-bottom: 15%;
     }
     .seccion-paquetes .div-general .div-general-paquetes .div-paquete .div-texto ol {
         width: 90%;

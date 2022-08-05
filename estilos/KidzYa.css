@@ -606,6 +606,10 @@ nav.navbar {
     background: linear-gradient(180deg, rgba(80, 176, 77, 1) 30%, rgba(253, 201, 8, 1) 100%);
 }
 
+.div-multiYa-movil {
+    display: none;
+}
+
 .div-DoreYa .div-info-2 {
     height: auto;
     display: flex;
@@ -629,6 +633,15 @@ nav.navbar {
 
 .div-DoreYa .div-producto .div-producto-general .div-flecha-multiYa p {
     width: 140%;
+}
+
+@media (max-width: 767px) {
+    .div-multiYa-movil {
+        display: flex;
+    }
+    .div-multiYa-escritorio {
+        display: none;
+    }
 }
 
 @media (max-width: 450px) {

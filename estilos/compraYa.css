@@ -234,16 +234,20 @@ nav.navbar {
     .seccion-inicio .div-general-texto {
         height: 45vh;
         padding-top: 0;
-        padding-bottom: 15%;
+        padding-bottom: 5%;
         align-items: flex-end;
     }
     .seccion-inicio .div-general-imagen {
         height: 45vh;
     }
+    .seccion-inicio .div-general-texto .div-texto {
+        width: 90%;
+    }
     .seccion-inicio .div-general-texto .div-texto h1 {
         font-size: 50px;
     }
     .seccion-inicio .div-texto p {
+        width: 100%;
         font-size: 20px;
         text-align: justify;
     }

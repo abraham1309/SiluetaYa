@@ -507,8 +507,8 @@ nav.navbar {
     .seccion-2-productos .div-producto-izquierdo,
     .div-producto-derecho {
         height: auto;
-        padding-top: 10%;
-        padding-bottom: 10%;
+        padding-top: 15%;
+        padding-bottom: 15%;
     }
 }
 
@@ -544,11 +544,9 @@ nav.navbar {
 
 @media (max-width: 550px) {
     .seccion-2-productos .div-cuerpo .producto-siluetaYa {
-        margin-left: 10%;
-    }
-    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
         width: 300px !important;
         height: 336px !important;
+        margin-left: 10%;
     }
 }
 
@@ -556,20 +554,24 @@ nav.navbar {
     .seccion-2-productos .div-cuerpo .producto-siluetaYa {
         width: 280px !important;
         height: 313px !important;
-        margin-right: 15%;
+        margin-left: 0;
+        margin-right: 32%;
     }
-    .seccion-2-productos .div-cuerpo .div-flecha1 {
+    .seccion-2-productos .div-cuerpo .producto-365 {
+        margin-left: 25%;
+    }
+    .seccion-2-productos .div-cuerpo .div-flechaSilueta {
         margin-top: 3%;
-        margin-right: -8%;
+        margin-left: 40%;
     }
     .seccion-2-productos .div-cuerpo .div-flecha1 p {
         font-size: 16px;
     }
-    .seccion-2-productos .div-cuerpo .div-flecha1 img {
-        width: 38%;
+    .seccion-2-productos .div-cuerpo .div-flechaSilueta img {
+        width: 85%;
     }
     .seccion-2-productos .div-cuerpo .div-flecha2 {
-        margin-left: 13%;
+        margin-left: 28%;
     }
     .seccion-2-productos .div-cuerpo .div-flecha2 p {
         font-size: 16px;
@@ -580,6 +582,9 @@ nav.navbar {
 }
 
 @media (max-width: 385px) {
+    .seccion-2-productos .div-cuerpo .producto-siluetaYa {
+        margin-right: 40%;
+    }
     .seccion-2-productos .div-encabezado h2 {
         font-size: 50px;
     }
@@ -672,6 +677,8 @@ nav.navbar {
 @media (max-width: 575px) {
     .div-pirateria {
         height: auto;
+        margin-bottom: 10%;
+        margin-top: 10%;
     }
     .div-pirateria .div-texto {
         height: auto;
@@ -785,7 +792,10 @@ nav.navbar {
         margin-bottom: 15%;
     }
     .seccion-2-productos .div-cuerpo .flecha-SiluetabsYa {
-        margin-top: 20%;
+        margin-bottom: 25%;
+    }
+    .seccion-2-productos .div-cuerpo .flecha-SiluetabsYa img {
+        width: 55%;
     }
     .seccion-2-productos .div-cuerpo .flecha-TejoForte {
         margin-top: 20%;
@@ -795,7 +805,10 @@ nav.navbar {
 @media (max-width: 440px) {
     .seccion-2-productos .div-cuerpo .flecha-SiluetabsYa {
         margin-right: 5%;
-        margin-bottom: 5%;
+        margin-bottom: 35%;
+    }
+    .seccion-2-productos .div-cuerpo .flecha-SiluetabsYa img {
+        width: 80%;
     }
 }
 
@@ -922,17 +935,17 @@ nav.navbar {
     }
     .div-3-productos .div-producto-1 {
         height: auto;
-        padding-top: 15%;
+        padding-top: 10%;
         padding-bottom: 10%;
     }
     .div-3-productos .div-producto-2 {
         height: auto;
-        padding-top: 15%;
+        padding-top: 10%;
         padding-bottom: 10%;
     }
     .div-3-productos .div-producto-3 {
         height: auto;
-        padding-top: 15%;
+        padding-top: 10%;
         padding-bottom: 10%;
     }
 }
@@ -1065,6 +1078,7 @@ nav.navbar {
     .div-DoreYa .div-producto .div-producto-general {
         justify-content: center;
         width: 100%;
+        margin-bottom: 7%;
     }
     .div-DoreYa .div-producto .div-producto-general img {
         width: 40%;
@@ -1075,7 +1089,7 @@ nav.navbar {
         justify-content: center;
     }
     .div-DoreYa .div-info .div-text {
-        width: 95%;
+        width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1083,8 +1097,13 @@ nav.navbar {
         text-align: center;
     }
     .div-DoreYa .div-info .div-text p {
-        width: 95%;
         text-align: justify !important;
+    }
+    .div-DoreYa .div-info .div-text h2 {
+        margin-bottom: 2%;
+    }
+    .div-DoreYa .div-info .div-text .boton-explorar {
+        margin-top: 5%;
     }
     .div-DoreYa .div-info {
         height: auto;
@@ -1108,7 +1127,6 @@ nav.navbar {
         justify-content: center;
     }
     .div-DoreYa .div-info .div-text {
-        width: 90%;
         text-align: center;
     }
     .div-DoreYa .div-info .div-text h2 {
@@ -1172,6 +1190,20 @@ nav.navbar {
     width: 70%;
 }
 
+@media (max-width: 850px) {
+    .div-asociados {
+        height: auto;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .div-asociados .div-informacion {
+        height: auto;
+    }
+    .div-asociados .div-general-imagen {
+        height: auto;
+    }
+}
+
 @media (max-width: 767px) {
     .div-asociados .div-informacion {
         height: auto;
@@ -1187,19 +1219,11 @@ nav.navbar {
     .div-asociados .div-general-imagen .div-imagen img {
         width: 45%;
     }
-}
-
-@media (max-width: 850px) {
-    .div-asociados {
-        height: auto;
-        padding-top: 10%;
-        padding-bottom: 10%;
+    .div-asociados .div-informacion .div-tex {
+        margin-bottom: 8%;
     }
-    .div-asociados .div-informacion {
-        height: auto;
-    }
-    .div-asociados .div-general-imagen {
-        height: auto;
+    .div-asociados .div-informacion .div-tex p {
+        margin-bottom: 8%;
     }
 }
 
@@ -1535,5 +1559,11 @@ footer .div-redes-sociales .div-iconos a {
     }
     footer .div-redes-sociales .div-iconos {
         justify-content: center;
+    }
+}
+
+@media (max-width: 450px) {
+    footer {
+        padding-bottom: 90px;
     }
 }

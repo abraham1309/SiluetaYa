@@ -126,6 +126,10 @@
         padding-bottom: 0;
         margin-left: 0;
     }
+    #slides .slides-container .contenedor1 img {
+        width: 70%;
+        margin-bottom: 30%;
+    }
     #slides .slides-container .contenedor1 .div-titulo {
         width: 100%;
         height: 50vh;
@@ -140,7 +144,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding-top: 10%;
+        padding-top: 30%;
     }
 }
 
@@ -208,14 +212,14 @@
 
 @media (max-width: 450px) {
     #slides .slides-container .contenedor-asociados .div-imagen .imagen-texto {
-        width: 90%;
+        width: 80%;
         margin-bottom: 8%;
     }
     #slides .slides-container .contenedor-asociados .div-imagen .imagen-persona {
         width: 110%;
     }
     #slides .slides-container .imagen2-carrusel {
-        background: url(../images/imagen2-carrusel/Asociados-Fondo-Movil-min.png);
+        background: url(../images/imagen2-carrusel/Asociados-Fondo-Movil-2-min.png);
     }
 }
 
@@ -505,6 +509,7 @@
     #slides .slides-container .div-raizes .imagen-titulo {
         position: relative;
         margin-left: 0;
+        margin-right: 0;
         margin-bottom: 0;
         margin-top: 25%;
         margin-bottom: 0;
@@ -524,7 +529,7 @@
     #slides .slides-container .div-raizes .imagen-productos {
         width: 160vw;
         margin-left: 0;
-        margin-top: -25%;
+        margin-top: -55%;
     }
     #slides .slides-container .div-raizes .imagen-titulo {
         width: 60vw;
