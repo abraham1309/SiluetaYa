@@ -115,10 +115,23 @@ nav.navbar {
     margin-right: 3%;
 }
 
+.navbar .container-fluid .collapse .navbar-nav .nav-item .btn-comprarYa {
+    margin-top: 2%;
+    border: none;
+    width: 150px;
+    height: 38px;
+    background-color: rgb(255, 106, 0);
+    color: #fff;
+    font-weight: bold;
+}
+
 @media (max-width: 991px) {
     .navbar .container-fluid .collapse .navbar-nav .subdiv-navbar {
         display: block;
         margin-right: 0;
+    }
+    .navbar .container-fluid .collapse .navbar-nav .nav-item .btn-comprarYa {
+        width: 60%;
     }
 }
 
