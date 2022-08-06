@@ -230,8 +230,8 @@ nav.navbar {
     }
     .seccion-principal .div-general .div-foto .img-movil {
         display: flex;
-        width: 80%;
-        margin-bottom: 10%;
+        width: 90%;
+        margin-bottom: 20%;
     }
 }
 
