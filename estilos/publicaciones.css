@@ -312,12 +312,17 @@ li {
 .swiper-button-next {
     color: rgb(104, 102, 102) !important;
     cursor: pointer !important;
+    margin-top: -11vh !important;
 }
 
 @media (max-width: 450px) {
     .seccion-duosya {
         margin-top: 10%;
         margin-bottom: 10%;
+    }
+    .seccion-duosya .swiper-button-prev,
+    .swiper-button-next {
+        margin-top: -9vh !important;
     }
 }
 
