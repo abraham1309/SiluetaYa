@@ -98,11 +98,12 @@ function verImagen(smallImg) {
 }
 
 /* Funciones para agregar y eliminar producto */
-document.getElementById("labelCantidad").innerHTML = 1;
-
-
 var label = document.getElementById("labelCantidad");
-var contador = 0;
+if (!label == "") {
+    label.innerHTML = 1
+}
+
+var contador = 1;
 
 function agregarProducto() {
     contador++;
@@ -110,7 +111,7 @@ function agregarProducto() {
 }
 
 function eliminarProducto() {
-    if (contador == 0) {
+    if (contador == 1) {
 
     } else {
         contador--;
@@ -121,8 +122,8 @@ function eliminarProducto() {
 
 //Metodo para cerrar el menu del navbar para celulares
 function cerrarNavbar() {
-    /*     if (!$(this).parent().hasClass("dropdown"))
-            $(".navbar-collapse").collapse("hide"); */
+    if (!$(this).parent().hasClass("dropdown"))
+        $(".navbar-collapse").collapse("hide");
 }
 
 /* Codigo para el modal */
@@ -135,7 +136,6 @@ let body = document.getElementById("body");
 abrir.style.cursor = "pointer";
 
 abrir.addEventListener("click", function() {
-    console.log("Hola mundos");
     modal.style.opacity = "1";
     modal.style.visibility = "visible";
     body.classList.add("body-scroll");
