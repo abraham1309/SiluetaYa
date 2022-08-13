@@ -121,8 +121,8 @@ function eliminarProducto() {
 
 //Metodo para cerrar el menu del navbar para celulares
 function cerrarNavbar() {
-    if (!$(this).parent().hasClass("dropdown"))
-        $(".navbar-collapse").collapse("hide");
+    /*     if (!$(this).parent().hasClass("dropdown"))
+            $(".navbar-collapse").collapse("hide"); */
 }
 
 /* Codigo para el modal */
@@ -135,6 +135,7 @@ let body = document.getElementById("body");
 abrir.style.cursor = "pointer";
 
 abrir.addEventListener("click", function() {
+    console.log("Hola mundos");
     modal.style.opacity = "1";
     modal.style.visibility = "visible";
     body.classList.add("body-scroll");
