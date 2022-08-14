@@ -79,11 +79,49 @@ function verImagen(smallImg) {
     var imgPrincipal = document.getElementById("imagenPrincipal");
     var rutaPrincipal = "";
 
+    console.log(imgPrincipal.width);
+
     imgPrincipal.dataset.zoomImage = smallImg.src;
     rutaPrincipal = imgPrincipal.src;
     imgPrincipal.src = smallImg.src;
 
     smallImg.src = rutaPrincipal;
+
+
+
+    /* Funcion para el zoom de la imagen del producto */
+    if (anchoPantalla > 800) {
+        imgPrincipal.classList.add('imgPrincipal2');
+        $('.imgPrincipal2').ezPlus({
+            zoomWindowPosition: 11,
+            easing: true
+        });
+
+    }
+}
+
+/* Codigo especial para ver la imagen en los productos de KidzYa */
+var clickCaja = false;
+
+function verImagenKidz(smallImg) {
+    var imgPrincipal = document.getElementById("imagenPrincipal");
+    var rutaPrincipal = "";
+
+    if (clickCaja == false) {
+        imgPrincipal.style.width = "50%";
+        clickCaja = true;
+
+    } else {
+        imgPrincipal.style.width = "35%";
+        clickCaja = false;
+    }
+
+    imgPrincipal.dataset.zoomImage = smallImg.src;
+    rutaPrincipal = imgPrincipal.src;
+    imgPrincipal.src = smallImg.src;
+
+    smallImg.src = rutaPrincipal;
+
 
 
     /* Funcion para el zoom de la imagen del producto */
