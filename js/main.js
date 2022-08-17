@@ -87,8 +87,6 @@ function verImagen(smallImg) {
 
     smallImg.src = rutaPrincipal;
 
-
-
     /* Funcion para el zoom de la imagen del producto */
     if (anchoPantalla > 800) {
         imgPrincipal.classList.add('imgPrincipal2');
