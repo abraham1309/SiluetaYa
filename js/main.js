@@ -79,7 +79,7 @@ function verImagen(smallImg) {
     var imgPrincipal = document.getElementById("imagenPrincipal");
     var rutaPrincipal = "";
 
-    console.log(imgPrincipal.width);
+    console.log("Hola mundo " + imgPrincipal.width);
 
     imgPrincipal.dataset.zoomImage = smallImg.src;
     rutaPrincipal = imgPrincipal.src;
