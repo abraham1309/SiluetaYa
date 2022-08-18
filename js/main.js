@@ -79,8 +79,6 @@ function verImagen(smallImg) {
     var imgPrincipal = document.getElementById("imagenPrincipal");
     var rutaPrincipal = "";
 
-    console.log("Hola mundo 1.1: " + imgPrincipal.width);
-
     imgPrincipal.dataset.zoomImage = smallImg.src;
     rutaPrincipal = imgPrincipal.src;
     imgPrincipal.src = smallImg.src;
@@ -98,9 +96,8 @@ function verImagen(smallImg) {
     }
 }
 
-/* Codigo especial para ver la imagen en los productos de KidzYa */
+/* Codigo especial para ver la imagen en los productos de KidzYa 
 var clickCaja = false;
-
 function verImagenKidz(smallImg) {
     var imgPrincipal = document.getElementById("imagenPrincipal");
     var rutaPrincipal = "";
@@ -120,9 +117,6 @@ function verImagenKidz(smallImg) {
 
     smallImg.src = rutaPrincipal;
 
-
-
-    /* Funcion para el zoom de la imagen del producto */
     if (anchoPantalla > 800) {
         imgPrincipal.classList.add('imgPrincipal2');
         $('.imgPrincipal2').ezPlus({
@@ -132,6 +126,7 @@ function verImagenKidz(smallImg) {
 
     }
 }
+ */
 
 /* Funciones para agregar y eliminar producto */
 var label = document.getElementById("labelCantidad");
