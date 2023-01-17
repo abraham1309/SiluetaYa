@@ -85,12 +85,6 @@
     .spinner img {
         width: 100px;
     }
-    .spinner .letra-s {
-        margin-left: 9%;
-    }
-    .spinner .letra-a {
-        margin-right: 9%;
-    }
 }
 
 #tidio-chat-iframe {
@@ -318,7 +312,8 @@ nav.navbar {
 }
 
 .seccion-productos .div-producto1 {
-    background-image: linear-gradient( to bottom, #0bb979, #68ca76, #9dda77, #cee87e, #fcf68b);
+    background: rgb(248, 151, 29);
+    background: linear-gradient(180deg, rgba(248, 151, 29, 1) 20%, rgba(129, 194, 150, 1) 70%);
 }
 
 .seccion-productos .div-producto2 {
@@ -730,12 +725,13 @@ nav.navbar {
 
 /*Estilos para la seccion de los productos SiluetabsYa y a SiluetaYa Tejoforte*/
 
-.seccion-2-productos .img-pronto {
+
+/* .seccion-2-productos .img-pronto {
     width: 15%;
     position: absolute;
     margin-top: -3%;
     left: 0;
-}
+} */
 
 .seccion-2-productos .div-SiluetabsYa {
     background: url("../images/Fondo-de-SiluetabsYa-min.png");
@@ -749,6 +745,22 @@ nav.navbar {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.seccion-2-productos .div-SiluetabsYa .div-encabezado {
+    width: 80%;
+}
+
+.seccion-2-productos .div-SiluetabsYa .div-cuerpo .flecha-SiluetabsYa {
+    position: absolute;
+    margin-right: 35%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.seccion-2-productos .div-SiluetabsYa .div-cuerpo .flecha-derecha {
+    position: absolute;
+    margin-left: 35%;
 }
 
 .seccion-2-productos .div-cuerpo .SiluetabsYa {
@@ -769,11 +781,16 @@ nav.navbar {
     .seccion-2-productos .div-cuerpo .SiluetabsYa {
         width: 260px;
         height: 222px;
-        margin-right: 7%;
     }
     .seccion-2-productos .div-cuerpo .TejoForte {
         width: 250px;
         height: 280px;
+    }
+    .seccion-2-productos .div-SiluetabsYa .div-cuerpo .flecha-derecha img {
+        width: 41%;
+    }
+    .seccion-2-productos .div-SiluetabsYa .div-cuerpo .flecha-derecha p {
+        font-size: 18px;
     }
 }
 
@@ -782,6 +799,12 @@ nav.navbar {
         width: 30%;
         margin-top: -6%;
         left: -1%;
+    }
+    .seccion-2-productos .div-SiluetabsYa .div-cuerpo .flecha-SiluetabsYa {
+        margin-right: 60%;
+    }
+    .seccion-2-productos .div-SiluetabsYa .div-cuerpo .flecha-derecha {
+        margin-left: 30%;
     }
 }
 
@@ -807,21 +830,19 @@ nav.navbar {
     .seccion-2-productos .div-cuerpo .flecha-SiluetabsYa {
         margin-bottom: 25%;
     }
-    .seccion-2-productos .div-cuerpo .flecha-SiluetabsYa img {
-        width: 55%;
-    }
     .seccion-2-productos .div-cuerpo .flecha-TejoForte {
         margin-top: 20%;
     }
 }
 
 @media (max-width: 440px) {
-    .seccion-2-productos .div-cuerpo .flecha-SiluetabsYa {
-        margin-right: 5%;
-        margin-bottom: 35%;
+    .seccion-2-productos .div-SiluetabsYa .div-cuerpo .flecha-SiluetabsYa {
+        margin-top: 9%;
+        margin-right: 70%;
     }
-    .seccion-2-productos .div-cuerpo .flecha-SiluetabsYa img {
-        width: 80%;
+    .seccion-2-productos .div-SiluetabsYa .div-cuerpo .flecha-derecha {
+        margin-top: 9.5%;
+        margin-left: 30%;
     }
 }
 
@@ -830,17 +851,12 @@ nav.navbar {
         width: 200px;
         height: 171px;
     }
-    .seccion-2-productos .div-cuerpo .flecha-SiluetabsYa {
-        margin-top: 5%;
+    .seccion-2-productos .div-SiluetabsYa .div-cuerpo .flecha-derecha {
+        width: 120px;
     }
 }
 
 @media (max-width: 300px) {
-    .seccion-2-productos .div-cuerpo .SiluetabsYa {
-        margin-left: 45%;
-        width: 170px;
-        height: 145px;
-    }
     .seccion-2-productos .div-cuerpo .flecha-SiluetabsYa {
         margin-top: 5%;
         margin-right: -5%;
@@ -929,7 +945,8 @@ nav.navbar {
 
 .div-3-productos .div-producto-1 {
     height: 145vh;
-    background-image: linear-gradient( to bottom, #0bb979, #68ca76, #9dda77, #cee87e, #fcf68b);
+    background: rgb(248, 151, 29);
+    background: linear-gradient(180deg, rgba(248, 151, 29, 1) 20%, rgba(129, 194, 150, 1) 70%);
 }
 
 .div-3-productos .div-producto-2 {
