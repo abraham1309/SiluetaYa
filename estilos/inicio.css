@@ -1504,6 +1504,8 @@ nav.navbar {
 }
 
 .seccion-duosya .swiper-container .swiper-wrapper .swiper-slide a {
+    height: 100%;
+    width: 90%;
     text-decoration: none;
     color: #fff;
     text-align: center;
@@ -1527,6 +1529,7 @@ nav.navbar {
 
 .seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-imagen {
     width: 90%;
+    height: 70%;
     margin-top: 10%;
     text-align: center;
 }
