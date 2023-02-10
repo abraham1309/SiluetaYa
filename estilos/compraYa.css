@@ -548,20 +548,27 @@ nav.navbar {
 
 .div-paquete-Activa {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    height: auto;
     background: url("../images/Fondo-de-Paquete-ActivaYa-min.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-.div-paquete-Activa .div-izquierdo {
+.div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-izquierdo {
     margin-left: 8.5%;
 }
 
-.div-paquete-Activa .div-izquierdo p {
+.div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-izquierdo p {
     font-family: "adieue";
     font-size: 25px;
     text-align: center;
@@ -569,11 +576,11 @@ nav.navbar {
     font-weight: bold;
 }
 
-.div-paquete-Activa .div-izquierdo img {
+.div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-izquierdo img {
     margin-left: 20%;
 }
 
-.div-paquete-Activa .div-central {
+.div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-central {
     height: 100vh;
     width: 40%;
     display: flex;
@@ -582,29 +589,29 @@ nav.navbar {
     flex-direction: column;
 }
 
-.div-paquete-Activa .div-central img {
+.div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-central img {
     width: 80%;
 }
 
-.div-paquete-Activa .div-central .imagen-productos {
+.div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-central .imagen-productos {
     margin-top: 9%;
 }
 
-.div-paquete-Activa .div-text-responsivo {
+.div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-text-responsivo {
     width: 95%;
     margin-top: 5%;
     text-align: center;
     display: none;
 }
 
-.div-paquete-Activa .div-text-responsivo h3 {
+.div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-text-responsivo h3 {
     font-family: "adieue";
     font-size: 45px;
     color: #fff;
     font-weight: bold;
 }
 
-.div-paquete-Activa .div-text-responsivo p {
+.div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-text-responsivo p {
     width: 100%;
     font-family: "adieue";
     font-size: 20px;
@@ -612,11 +619,11 @@ nav.navbar {
     text-shadow: 1px 1px 20px #ff6b00;
 }
 
-.div-paquete-Activa .div-derecho {
+.div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-derecho {
     margin-top: 5%;
 }
 
-.div-paquete-Activa .div-derecho p {
+.div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-derecho p {
     width: 100%;
     font-family: "adieue";
     font-size: 18px;
@@ -625,14 +632,24 @@ nav.navbar {
     text-shadow: 1px 1px 20px #ff6b00;
 }
 
+.div-paquete-Activa .swiper-button-prev {
+    color: #fff;
+    cursor: pointer;
+}
+
+.div-paquete-Activa .swiper-button-next {
+    color: #fff;
+    cursor: pointer;
+}
+
 @media (max-width: 890px) {
-    .div-paquete-Activa .div-derecho p {
+    .div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-derecho p {
         font-size: 17px;
     }
-    .div-paquete-Activa .div-izquierdo img {
+    .div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-izquierdo img {
         height: 100px;
     }
-    .div-paquete-Activa .div-izquierdo p {
+    .div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-izquierdo p {
         font-size: 24px;
     }
 }
@@ -643,34 +660,37 @@ nav.navbar {
         padding-top: 10%;
         padding-bottom: 10%;
     }
-    .div-paquete-Activa .div-central {
+    .div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-central {
         height: auto;
     }
 }
 
 @media (max-width: 650px) {
-    .div-paquete-Activa {
+    /*     .div-paquete-Activa {
+        flex-direction: column;
+    } */
+    .div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide {
         flex-direction: column;
     }
-    .div-paquete-Activa .div-text-responsivo {
+    .div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-text-responsivo {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
-    .div-paquete-Activa .div-derecho {
+    .div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-derecho {
         display: none;
     }
-    .div-paquete-Activa .div-izquierdo {
+    .div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-izquierdo {
         display: none;
     }
-    .div-paquete-Activa .div-central .boton-explorar-eliminar {
+    .div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-central .boton-explorar-eliminar {
         display: none !important;
     }
-    .div-paquete-Activa .div-central {
+    .div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-central {
         width: 90%;
     }
-    .div-paquete-Activa .div-central img {
+    .div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-central img {
         width: 80%;
     }
 }
@@ -679,19 +699,19 @@ nav.navbar {
     .div-paquete-Activa {
         padding-top: 30%;
     }
-    .div-paquete-Activa .div-text-responsivo h3 {
+    .div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-text-responsivo h3 {
         font-size: 35px;
     }
-    .div-paquete-Activa .div-central .imagen-productos {
+    .div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-central .imagen-productos {
         margin-top: 25%;
     }
 }
 
 @media (max-width: 325px) {
-    .div-paquete-Activa .div-central .imagen-productos {
+    .div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-central .imagen-productos {
         margin-top: 30%;
     }
-    .div-paquete-Activa .div-text-responsivo {
+    .div-paquete-Activa .swiper-container .swiper-wrapper .swiper-slide .div-text-responsivo {
         margin-top: 10%;
     }
 }
