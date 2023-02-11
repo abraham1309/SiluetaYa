@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.contenedor-carrusel-activaYa', {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
