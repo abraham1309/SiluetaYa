@@ -1049,26 +1049,26 @@ p {
     font-family: "adieue";
 }
 
-.seccion-duosya .contenedor-carrusel-activaYa .swiper-wrapper .div-color-1 {
+.seccion-duosya .swiper-container .swiper-wrapper .div-color-1 {
     height: auto;
     padding-top: 2%;
     padding-bottom: 2%;
 }
 
-.seccion-duosya .contenedor-carrusel-activaYa .swiper-wrapper .div-color-2 {
+.seccion-duosya .swiper-container .swiper-wrapper .div-color-2 {
     height: auto;
     padding-top: 2%;
     padding-bottom: 2%;
 }
 
-.seccion-duosya .contenedor-carrusel-activaYa .swiper-wrapper .swiper-slide {
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 }
 
-.seccion-duosya .contenedor-carrusel-activaYa .swiper-wrapper .swiper-slide a {
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide a {
     height: 100%;
     width: 90%;
     text-decoration: none;
@@ -1080,7 +1080,7 @@ p {
     flex-direction: column;
 }
 
-.seccion-duosya .contenedor-carrusel-activaYa .swiper-wrapper .swiper-slide .div-nombre {
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre {
     width: 90%;
     margin-top: 15%;
     text-align: center;
@@ -1089,20 +1089,20 @@ p {
     align-items: center;
 }
 
-.seccion-duosya .contenedor-carrusel-activaYa .swiper-wrapper .swiper-slide .div-nombre h3 {
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-nombre h3 {
     font-family: "adieue";
     font-size: 35px;
     color: #000;
 }
 
-.seccion-duosya .contenedor-carrusel-activaYa .swiper-wrapper .swiper-slide .div-imagen {
+.seccion-duosya .swiper-container.swiper-wrapper .swiper-slide .div-imagen {
     width: 90%;
     height: 70%;
     margin-top: 10%;
     text-align: center;
 }
 
-.seccion-duosya .contenedor-carrusel-activaYa .swiper-wrapper .swiper-slide .div-imagen img {
+.seccion-duosya .swiper-container .swiper-wrapper .swiper-slide .div-imagen img {
     width: 80%;
     text-align: center;
 }
