@@ -11,6 +11,15 @@
 
 /* Estilos para el navbar */
 
+nav.navbar {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.navbar .container-fluid .collapse .navbar-nav .nav-item a {
+    font-family: "adieue";
+    font-size: 17px;
+}
+
 @media (max-width: 991px) {
     .navbar .container-fluid .collapse .navbar-nav .subdiv-navbar {
         display: block;
