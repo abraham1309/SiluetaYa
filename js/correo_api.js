@@ -42,18 +42,8 @@ function enviarCorreo() {
     var correo = document.getElementById('inputCorreo').value;
     var asunto = document.getElementById('selectAsunto').value;
     var mensaje = document.getElementById('areaMensaje').value;
-    var html = "<p>" + mensaje + "</>";
 
-
-    /*     html1 = "<div style='height: 100%; width: 100%; background: rgb(254, 214, 0); background: radial-gradient(circle, rgba(254, 214, 0, 1) 0%, rgba(241, 109, 34, 1) 85%); display: flex; justify-content: center; align-items: center; flex-direction: column;'>";
-        html2 = "<div style=' width: 85%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column;'>";
-        html3 = "<h1 style='margin-bottom: -15px;'>Asunto: " + asunto + " </h1>";
-        html4 = "<h3 style='margin-bottom: -10px;'>Nombre: " + nombre + " </h3>";
-        html5 = "<p style='text-align: center;'> " + mensaje + " </p>";
-        html6 = "</div>"
-        html7 = "</div>"
-
-        htmlFinal = html + html2 + html3 + html4 + html5 + html6 + html7; */
+    html = "<div style='height: 100%; width: 100%; background: rgb(254, 214, 0); background: radial-gradient(circle, rgba(254, 214, 0, 1) 0%, rgba(241, 109, 34, 1) 85%); display: flex; justify-content: center; align-items: center; flex-direction: column;'>" + "<div style=' width: 80%; height: auto; margin-left: 10%; margin-right: 10%;'>" + "<h1 style='margin-bottom: -35px; text-align: center;'>Asunto: " + asunto + " </h1>" + "<h2 style='margin-bottom: -30px; text-align: center;'>Nombre: " + nombre + " </h2>" + "<p style='text-align: center; font-size: 16px;'> " + mensaje + " </p>" + "</div>" + "</div>";
 
     var datos = {
         nameFrom: nombre,
