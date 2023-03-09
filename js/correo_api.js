@@ -42,16 +42,30 @@ function enviarCorreo() {
     var correo = document.getElementById('inputCorreo').value;
     var asunto = document.getElementById('selectAsunto').value;
     var mensaje = document.getElementById('areaMensaje').value;
+    var html = "<p>" + mensaje + "</>";
+
+
+    /*     html1 = "<div style='height: 100%; width: 100%; background: rgb(254, 214, 0); background: radial-gradient(circle, rgba(254, 214, 0, 1) 0%, rgba(241, 109, 34, 1) 85%); display: flex; justify-content: center; align-items: center; flex-direction: column;'>";
+        html2 = "<div style=' width: 85%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column;'>";
+        html3 = "<h1 style='margin-bottom: -15px;'>Asunto: " + asunto + " </h1>";
+        html4 = "<h3 style='margin-bottom: -10px;'>Nombre: " + nombre + " </h3>";
+        html5 = "<p style='text-align: center;'> " + mensaje + " </p>";
+        html6 = "</div>"
+        html7 = "</div>"
+
+        htmlFinal = html + html2 + html3 + html4 + html5 + html6 + html7; */
+
     var datos = {
         nameFrom: nombre,
         emailFrom: correo,
         to: 'abraham@mobil.aullox.com',
         subject: asunto,
-        text: mensaje
+        text: mensaje,
+        html
     };
 
     var id = generarId();
-    var url = 'https://dev.api.ifscore.biz/ifscore/mail/1.0.0/send/multiplica/app/portal_' + id;
+    var url = 'https://dev.api.ifscore.biz/ifscore/mail/1.0.0/send/app/portal_' + id;
 
     /* Llamamos a la api y enviamos los datos */
     fetch(url, {
@@ -68,17 +82,21 @@ function enviarCorreo() {
                 divConfirmacion.style.display = "none";
                 divError.style.display = "none";
                 divConfirmacion.style.display = "flex";
+
+                setTimeout(function() {
+                    divConfirmacion.style.display = "none";
+                }, 10000);
             } else {
                 if (response.code == 400) {
                     divError.style.display = "none";
                     divConfirmacion.style.display = "none";
                     divError.style.display = "flex";
+
+                    setTimeout(function() {
+                        divError.style.display = "none";
+                    }, 10000);
                 }
             }
         });
 
-}
-
-function onSubmit(token) {
-    alert("Gracias por enviar su correo " + token);
 }
