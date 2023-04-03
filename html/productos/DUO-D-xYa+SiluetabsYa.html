@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DUO D-xYa + SiluetabsYa</title>
+    <link rel="icon" type="image/x-icon" href="../../images/favicon-siluetaYa.ico">
+
+    <link rel="stylesheet" href="../../estilos/normalize.css">
+    <link rel="stylesheet" href="../../estilos/compraYa.css">
+
+    <!--Iconos-->
+    <script src="https://kit.fontawesome.com/817731e670.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Estilos para swiperjs (para el carrusel de los paquetes) -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <!-- Escript para el zoom la imagen -->
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/igorlino/elevatezoom-plus/1.1.6/src/jquery.ez-plus.js"></script>
+
+    <script src="//code.tidio.co/zfthdtwy8dvglcy7r3ab8arhxcckda4e.js" async></script>
+
+</head>
+
+<body style="overflow-x: hidden;" id="body" class="body">
+    <!--Menu de navegacion-->
+    <nav class="navbar  navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../../index.html" style="margin-left: 5%;" onclick="cerrarNavbar()">
+                <img loading="lazy" src="../../images/logo-nav.png" alt="" width="125">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav  ms-auto mb-2 mb-lg-0" style="margin-right: 5%;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../ConocenosYa.html" onclick="cerrarNavbar()">ConócenosYa!</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../compraYa.html" onclick="cerrarNavbar()">CompraYa!</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../vendeYa.html" onclick="cerrarNavbar()">VendeYa!</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../app.html" onclick="cerrarNavbar()">App</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../blogYa.html" onclick="cerrarNavbar()">BlogYa!</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contactaYa.html" onclick="cerrarNavbar()">ContactaYa!</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../KidzYa.html" onclick="cerrarNavbar()">KidzYa!</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../andyya.html" onclick="cerrarNavbar()">AndyYa!</a>
+                    </li>
+
+                    <li class="nav-item" style="margin-right: 2%; margin-top: 5px;">
+                        <a class="nav-link" href="../compraYa.html" style="padding: 0;" onclick="cerrarNavbar()">
+                            <img loading="lazy" src="../../images/Icono-Carrito.png" style="width: 25px; " alt="" srcset="">
+                        </a>
+                    </li>
+
+                    <li class="nav-item" style="margin-top: 5px;" onclick="cerrarNavbar()">
+                        <a class="nav-link" style="padding: 0;">
+                            <img loading="lazy" src="../../images/Icono-Lupa.png" style="width: 25px;" alt="" srcset="" id="btnAbrir">
+                        </a>
+                    </li>
+
+                    <li class="nav-item" style="margin-left: 2%;">
+                        <button style="margin-top: 2%; border: none; width: 150px; height: 38px; background-color: rgb(255, 106, 0); color: #fff; font-weight: bold;" onclick="cerrarNavbar()">
+                            <a href="../compraYa.html" style="color: #fff; text-decoration: none;">
+                                Comprar Ahora
+                            </a>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal para la busqueda -->
+    <div class="div-modal" id="divModal">
+        <div class="contenedor-modal modal-cerrar" id="contenedorModal">
+            <div class="div-cuerpo">
+                <img loading="lazy" src="../../images/Icono-Lupa.png" alt="" class="img-lupa">
+                <input type="text" placeholder="Buscar" id="inputB">
+                <img loading="lazy" src="../../images/circle-xmark-solid.svg" alt="" srcset="" class="img-cerrar" id="btnCerrar">
+            </div>
+
+            <div class="caja-resultados" id="cajaResultados">
+                <ul>
+
+                    <li>
+                        <a href="./SiluetaYa-Raiz-de-Tejocote.html">
+                            <i class="fas fa-search"></i> SiluetaYa
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../productos/SiluetaYa-365.html">
+                            <i class="fas fa-search"></i> SiluetaYa 365
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../productos/Siluetabs.html">
+                            <i class="fas fa-search"></i> SiluetabsYa
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../productos/SiluetaYa-Tejoforte.html">
+                            <i class="fas fa-search"></i> SiluetaYa Tejoforte
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../productos/MJ-YA.html">
+                            <i class="fas fa-search"></i> MJ Ya
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../productos/NeuYa.html">
+                            <i class="fas fa-search"></i> NEUYa
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../productos/UPP-Ya.html">
+                            <i class="fas fa-search"></i> UPP Ya
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../productos/DoreYa.html">
+                            <i class="fas fa-search"></i> DoréYa
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../productos/duo-NeuYa+MJYa.html">
+                            <i class="fas fa-search"></i> Duo NeuYa + MJYa
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../productos/duo-neuYa+Upp-Ya.html">
+                            <i class="fas fa-search"></i> Duo NeuYa + Upp-Ya
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../productos/duo-neuYa+Raíz-+de-Tejocote.html">
+                            <i class="fas fa-search"></i> Duo NeuYa + raiz de tejocote
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../productos/duo-raizdeTejocote+MJYa.html">
+                            <i class="fas fa-search"></i> Duo raiz de tejocote + MJ-Ya
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../productos/duo-Raiz-de-Tejocote+DoreYa.html">
+                            <i class="fas fa-search"></i> Duo raiz de tejocote + DoreYa
+                    </li>
+
+                    <li>
+                        <a href="../productos/duo-Raiz-de-Tejocote+UPP-Ya.html">
+                            <i class="fas fa-search"></i> Duo raiz de tejocote + UPP-YA
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../productos/duo-MJ+Ya+UPP-Ya.html">
+                            <i class="fas fa-search"></i> Duo MJ-YA + UPP-Ya
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../productos/duo-DoreYa+UPP-Ya.html">
+                            <i class="fas fa-search"></i> Duo DoreYa + UPP-Ya
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../productos/duo-DoreYa-MJ-Ya.html">
+                            <i class="fas fa-search"></i> Duo DoreYa + MJ+Ya
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./MimitoYa.html">
+                            <i class="fas fa-search"></i> MimitoYa
+                    </li>
+
+                    <li>
+                        <a href="./MultiYa.html">
+                            <i class="fas fa-search"></i> MultiYa
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./ProtecYa.html">
+                            <i class="fas fa-search"></i> ProtecYa
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./Paquete-ActivaYa.html">
+                            <i class="fas fa-search"></i> Paquete ActivaYa
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../publicaciones/ya-estan-aqui-conoce-los-nuevos-productos-de-SiluetaYa.html">
+                            <i class="fas fa-search"></i> Blog, ¡Ya están aquí! Conoce los nuevos productos de Silueta Ya
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../publicaciones/este-es-el-secreto-mejor-guardado-para-perder-peso.html">
+                            <i class="fas fa-search"></i> Blog, Este es el secreto mejor guardado para perder peso
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../publicaciones/tips-para-conseguir-la-silueta-que-quieres.html">
+                            <i class="fas fa-search"></i> Blog, Sigue estos tips para conseguir la silueta que quieres, ¡este verano!
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../publicaciones/como-puedo-ser-distribuidora-de-SiluetaYa.html">
+                            <i class="fas fa-search"></i> Blog, ¿Cómo puedo ser distribuidora de Silueta Ya?
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../publicaciones/el-mejor-regalo-para-papa-es-su-salud.html">
+                            <i class="fas fa-search"></i> Blog, El mejor regalo para papá es su salud
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../publicaciones/compra-segura-con-SiluetaYa.html">
+                            <i class="fas fa-search"></i> Blog, Compra segura con SiluetaYa!
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../publicaciones/por-que-siempre-tengo-hambre.html">
+                            <i class="fas fa-search"></i> Blog, ¿Por qué siempre tengo hambre? Cinco posibles causas y cómo remediarlo
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../publicaciones/5-alimentos-que-que-no-te-dejan-bajar-de-peso.html">
+                            <i class="fas fa-search"></i> Blog, 5 alimentos que que no te dejan bajar de peso
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../publicaciones/5-alimentos-ricos-en-potasio-que-debes-incluir-en-tu-alimentacion.html">
+                            <i class="fas fa-search"></i> Blog, 5 alimentos ricos en potasio que debes incluir en tu alimentación
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../publicaciones/dia-de-la-madre.html">
+                            <i class="fas fa-search"></i> Blog, Día de la madre
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seccion del producto -->
+    <section class="seccion-producto">
+        <div class="div-general-producto">
+            <div class="div-informacion">
+                <div class="div-texto">
+                    <h1>
+                        DUO D-xYa + SiluetabsYa
+                    </h1>
+                    <h2>$420.00</h2>
+
+                    <p>
+                        Los ingredientes de D-xYa unidos a SiluetabsYa forman una combinación perfecta con resultados comprobados óptimos.
+                    </p>
+
+                    <p>
+                        <strong><i>D-xYa:</i></strong>
+                        <br>Ingredientes principales: alga espirulina, nopal cocolmeca, té verde, té matcha, proteina de chícharo, linaza, bromelina, omega 3, 6, 9 y raíz de tejocote.
+                    </p>
+
+                    <!-- <p>
+                        <strong><i>SiluetabsYa:</i></strong>
+                    </p> -->
+
+                    <ol>
+                        <li type="disc">
+                            <strong>Modo de uso:</strong>
+                            <p>
+                                <strong><i>D-xYa:</i></strong>
+                                <br> Tomar una cápsula de D-xYa y una tableta de SiluetabsYa por la noche, después de cenar o antes de ir a dormir.
+                            </p>
+
+                            <!-- <p>
+                                <strong><i>SiluetabsYa:</i></strong>
+                            </p> -->
+
+                        </li>
+
+                        <li type="disc">
+                            <strong>Contraindicaciones:</strong>
+                            <br>No exceder la dosis indicada.
+                            <br>No se recomienda el uso de este producto en mujeres embarazadas o lactando, tampoco en menores de 18 años.
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="div-general-botones">
+                    <p>Cantidad</p>
+                    <div class="div-btns">
+                        <div class="div-cantidad-btn">
+                            <button onclick="eliminarProducto()">-</button>
+                            <label for="" id="labelCantidad">0</label>
+                            <button onclick="agregarProducto()">+</button>
+                        </div>
+                        <br>
+                        <button class="btn-agrregar-carrito">Añadir al carrito</button>
+                    </div>
+
+                    <br>
+
+                    <button class="btn-comprar-ahora">Comprar ahora</button>
+                </div>
+            </div>
+
+            <div class="div-imagenes">
+                <div class="div-imagen-principal">
+                    <img loading="lazy" src="../../images/D-xYa SiluetabsYa-min.png" alt="" srcset="" class="imgPrincipal" id="imagenPrincipal" data-zoom-image="">
+                </div>
+
+                <div class="div-mas-imagenes">
+                    <div class="div-imagenes">
+                        <!--                         
+                        <img loading="lazy" src="../../images/doreYa/0-DoreYa-min.png" alt="" srcset="" onclick="verImagen(this)">
+                        <img loading="lazy" src="../../images/MJ-YA/0-MJYa-min.png" alt="" srcset="" style="border-left: solid 1px #000;" onclick="verImagen(this)" style="width: 27%; padding-left: 3%; padding-right: 3%;"> 
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de DUOSYA -->
+    <div class="seccion-duosya">
+        <div class="div-titulo">
+            <h2>Más productos</h2>
+        </div>
+
+        <div class="swiper-container mySwiper" style="overflow: hidden;">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide div-color-1">
+                    <a href="./duo-NeuYa+MJYa.html">
+                        <div class="div-nombre">
+                            <h3>
+                                DÚO NEUYa +
+                                <br> MJ+Ya
+                            </h3>
+                        </div>
+
+                        <div class="div-imagen">
+                            <img loading="lazy" src="../../images/Duo-NueYa&MJYA-min.png" alt="" srcset="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide div-color-2">
+                    <a href="./duo-neuYa+Upp-Ya.html">
+                        <div class="div-nombre">
+                            <h3>
+                                DÚO NEUYa +
+                                <br> UPP-Ya
+                            </h3>
+                        </div>
+
+                        <div class="div-imagen">
+                            <img loading="lazy" src="../../images/Duo-NueYa&UppYa-min.png" alt="DUO NeuYa + MJ+Ya" srcset="" style="width: 70%;">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide div-color-1">
+                    <a href="./duo-neuYa+Raíz-+de-Tejocote.html">
+                        <div class="div-nombre">
+                            <h3>
+                                DÚO NEUYa + Raíz
+                                <br> de tejocote
+                            </h3>
+                        </div>
+
+                        <div class="div-imagen">
+                            <img loading="lazy" src="../../images/Duo-NueYa&SiluetaYa-min.png" alt="" srcset="" style="width: 60%;">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide div-color-2">
+                    <a href="./duo-DoreYa+UPP-Ya.html">
+                        <div class="div-nombre">
+                            <h3>
+                                DÚO DoréYa+
+                                <br> UPP-Ya
+                            </h3>
+                        </div>
+
+                        <div class="div-imagen">
+                            <img loading="lazy" src="../../images/Duo-DoreYa&UppYa-2-min.png" alt="" srcset="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide div-color-1">
+                    <a href="./duo-DoreYa-MJ-Ya.html">
+                        <div class="div-nombre">
+                            <h3>
+                                DÚO DoréYa+
+                                <br> MJ+YA
+                            </h3>
+                        </div>
+
+                        <div class="div-imagen">
+                            <img loading="lazy" src="../../images/Duo-DoreYa&MJYA-2-min.png" alt="" srcset="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide div-color-2">
+                    <a href="./duo-Raiz-de-Tejocote+DoreYa.html">
+                        <div class="div-nombre">
+                            <h3>
+                                DÚO SiluetaYa +
+                                <br> DoréYa
+                            </h3>
+                        </div>
+
+                        <div class="div-imagen">
+                            <img loading="lazy" src="../../images/Duo-SiluetaYa&DoreYa-2-min.png" alt="" srcset="" style="width: 70%;">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide div-color-1">
+                    <a href="./duo-raizdeTejocote+MJYa.html">
+                        <div class="div-nombre">
+                            <h3>
+                                DÚO SiluetaYa+
+                                <br> MJ+YA
+                            </h3>
+                        </div>
+
+                        <div class="div-imagen">
+                            <img loading="lazy" src="../../images/Duo-SiluetaYa&MJYA-min.png" alt="" srcset="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide div-color-2">
+                    <a href="./duo-Raiz-de-Tejocote+UPP-Ya.html">
+                        <div class="div-nombre">
+                            <h3>
+                                DÚO SiluetaYa+
+                                <br> UPP-Ya
+                            </h3>
+                        </div>
+
+                        <div class="div-imagen">
+                            <img loading="lazy" src="../../images/Duo-SiluetaYa&UppYa-min.png" alt="" srcset="">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide div-color-1">
+                    <a href="./duo-MJ+Ya+UPP-Ya.html">
+                        <div class="div-nombre">
+                            <h3>
+                                DÚO MJ+YA
+                                <br> UppYa
+                            </h3>
+                        </div>
+
+                        <div class="div-imagen">
+                            <img loading="lazy" src="../../images/Duo-MJYA&UppYa-min.png" alt="" srcset="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next" style="z-index: 1;"></div>
+        <div class="swiper-button-prev" style="z-index: 1;"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="row g-0">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 div-logo">
+                <a href="../../index.html">
+                    <img loading="lazy" src="../../images/Logo-en-blanco---Silueta-min.png" alt="SiluetaYa" srcset="">
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 div-leyenda">
+                <p>©2023 SiluetaYa.com | <a href="../politicasPrivacidad.html"><strong>Políticas de Privacidad</strong></a></p>
+            </div>
+
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 div-redes-sociales">
+                <div class="div-iconos">
+                    <a href="https://www.facebook.com/SiluetaYaMex" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-facebook-f"></i>
+
+                    </a>
+
+                    <a href="https://www.instagram.com/siluetaya/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+
+                    <a href="https://twitter.com/siluetaya" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCxrzAuoLEZHA_ZutpuXHnQw" class="logo-youtube" target="_blank" rel="noopener noreferrer">
+                        <i class="fa fa-youtube"></i>
+                    </a>
+                    <a>
+
+                    </a>
+                    <a></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+    <!-- Scripts para swiperjs (para el carrusel de los DOUSYA) -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../../js/carruselDuosYa.js"></script>
+
+
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

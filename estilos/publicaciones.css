@@ -8,6 +8,9 @@
     src: url("../tipografias/adineueTEXT-Light.ttf");
 }
 
+
+/* Estilos navbar */
+
 nav.navbar {
     background-color: rgb(255, 255, 255) !important;
 }
@@ -15,6 +18,16 @@ nav.navbar {
 .navbar .container-fluid .collapse .navbar-nav .nav-item a {
     font-family: "adieue";
     font-size: 17px;
+}
+
+@media (max-width: 991px) {
+    .navbar .container-fluid .collapse .navbar-nav .subdiv-navbar {
+        display: block;
+        margin-right: 0;
+    }
+    .navbar .container-fluid .collapse .navbar-nav .nav-item button {
+        width: 104% !important;
+    }
 }
 
 #tidio-chat-iframe {
@@ -142,7 +155,6 @@ nav.navbar {
     background-size: cover !important;
     background-position: center center !important;
     z-index: -1 !important;
-    background-color: rebeccapurple;
 }
 
 .seccion-inicio .fondo img {
@@ -217,8 +229,9 @@ li {
     font-size: 40px;
 }
 
-.seccion-informacion .div-redes .fa-facebook-f {
+.seccion-informacion .div-redes .fa-twitter {
     margin-right: 6%;
+    margin-left: 6%;
 }
 
 @media (max-width: 767px) {

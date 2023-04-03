@@ -497,7 +497,7 @@
     position: absolute;
     width: 65vw;
     margin-right: 25%;
-    margin-bottom: 15%;
+    margin-bottom: 5%;
 }
 
 #slides .slides-container .div-raizes .imagen-productos-movil {
@@ -543,7 +543,7 @@
 
 @media (max-width: 450px) {
     #slides .slides-container .div-raizes .imagen-productos {
-        width: 160vw;
+        width: 140vw;
         margin-left: 0;
         margin-top: -55%;
     }

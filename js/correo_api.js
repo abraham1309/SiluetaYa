@@ -42,16 +42,20 @@ function enviarCorreo() {
     var correo = document.getElementById('inputCorreo').value;
     var asunto = document.getElementById('selectAsunto').value;
     var mensaje = document.getElementById('areaMensaje').value;
+
+    html = "<div style='height: 100%; width: 100%; background: rgb(254, 214, 0); background: radial-gradient(circle, rgba(254, 214, 0, 1) 0%, rgba(241, 109, 34, 1) 85%); display: flex; justify-content: center; align-items: center; flex-direction: column;'>" + "<div style=' width: 80%; height: auto; margin-left: 10%; margin-right: 10%;'>" + "<h1 style='margin-bottom: -35px; text-align: center;'>Asunto: " + asunto + " </h1>" + "<h2 style='margin-bottom: -30px; text-align: center;'>Nombre: " + nombre + " </h2>" + "<p style='text-align: center; font-size: 16px;'> " + mensaje + " </p>" + "</div>" + "</div>";
+
     var datos = {
         nameFrom: nombre,
         emailFrom: correo,
         to: 'abraham@mobil.aullox.com',
         subject: asunto,
-        text: mensaje
+        text: mensaje,
+        html
     };
 
     var id = generarId();
-    var url = 'https://dev.api.ifscore.biz/ifscore/mail/1.0.0/send/multiplica/app/portal_' + id;
+    var url = 'https://dev.api.ifscore.biz/ifscore/mail/1.0.0/send/app/portal_' + id;
 
     /* Llamamos a la api y enviamos los datos */
     fetch(url, {
@@ -68,17 +72,21 @@ function enviarCorreo() {
                 divConfirmacion.style.display = "none";
                 divError.style.display = "none";
                 divConfirmacion.style.display = "flex";
+
+                setTimeout(function() {
+                    divConfirmacion.style.display = "none";
+                }, 10000);
             } else {
                 if (response.code == 400) {
                     divError.style.display = "none";
                     divConfirmacion.style.display = "none";
                     divError.style.display = "flex";
+
+                    setTimeout(function() {
+                        divError.style.display = "none";
+                    }, 10000);
                 }
             }
         });
 
-}
-
-function onSubmit(token) {
-    alert("Gracias por enviar su correo " + token);
 }
